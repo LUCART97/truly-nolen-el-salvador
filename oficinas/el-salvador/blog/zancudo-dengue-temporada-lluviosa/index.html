@@ -1337,6 +1337,12 @@ body.country-site[data-oficina] .machote-chat-host .tia-fab-txt{order:-1;margin:
 body.country-site[data-oficina] .machote-chat-host .tia-fab-txt::after{right:-8px!important;left:auto!important;top:50%!important;bottom:auto!important;width:11px!important;height:11px!important;transform:translateY(-50%) rotate(-45deg)!important}
 @media(max-width:760px){body.country-site[data-oficina] .machote-chat-host .tia-fab .tia-carro{width:62px!important}body.country-site[data-oficina] .machote-chat-host .tia-fab-txt{margin:0 5px 6px 0!important}}
 body.country-site[data-oficina] .machote-chat-host .tia-fab>svg{display:none!important}
+/* Windows/Chrome con barra de desplazamiento visible: la acuarela del pie (100vw) se pasaba 8 px del ancho útil, salía una
+   barra horizontal abajo y tapaba el carro del chat. Se recorta ese sobrante (la acuarela sigue de borde a borde). */
+html:has(body.country-site[data-oficina]),body.country-site[data-oficina]{overflow-x:clip}
+/* Carro del chat más arriba, lejos del borde inferior de la pantalla */
+body.country-site[data-oficina] .machote-chat-host .tia{bottom:32px!important;right:22px!important}
+@media(max-width:760px){body.country-site[data-oficina] .machote-chat-host .tia{bottom:18px!important;right:14px!important}}
 </style>
 </head>
 <body class="country-site natural" data-machote="costa-rica" data-oficina="el-salvador">
