@@ -1386,6 +1386,21 @@ body.country-site[data-oficina] #inicio .hero-routes{gap:0 14px!important}
 body.country-site[data-oficina] #inicio .hero-routes a{font-size:12px!important;white-space:nowrap}
 body.country-site[data-oficina] #inicio .hero-routes a span{margin-left:4px!important}
 }
+/* Celular, entrega 3-nov noche: menos aire entre secciones (el separador del master mide 64 px), pestañas de plagas
+   en una sola línea y el técnico del cierre al lado de los enlaces en vez de debajo con un hueco amarillo. */
+@media(max-width:760px){
+
+body.country-site[data-oficina] .s-intro{padding-bottom:0!important}
+body.country-site[data-oficina] .s-prose>:last-child{margin-bottom:0}
+body.country-site[data-oficina] .pest-families a{white-space:nowrap}
+body.country-site[data-oficina] main .s-closing>.wrap{min-height:0;padding-bottom:28px;background-position:right 6px bottom;background-size:auto 200px}
+body.country-site[data-oficina] main .s-closing>.wrap>p{padding-right:0}
+}
+@media(max-width:760px){
+body.country-site[data-oficina] .s-section{padding:22px 0}
+body.country-site[data-oficina] .local-footer{padding-bottom:84px!important}
+body.country-site[data-oficina] .local-footer .footer-legal{padding-bottom:12px}
+}
 </style>
 </head>
 <body class="country-site natural" data-machote="costa-rica" data-oficina="el-salvador">
