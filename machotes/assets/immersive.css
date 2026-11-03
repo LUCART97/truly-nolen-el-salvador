@@ -1,0 +1,169 @@
+/* Truly site contract v1. Loaded last: geometry shared by all ten designs. */
+html{scroll-padding-top:100px}body[data-machote]{margin:0;--chapter-height:100svh;--motion-duration:650ms;--motion-ease:cubic-bezier(.16,1,.3,1)}
+body[data-machote] .machote-banner{display:none}body[data-machote] main{padding-top:0;margin-top:0}
+body[data-machote]>header{position:fixed!important;inset:0 0 auto!important;margin:0!important;width:100%;max-width:none;min-height:80px;padding:16px clamp(24px,4.5vw,72px)!important;box-sizing:border-box;z-index:30;background:#f7f6f1f2;color:#17212a;box-shadow:0 1px 0 #17212a20;transition:background .25s,box-shadow .25s}
+body[data-machote]>header.is-scrolled{background:#f7f6f1;box-shadow:0 4px 20px #17212a12}
+body[data-machote]>header a:not(.button):not(.btn),body[data-machote]>header button:not(.button),body[data-machote]>header summary{color:#17212a}
+body[data-machote]>header .brand small{color:inherit}
+body[data-machote] main>section:not(.tn-brand-band){min-height:var(--chapter-height);box-sizing:border-box;align-content:center;scroll-margin-top:80px}
+body[data-machote] main>section.wrap{max-width:none;width:100%;padding-inline:clamp(24px,4.5vw,72px)}
+body[data-machote] main>section:is(.hero,.car-hero,.cinema){position:relative;display:flex;flex-direction:row;align-items:flex-end;justify-content:flex-start;isolation:isolate;width:100%;max-width:none;height:auto;min-height:100svh;aspect-ratio:auto;margin:0;padding:140px clamp(24px,4.5vw,72px) 106px;background:#17212a;color:#fff;border:0;border-radius:0;overflow:hidden}
+body[data-machote] :is(.hero,.car-hero,.cinema) :is(.film,.hero-media,.car-media){position:absolute;inset:0;width:100%;height:100%;max-width:none;aspect-ratio:auto;transform:none;margin:0;z-index:-2;border-radius:0;overflow:hidden}
+body[data-machote] :is(.film,.hero-media,.car-media) :is(picture,img,video){position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:var(--film-focus,center);border-radius:0;transform:none}
+body[data-machote] :is(.hero,.car-hero,.cinema):after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(0deg,#0c1c22e8 0%,#0c1c2233 70%,#0c1c2210)}
+body[data-machote] :is(.hero,.car-hero) :is(.hero-overlay,.car-shade){display:none}
+body[data-machote] .cinema .hero-text{position:relative;inset:auto;z-index:1;max-width:740px;width:100%;margin:0;padding:0;text-align:left;align-self:auto;background:none;color:#fff;transform:none}
+body[data-machote] .cinema .hero-text .eyebrow{color:#fff;margin:0 0 24px}
+body[data-machote] .cinema h1{font-size:clamp(46px,5.8vw,84px);line-height:1.02;letter-spacing:-.045em;max-width:11ch;margin:0 0 28px}
+body[data-machote] .cinema h2{font-size:clamp(40px,5vw,72px);line-height:1.05;max-width:12ch;margin:0 0 28px}
+body[data-machote] .cinema .hero-text>p:not(.eyebrow){font-size:clamp(18px,1.5vw,22px);line-height:1.5;max-width:38ch;margin:0 0 26px;color:#fff}
+body[data-machote] .cinema .button{background:#ffe000;color:#17212a;min-height:52px}
+body[data-machote] .cinema .discover{display:flex;position:absolute;inset:auto auto 32px clamp(24px,4.5vw,72px);color:white;z-index:2;min-height:44px;max-width:calc(100% - 180px);font-size:13px}
+body[data-machote] .local-operation>img{min-height:100%;object-fit:cover}
+body[data-machote] .local-cinema{--film-focus:center}
+/* Keep the ant's head and Bellas Artes together in the narrow hero crop. */
+@media(max-width:760px){body[data-machote=mexico] #inicio{--film-focus:76% center}}
+body[data-machote=international] .car-copy{position:relative;inset:auto;width:100%;padding:0;transform:none;z-index:1;align-self:end}
+body[data-machote=guatemala] .hero>div:not(.hero-media){z-index:1}
+body[data-machote] :is(.marco-launch,.marco-trigger,.tn-chat-entry){display:none!important}
+/* Color and type are explicit for the reused Truly AI component, scoped to its host. */
+.machote-chat-host{--fg:#17212a;--fg-muted:#52606b;--fg-on-deep:#fff;--fg-on-deep-muted:#d4ded8;--line:#d9dfdf;--bg-surface:#fff;--tint-soft:#f3f5f3;--bg-deep:#17212a;--brand-yellow:#ffe000;--brand-yellow-light:#fff2a3;--brand-ink:#17212a;--white:#fff;--sombra-panel:0 16px 64px #17212a33;--radio-pill:999px;--t-ui:180ms;--t-panel:300ms;--ease:cubic-bezier(.16,1,.3,1);--bg-hover:#e9efec;--font-body:Hanken,Arial,sans-serif;color:#17212a;font:16px/1.5 var(--font-body)}
+.machote-chat-host .tia{z-index:50}.machote-chat-host .tia-foot{font-size:11px;text-align:center}.machote-chat-host .tia :is(button,input){font-family:inherit}.machote-chat-host .tia-atajo{white-space:normal}.machote-chat-host .tia-panel{max-height:calc(100dvh - 100px)}
+.machote-chat-host .tia-form{display:flex;grid-template-columns:none;gap:8px;padding:12px;margin:0;min-height:0;border:0;background:#fff;color:#17212a}.machote-chat-host .tia-campo{min-width:0;width:100%;height:44px;padding:10px 12px;margin:0;border:1px solid #77848b;border-radius:12px;background:#fff;color:#17212a;font-size:16px}.machote-chat-host .tia-send{width:44px;min-width:44px;min-height:44px;padding:10px;border:0;border-radius:50%;margin:0}
+body[data-machote] .machote-reading-progress{position:fixed;top:0;left:0;width:100%;height:3px;background:#e7b600;z-index:60;transform:scaleX(var(--reading-progress,0));transform-origin:left;pointer-events:none}
+body[data-machote] :is(a,button,summary,input,textarea):focus-visible{outline:3px solid #14689a;outline-offset:4px}
+body[data-machote] .cinema :is(a,button):focus-visible{outline-color:#ffe000}
+@media(prefers-reduced-motion:no-preference){
+ body[data-machote] .chapter-enter{animation:chapter-enter var(--motion-duration) var(--motion-ease) both}
+ body[data-machote] :is(.service,.pest-grid a,.button,.btn){transition:transform .25s var(--motion-ease),box-shadow .25s}
+ body[data-machote] :is(.service,.pest-grid a):hover{transform:translateY(-5px);box-shadow:0 16px 32px #17212a15}
+ body[data-machote] :is(.button,.btn):hover{transform:translateY(-2px)}
+ @keyframes chapter-enter{from{transform:translateY(24px);opacity:.55}to{transform:none;opacity:1}}
+}
+@media(max-width:1100px){body[data-machote]>header{min-height:76px;padding-block:12px!important}body[data-machote] .site-nav nav.is-open{max-height:calc(100svh - 90px);overflow-y:auto}body[data-machote] .site-nav nav{background:#f7f6f1}}
+@media(max-width:760px){
+ body[data-machote]>header{min-height:72px;padding-inline:20px!important}
+ body[data-machote] main>section:is(.hero,.car-hero,.cinema){padding:128px 24px 110px;min-height:100svh}
+ body[data-machote] .cinema h1{font-size:clamp(40px,11vw,54px);max-width:11ch;margin-bottom:22px}
+ body[data-machote] .cinema .hero-text{max-width:none}
+ body[data-machote] .cinema .hero-text .eyebrow{margin-bottom:18px;font-size:11px}
+ body[data-machote] .cinema .hero-text>p:not(.eyebrow){font-size:18px;margin-bottom:24px}
+ body[data-machote] .cinema:after{background:linear-gradient(0deg,#0c1c22f5 0%,#0c1c2255 80%)}
+ body[data-machote] .cinema .discover{font-size:11px;bottom:24px;left:24px;max-width:calc(100% - 174px)}
+ body[data-machote] .local-operation>img{min-height:0}
+ body[data-machote] .machote-chat-host .tia{right:16px;bottom:16px}
+}
+@media(prefers-reduced-motion:reduce){body[data-machote]{scroll-behavior:auto}body[data-machote] *,body[data-machote] *:before,body[data-machote] *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Contract geometry takes precedence over historical country-specific frame rules. */
+body[data-machote] main>section:is(.hero,.car-hero,.cinema){min-height:100svh!important;padding:140px clamp(24px,4.5vw,72px) 106px!important}
+body[data-machote=guatemala] .hero .hero-copy,body[data-machote=international] .car-hero .car-copy{position:relative;inset:auto;display:block;width:100%;max-width:740px;height:auto;min-height:0;padding:0;margin:0;color:#fff;transform:none}
+body[data-machote=guatemala] .hero :is(.hero-heading,.hero-action),body[data-machote=international] .car-hero :is(.car-heading,.car-action){position:static;width:auto;height:auto;min-height:0;margin:0;padding:0;transform:none;color:#fff;display:block}
+body[data-machote=guatemala] .hero h1,body[data-machote=international] .car-hero h1{color:#fff;max-width:12ch;font-size:clamp(44px,5vw,72px);line-height:1.05;margin:20px 0 24px}
+body[data-machote=guatemala] .hero :is(.hero-description,.hero-eyebrow),body[data-machote=international] .car-hero :is(.car-description,.car-kicker){color:#fff;max-width:38ch;margin:0 0 24px}
+body[data-machote=guatemala] .hero .hero-next{color:white;left:clamp(24px,4.5vw,72px);bottom:28px}
+body[data-machote=international]>.site-header{padding:0!important;min-height:80px}
+body[data-machote=international]>.site-header .utility{display:none}
+body[data-machote=international]>.site-header .nav-shell{min-height:80px;padding:12px clamp(24px,4.5vw,72px);box-sizing:border-box;background:#ffe000}
+body[data-machote=international] .car-premium{display:block;margin-top:14px;color:#fff}
+.machote-chat-host .tia-fab svg{display:block;width:26px;height:26px;max-width:none;fill:none;stroke:currentColor;stroke-width:2;position:static}
+.machote-chat-host .tia-send svg,.machote-chat-host .tia-x svg{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.machote-chat-host .tia-send{background:#17212a;color:#ffe000}
+@media(max-width:760px){
+ body[data-machote] main>section:is(.hero,.car-hero,.cinema){padding:128px 24px 110px!important}
+ body[data-machote=guatemala] .hero h1,body[data-machote=international] .car-hero h1{font-size:42px;max-width:12ch}
+ body[data-machote=guatemala] .hero .hero-description,body[data-machote=international] .car-hero .car-description{font-size:17px;line-height:1.5}
+ body[data-machote=international]>.site-header .nav-shell{min-height:72px;padding:10px 20px}
+ body[data-machote=international]>.site-header{min-height:72px}
+}
+body[data-machote].country-site .cinema .film :is(img,video){object-fit:cover;object-position:var(--film-focus,center)}
+body[data-machote].country-site .cinema .hero-text{display:block}
+body[data-machote].country-site .cinema:after{display:block}
+body[data-machote] main>section:is(.hero,.car-hero,.cinema){max-height:none!important}
+/* Explicit contrast on dark variants; historical skins cannot recolor shared controls. */
+body[data-machote]>header{background:#f7f6f1!important;color:#17212a!important}
+body[data-machote] .machote-chat-host .tia-fab,body[data-machote] .machote-chat-host .tia-fab svg{color:#ffe000;stroke:#ffe000}
+body[data-machote=guatemala] .guatemala-footer-art img{width:100%;max-width:100%;height:auto;margin:0;object-fit:contain;transform:none}
+body[data-machote=guatemala] .guatemala-footer-art{overflow:visible}
+body[data-machote] .detail-hero{padding-top:120px}
+
+/* Actual account access, shared by desktop navigation and the mobile menu. */
+body[data-machote] :is(.my-truly-access,.inside-truly-access){display:inline-flex;align-items:center;gap:.35em;min-height:44px;font-weight:700;text-decoration:none;white-space:nowrap}
+body[data-machote] :is(.my-truly-access,.inside-truly-access):focus-visible{outline:3px solid #8b5800;outline-offset:3px}
+/* Both portals must fit alongside the international navigation on laptops. */
+@media(min-width:1101px) and (max-width:1399px){
+ body[data-machote=international]>.site-header .nav-shell{padding-inline:24px;gap:20px}
+ body[data-machote=international] .navigation{gap:14px}
+ body[data-machote=international] .navigation :is(.my-truly-access,.inside-truly-access,.nav-trigger,.nav-office,.search-open,.nav-cta){font-size:14px;white-space:nowrap}
+ body[data-machote=international] .navigation .nav-cta{padding-inline:14px}
+}
+/* Use the disclosure menu before desktop controls can collide on narrow laptops. */
+@media(min-width:960px) and (max-width:1199px){
+ body[data-machote=international] .menu-toggle{display:flex;align-items:center;gap:10px;min-height:48px;margin-left:auto}
+ body[data-machote=international] .navigation{display:none;position:fixed;inset:80px 0 0;max-height:calc(100svh - 80px);overflow-y:auto;padding:18px 24px 32px;background:#fff}
+ body[data-machote=international] .navigation.is-open{display:flex;flex-direction:column;align-items:stretch;gap:4px}
+ body[data-machote=international] .navigation :is(.nav-trigger,.nav-office,.my-truly-access,.inside-truly-access){font-size:18px;min-height:48px}
+ body[data-machote=international] .navigation .nav-trigger{width:100%;justify-content:space-between}
+ body[data-machote=international] .navigation .mega{position:static;display:block;padding:16px;box-shadow:none}
+ body[data-machote=international] .navigation .mega-intro{display:none}
+ body[data-machote=international] .navigation .mega-links{display:grid;grid-template-columns:1fr 1fr}
+ body[data-machote=international] .navigation .mobile-portals{display:block;padding-top:24px}
+ body[data-machote=international] .navigation .nav-cta{align-self:flex-start;margin-top:12px}
+}
+
+/* Portal access is a utility group, separate from service navigation. */
+body[data-machote] .truly-portals{display:flex;align-items:center;gap:0}
+body[data-machote] .truly-portals a{font-size:13px;font-weight:600;padding:0 16px;min-height:44px;line-height:1.3;border:0}
+body[data-machote] .truly-portals a+a{border-left:1px solid #17212a30}
+body[data-machote] .truly-portals a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(min-width:1101px){
+ body.country-site[data-machote]>.site-nav{padding-top:54px!important;padding-bottom:14px!important;min-height:122px;gap:24px}
+ body.country-site .site-nav:before{content:'';position:absolute;inset:0 0 auto;height:44px;background:#eceee9;border-bottom:1px solid #17212a12}
+ body.country-site .truly-portals{position:absolute;right:clamp(24px,4.5vw,72px);top:0;height:44px}
+ body.country-site .truly-portals a{min-height:44px}
+ body.country-site .site-nav nav{gap:24px}
+ body.country-site .site-nav :is(nav>a,summary){font-size:13px;font-weight:600}
+ body.country-site .site-nav>.button{font-size:13px;min-height:46px;padding:12px 18px;white-space:nowrap}
+ body.country-site main>section{scroll-margin-top:128px!important}
+ body.country-site .detail-hero,body.country-site .legal-content{padding-top:160px}
+}
+@media(max-width:1100px){
+ body.country-site .truly-portals{width:100%;padding:8px 0 16px;border-bottom:1px solid #17212a20;margin-bottom:8px}
+ body.country-site .site-nav .truly-portals a{flex:1;justify-content:center;padding:12px 8px;font-size:14px;min-height:48px;border-bottom:0}
+}
+/* Quiet, consistent actions: no decorative diagonal arrows or full-width rules. */
+body.country-site .button{justify-content:center;gap:12px;padding:15px 24px;border-radius:6px;min-height:52px;font-size:15px;line-height:1.4;font-weight:700;text-align:center;text-decoration:none;box-shadow:none}
+body.country-site .text-link{display:inline-flex;width:fit-content;max-width:100%;gap:0;border:0;padding:10px 0;font-size:15px;font-weight:650;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;line-height:1.5}
+body.country-site .service .service-action{display:inline-flex;position:static;margin:20px 0 0;padding:11px 18px;min-height:44px;border:1px solid #17212a40;border-radius:6px;font-size:13px;line-height:20px;font-weight:650;letter-spacing:0;color:inherit;border-color:currentColor}
+body.country-site .service:hover .service-action{background:#ffe000;border-color:#ffe000;color:#17212a}
+body.country-site .consult-options>a{border:1px solid #17212a30;border-radius:6px;padding:18px 20px;background:#fff;color:#17212a;font-size:16px;line-height:1.5;font-weight:600}
+body.country-site .consult-options>a:hover{border-color:#17212a;background:#f7f6f1}
+body.country-site.editorial .service>div{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:32px 40px}
+body.country-site.editorial .service>div>p{max-width:40ch}
+body.country-site.editorial .service>img{height:100%;min-height:300px}
+/* A complete local landmark leads directly into the site's closing navigation. */
+body.country-site .local-footer{padding-top:40px;padding-bottom:88px;border-top:1px solid var(--line)}
+body.country-site .local-footer .footer-place img{max-height:420px;width:auto;max-width:100%;margin-inline:auto;object-fit:contain}
+body.country-site .local-footer .footer-place figcaption{text-align:center;margin:16px 0 36px;font-size:12px;letter-spacing:.06em;color:var(--ink)}
+body.country-site .local-footer .footer-intro{padding:32px 0;gap:32px;align-items:center}
+body.country-site .local-footer .footer-intro>p{font-size:clamp(24px,2.4vw,36px);line-height:1.15;margin:0}
+body.country-site .local-footer .footer-intro>.text-link{border:1px solid #17212a40;border-radius:6px;padding:12px 20px;text-decoration:none;min-height:48px;justify-content:center}
+body.country-site .local-footer .footer-columns{padding:40px 0;gap:32px}
+body.country-site .local-footer .footer-columns h2{font-size:15px;line-height:1.5;margin:0 0 16px}
+body.country-site .local-footer .footer-columns a{font-size:14px;line-height:1.5;min-height:44px;padding-block:10px}
+body.country-site .local-footer .footer-office>p{font-size:16px}
+body.country-site .local-footer .footer-office .office-note{font-size:12px;line-height:1.6;max-width:30ch}
+body.country-site .local-footer .footer-legal{gap:20px;font-size:12px;align-items:center;padding-top:24px}
+@media(max-width:760px){
+ body.country-site.editorial .service>div{padding:24px}
+ body.country-site.editorial .service>img{min-height:0;height:230px}
+ body.country-site .local-footer{padding-top:24px}
+ body.country-site .local-footer .footer-place img{max-height:260px}
+ body.country-site .local-footer .footer-place figcaption{margin:8px 0 24px;font-size:11px;letter-spacing:0}
+ body.country-site .local-footer .footer-intro{display:grid;grid-template-columns:1fr;gap:24px;padding:24px 0}
+ body.country-site .local-footer .footer-intro>.text-link{width:fit-content}
+ body.country-site .local-footer .footer-columns{grid-template-columns:1fr 1fr;gap:32px 24px;padding:32px 0}
+ body.country-site .local-footer .footer-columns h2{font-size:14px}
+ body.country-site .local-footer .footer-columns a{font-size:13px}
+ body.country-site .local-footer .footer-office{grid-column:auto;padding-top:0;border-top:0}
+ body.country-site .local-footer .footer-office .office-note{max-width:44ch}
+}

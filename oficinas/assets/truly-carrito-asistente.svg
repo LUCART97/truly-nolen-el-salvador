@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+  <title>Coche de Truly Nolen con orejas, nariz roja y bigotes</title>
+  <defs>
+    <radialGradient id="mouse-nose" cx=".34" cy=".24" r=".8"><stop stop-color="#FF6571"/><stop offset=".35" stop-color="#E91835"/><stop offset="1" stop-color="#9D0821"/></radialGradient>
+    <linearGradient id="hood" x1="365" y1="183" x2="453" y2="282" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE851"/><stop offset=".6" stop-color="#FFD900"/><stop offset="1" stop-color="#E5B800"/></linearGradient>
+    <linearGradient id="bumper" x1="406" y1="267" x2="406" y2="285" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF9D8"/><stop offset=".4" stop-color="#D1C79F"/><stop offset="1" stop-color="#716A4F"/></linearGradient>
+    <radialGradient id="lens-depth" cx=".4" cy=".34" r=".68"><stop stop-color="#FFFFFF" stop-opacity=".25"/><stop offset=".55" stop-color="#FFF3B5" stop-opacity="0"/><stop offset=".82" stop-color="#7D6732" stop-opacity=".28"/><stop offset="1" stop-color="#453C2C" stop-opacity=".85"/></radialGradient>
+    <radialGradient id="lamp-halo"><stop stop-color="#FFFFFF" stop-opacity=".96"/><stop offset=".24" stop-color="#FFF6C6" stop-opacity=".85"/><stop offset=".5" stop-color="#FFE795" stop-opacity=".55"/><stop offset="1" stop-color="#FFE08A" stop-opacity="0"/></radialGradient>
+    <linearGradient id="projected-light" x1="335" y1="230" x2="433" y2="287" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFDE5" stop-opacity=".85"/><stop offset="1" stop-color="#FFE8A1" stop-opacity="0"/></linearGradient>
+    <filter id="beam-soft" x="-15%" y="-30%" width="130%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <!-- Three-quarter Beetle proportions from the official Mouse-Car.png.
+       Original vector artwork: yellow body, clear glazing and solid charcoal tyres. -->
+  <g fill="#FFD900">
+    <circle cx="210" cy="57" r="29"/>
+    <circle cx="337" cy="57" r="29"/>
+    <path d="M202 80h16v24h-16zM329 80h16v24h-16z"/>
+    <path fill-rule="evenodd" d="M38 228c1-27 14-46 38-54l23-39c25-35 62-45 113-47l98 3c38 2 60 14 87 40l35 35 61 15c24 6 43 24 49 49l8 44c2 16-7 27-25 29l-66 8-153 5c-3-47-19-80-50-80-31 0-46 27-49 71l-82-11c-2-42-14-68-37-68-26 0-38 25-42 53l-13-8c-8-6-10-13-9-24l4-21Zm185-116 18 67 165-4-33-34c-19-20-39-27-69-29h-81Zm-24 0c-31 1-51 9-67 24l-22 35 103 11-14-70Z"/>
+
+    <path d="M395 158c14-8 29-6 36 4l-3 12-22-1-11-15Z"/>
+  </g>
+  <!-- Filled tyres and inset yellow hubs remain readable at a 72 px width. -->
+  <g stroke="#181C1A" stroke-width="3">
+    <ellipse cx="83" cy="272" rx="29" ry="49" fill="#292E2B"/>
+    <ellipse cx="250" cy="295" rx="35" ry="57" fill="#292E2B"/>
+  </g>
+  <g fill="#EABF14" stroke="#776112" stroke-width="3">
+    <ellipse cx="83" cy="272" rx="15" ry="29"/>
+    <ellipse cx="250" cy="295" rx="19" ry="36"/>
+  </g>
+  <g fill="#FFE665">
+    <ellipse cx="83" cy="272" rx="6" ry="12"/>
+    <ellipse cx="250" cy="295" rx="8" ry="15"/>
+  </g>
+  <!-- Clear glazing and restrained headlamps remain legible at launcher scale. -->
+  <path d="M223 112l18 67 165-4-33-34c-19-20-39-27-69-29h-81ZM199 112c-31 1-51 9-67 24l-22 35 103 11-14-70Z" fill="#344B50"/>
+  <path d="m245 121 12 45 114-3M183 121l10 46-62-7" stroke="#A9C1C3" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  <!-- Complete hood, lower grille and solid bumper: no transparent cut-outs. -->
+  <path d="M350 187c46-10 93-7 132 7l29 56c-51 17-111 21-170 10l-9-36 18-37Z" fill="url(#hood)"/>
+  <path d="M421 190c11 16 18 35 23 54M348 254c43 7 103 3 153-10" stroke="#B9940D" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <path d="M376 257c27 0 57-2 85-6l-2 12-81 5-2-11Z" fill="#675621"/>
+  <path d="m390 258 1 7m13-8 1 7m13-8 1 7m13-8 1 7m13-9 1 7" stroke="#C9AA37" stroke-width="3"/>
+  <path d="m308 276 210-11 2 15-209 14-3-18Z" fill="#A78310"/>
+  <path d="m308 272 210-10 2 13-209 14-3-17Z" fill="url(#bumper)" stroke="#7D713E" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Metal rim, recessed reflector and lens, sized to survive a 72 px icon. -->
+  <g fill="#74602A" stroke="#FFE975" stroke-width="4">
+    <ellipse cx="322" cy="222" rx="31" ry="25"/>
+    <ellipse cx="502" cy="214" rx="17" ry="24"/>
+  </g>
+  <g class="headlamps" fill="#B49C55" stroke="#423C2C" stroke-width="2">
+    <ellipse cx="322" cy="222" rx="25" ry="19"/>
+    <ellipse cx="502" cy="214" rx="12" ry="18"/>
+  </g>
+  <g fill="url(#lens-depth)">
+    <ellipse cx="322" cy="222" rx="25" ry="19"/>
+    <ellipse cx="502" cy="214" rx="12" ry="18"/>
+  </g>
+  <path d="M307 216c4-5 11-7 18-6M498 204l-2 8" stroke="#FFFFEB" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <!-- Mouse-car signature. Short, solid whiskers remain legible at launcher size. -->
+  <g class="mouse-car-face" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#17181C" stroke-width="5">
+      <path d="M407 216 Q384 204 362 201"/><path d="M406 222 357 220"/><path d="M407 229 Q381 232 364 241"/>
+      <path d="M437 214 Q459 201 478 197"/><path d="M438 220 484 216"/><path d="M438 227 Q463 230 480 236"/>
+    </g>
+    <ellipse cx="423" cy="225" rx="20" ry="17" fill="#6E3D17" opacity=".22"/>
+    <ellipse cx="421" cy="219" rx="19" ry="17" fill="url(#mouse-nose)" stroke="#9D0821" stroke-width="1.5"/>
+    <ellipse cx="414" cy="212" rx="6" ry="3.5" fill="#FFFFFF" opacity=".28"/>
+  </g>
+  <!-- Warm projected light fades inside the original viewport; car scale is unchanged. -->
+  <g class="headlamp-glow">
+    <path d="M332 216 449 250 421 303 324 238Z" fill="url(#projected-light)" filter="url(#beam-soft)"/>
+    <ellipse cx="329" cy="225" rx="69" ry="52" fill="url(#lamp-halo)"/>
+    <ellipse cx="503" cy="215" rx="49" ry="49" fill="url(#lamp-halo)"/>
+  </g>
+  <g class="lamp-cores" fill="#FFFFF3">
+    <ellipse cx="320" cy="220" rx="16" ry="11"/>
+    <ellipse cx="501" cy="212" rx="7" ry="11"/>
+  </g>
+  <style>
+    .headlamps{fill:#B49C55;animation:lamps 8s ease-in-out infinite}
+    .headlamp-glow,.lamp-cores{opacity:0;animation:glow 8s ease-in-out infinite}
+    @keyframes lamps{0%,10%,70%,100%{fill:#B49C55}28%,52%{fill:#FFFFEF}}
+    @keyframes glow{0%,10%,70%,100%{opacity:0}28%,52%{opacity:.95}}
+    @media(prefers-reduced-motion:reduce){.headlamps,.headlamp-glow,.lamp-cores{animation:none}.headlamps{fill:#FFFFEF}.headlamp-glow,.lamp-cores{opacity:.75}}
+  </style>
+</svg>

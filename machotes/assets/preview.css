@@ -1,0 +1,15 @@
+/* Shared preview controls do not alter the source sites' composition. */
+.machote-banner{font:500 11px/1.5 Arial,sans-serif;text-align:center;padding:8px 16px;background:#17212a;color:#fff;position:relative;z-index:20}.machote-banner a{color:#ffe000}.machote-modal{max-width:540px;width:calc(100% - 32px);max-height:85svh;padding:32px;border:0;border-radius:12px;background:#f7f6f1;color:#17212a;font:16px/1.6 Arial,sans-serif}.machote-modal::backdrop{background:#17212aaa}.machote-modal h2{font-size:28px;margin-bottom:20px}.machote-modal button{padding:12px 24px;min-height:44px;background:#ffe000;color:#17212a;border:0;font:700 15px Arial;cursor:pointer;margin-top:20px}.machote-video-toggle{position:absolute;right:24px;bottom:24px;z-index:10;background:#17212a;color:white;border:1px solid white;border-radius:50%;width:48px;height:48px;cursor:pointer}.machote-modal:focus-visible,.machote-modal button:focus-visible{outline:3px solid #17212a;outline-offset:3px}.country-site:has(.machote-banner) .panorama{margin-top:0}
+
+body[data-machote=guatemala] .site-header{margin-top:32px}
+
+/* Preview navigation uses the source layouts, with working disclosure states. */
+body[data-machote=international] .mega[hidden],body[data-machote=international] .navigation[hidden]{display:none!important}
+body[data-machote=guatemala] .guatemala-footer-art img{width:100%;height:auto;max-width:100%;object-fit:contain;transform:none}
+body[data-machote=guatemala] .guatemala-footer-art{height:auto;min-height:0;overflow:visible}
+body[data-machote=guatemala] .site-footer a,body[data-machote=international] footer a{min-height:44px;display:inline-flex;align-items:center}
+body[data-machote=guatemala] .site-footer summary,body[data-machote=international] footer summary{min-height:44px}
+
+body[data-machote] header .brand{min-height:44px;min-width:44px}
+body[data-machote=guatemala] .footer-columns details>a{display:flex;width:fit-content}
+body[data-machote=guatemala] .footer-columns .email-link{display:block;overflow-wrap:anywhere;margin-block:8px}
