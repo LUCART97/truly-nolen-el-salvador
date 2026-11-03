@@ -1343,6 +1343,29 @@ html:has(body.country-site[data-oficina]),body.country-site[data-oficina]{overfl
 /* Carro del chat más arriba, lejos del borde inferior de la pantalla */
 body.country-site[data-oficina] .machote-chat-host .tia{bottom:32px!important;right:22px!important}
 @media(max-width:760px){body.country-site[data-oficina] .machote-chat-host .tia{bottom:18px!important;right:14px!important}}
+/* Fichas por especie (species-section) con las medidas de globaltni.com/es/pests/ (pests.css + interior-ux.css), 3-nov-2026 */
+body.country-site[data-oficina] .species-section{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:32px;padding:32px 0;align-items:start;border-bottom:1px solid #dedede}
+body.country-site[data-oficina] .species-specimen{display:flex;align-items:center;justify-content:center;border:1px solid #e0e0e0;background:#fff;border-radius:3px;padding:20px;min-height:215px}
+body.country-site[data-oficina] .species-specimen .pest-figure{margin:0;width:100%;max-width:100%;min-height:0}
+body.country-site[data-oficina] .species-specimen img{display:block;width:100%;height:180px;max-height:180px;object-fit:contain}
+body.country-site[data-oficina] .species-description h3{font-size:clamp(23px,2.2vw,31px);line-height:1.2;letter-spacing:-.007em;margin:0 0 18px}
+body.country-site[data-oficina] .species-description p{font-size:17px;line-height:1.75}
+body.country-site[data-oficina] dl.species-facts{display:grid;grid-template-columns:minmax(120px,160px) minmax(0,1fr);gap:0 18px;margin:12px 0 0;font-size:15px;line-height:1.65}
+body.country-site[data-oficina] .species-facts dt{font-weight:700;padding:10px 0;border-top:1px solid #dedede}
+body.country-site[data-oficina] .species-facts dd{margin:0;padding:10px 0;border-top:1px solid #dedede;overflow-wrap:anywhere}
+body.country-site[data-oficina] .species-facts dt:first-child,body.country-site[data-oficina] .species-facts dt:first-child+dd{border-top:0;padding-top:0}
+body.country-site[data-oficina] .species-note{margin:18px 0 0}
+@media(max-width:760px){body.country-site[data-oficina] .species-section{grid-template-columns:1fr;gap:24px;padding:29px 0}
+body.country-site[data-oficina] .species-specimen{min-height:205px}
+body.country-site[data-oficina] .species-specimen img{height:165px}
+body.country-site[data-oficina] dl.species-facts{grid-template-columns:1fr;gap:0}
+body.country-site[data-oficina] .species-facts dd{border-top:0;padding-top:0}}
+/* Blancos táctiles de 44 px en celular: enlaces de la red de oficinas y migas (ojo de diseño, 3-nov-2026) */
+@media(max-width:760px){body.country-site[data-oficina] .network .network-links a{min-height:44px}
+body.country-site[data-oficina] :is(.breadcrumb,.pest-breadcrumb,.s-intro nav,.journal-breadcrumb,.c-breadcrumb) a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}}
+body.country-site[data-oficina] .species-note{margin:18px 0 48px}
+body.country-site[data-oficina] .species-after{padding-top:28px}
+body.country-site[data-oficina] .pest-group>h2{margin-bottom:8px}
 </style>
 </head>
 <body class="country-site natural" data-machote="costa-rica" data-oficina="el-salvador">
