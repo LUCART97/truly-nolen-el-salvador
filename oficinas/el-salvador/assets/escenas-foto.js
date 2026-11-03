@@ -34,6 +34,6 @@
     setTimeout(aMundo, CARRO * 1000);
   }
   // el mundo baja después de que la página ya cargó (no compite con la foto del carro)
-  setTimeout(cargar, 3000);
+  setTimeout(cargar, 1000);
   setTimeout(aMundo, CARRO * 1000);
 })();
