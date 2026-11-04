@@ -6,6 +6,8 @@
   if (!film || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
   var FUNDIDO = 0.8, CARRO = 10, MUNDO = 10;
   var movil = matchMedia('(max-width:760px)').matches;
+  // Con el video horizontal ya instalado, este script solo atiende al celular (mientras falta el video vertical).
+  if (film.hasAttribute('data-sin-movil') && !movil) return;
   var inicio = document.getElementById('inicio');
   var mundo = document.createElement('video');
   mundo.muted = true; mundo.playsInline = true; mundo.preload = 'none'; mundo.loop = false;

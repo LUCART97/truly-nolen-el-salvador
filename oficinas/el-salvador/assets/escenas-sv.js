@@ -17,6 +17,8 @@
   var grande = (window.innerWidth || 0) * (window.devicePixelRatio || 1) > 1920;
   // Celular: videos recortados al formato del teléfono (carro completo y el monumento).
   var movil = (window.innerWidth || 0) <= 760;
+  // Sin video vertical todavía (data-sin-movil): en celular sigue la foto del carro con el mundo (escenas-foto.js).
+  if (movil && film.hasAttribute('data-sin-movil')) return;
   var inicio = document.getElementById('inicio');
   var carro = video(movil ? '/truly-nolen-el-salvador/oficinas/el-salvador/assets/el-salvador-movil.mp4' : '/truly-nolen-el-salvador/oficinas/el-salvador/assets/el-salvador-desktop.mp4', 1);
   var MUNDO_SRC = movil ? '/truly-nolen-el-salvador/oficinas/assets/mundo-movil.mp4?v=4k' : '/truly-nolen-el-salvador/oficinas/assets/mundo-desktop.mp4?v=4k';
