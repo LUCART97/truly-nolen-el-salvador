@@ -166,6 +166,33 @@ body.country-site[data-oficina] .machote-chat-host .tia{bottom:32px!important;ri
 .pest-main .species-after{margin-top:28px}
 .s-proteja-grid a{align-items:start}.s-proteja-grid a [aria-hidden]{align-self:center}
 @media (min-width:600px){.s-consejos-grid h3{min-height:2.4em}}
+/* ===== Botón del chat = globaltni (R8; Cesar, 5-nov-2026: «copia el de global»). Valores medidos en globaltni.com/es con
+   getComputedStyle (brand-2026.css, body.brand-2026.a-site .tn-chat-*): botón 112×108 a 16/12 px (celular 88×89 a 10/10),
+   carro 108×70 (86×56), globo 68×36 arriba a la derecha (62×32), borde 1,5 px, esquinas 12 (10), «Chat» 14/700 (13), piquito 9 px
+   skewY(-38°), sombra drop-shadow(0 2px 3px rgba(1,0,7,.16)) y dos faros que se encienden. Pisa las reglas viejas del chat. ===== */
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher{position:fixed!important;left:auto!important;top:auto!important;right:max(16px,env(safe-area-inset-right))!important;bottom:calc(12px + env(safe-area-inset-bottom))!important;z-index:55!important;width:112px!important;height:108px!important;min-height:0!important;padding:0!important;margin:0!important;display:flex!important;flex-direction:row!important;align-items:flex-end!important;justify-content:center!important;gap:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;filter:drop-shadow(rgba(1,0,7,.16) 0 2px 3px)!important;cursor:pointer;transition:transform .2s ease}
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher:hover{transform:scale(1.035)}
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher::before,body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher::after{display:none!important}
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher>svg.tia-fx{display:none!important}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-car-scene{position:relative!important;display:block!important;width:108px!important;height:70px!important;flex:0 0 auto!important;pointer-events:none}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-car{display:block!important;width:108px!important;height:70px!important;max-width:none!important;object-fit:contain!important;margin:0!important}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-lamp{position:absolute;display:block;pointer-events:none;opacity:0;border-radius:50%;background:radial-gradient(rgb(255,254,243) 0%,rgb(255,249,215) 36%,rgba(255,243,186,.5) 65%,rgba(255,240,176,0) 100%);box-shadow:rgba(255,241,190,.4) 0 0 4px 1px;transform:translate(-50%,-50%) rotate(22deg)}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-lamp-near{left:53.8%;top:58.5%;width:7.2%;height:7.8%}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-lamp-far{left:87%;top:55.7%;width:3.4%;height:8.5%;transform:translate(-50%,-50%) rotate(-25deg)}
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher:is(:hover,:focus-visible) .tn-chat-lamp{opacity:.62}
+@media (prefers-reduced-motion:no-preference){body.country-site[data-oficina] .machote-chat-host .tn-chat-lamp{animation:3.2s ease-in-out .5s 1 normal none running tn-chat-headlights;transition:opacity .35s}}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-cue{position:absolute!important;top:0!important;right:0!important;left:auto!important;bottom:auto!important;width:auto!important;min-width:68px!important;height:36px!important;padding:0 13px!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;background:#ffd800!important;color:#010007!important;border:1.5px solid #010007!important;border-radius:12px!important;box-shadow:none!important;font:700 14px/1 Montserrat,Machote,system-ui,sans-serif!important;box-sizing:border-box!important}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-cue::after{content:""!important;position:absolute!important;right:19px!important;bottom:-6px!important;left:auto!important;top:auto!important;width:9px!important;height:9px!important;transform:skewY(-38deg)!important;background:#ffd800!important;border:0!important;border-right:1.5px solid #010007!important;border-bottom:1.5px solid #010007!important}
+body.country-site[data-oficina] .machote-chat-host .tn-chat-cue-label{font:inherit!important;color:inherit!important}
+/* abierto el panel, el botón se esconde como en globaltni (el panel tiene su propio botón de cerrar) */
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher[aria-expanded="true"],body.country-site[data-oficina] .tia--on .tia-fab.tn-chat-launcher{display:none!important}
+@media (max-width:600px){
+ body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher{width:88px!important;height:89px!important;right:max(10px,env(safe-area-inset-right))!important;bottom:calc(10px + env(safe-area-inset-bottom))!important}
+ body.country-site[data-oficina] .machote-chat-host .tn-chat-car-scene,body.country-site[data-oficina] .machote-chat-host .tn-chat-car{width:86px!important;height:56px!important}
+ body.country-site[data-oficina] .machote-chat-host .tn-chat-cue{height:32px!important;min-width:62px!important;padding:0 10px!important;font-size:13px!important;border-radius:10px!important}
+}
+body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher{font-size:18px!important;font-weight:400!important}
+@media (max-width:600px){body.country-site[data-oficina] .machote-chat-host .tia-fab.tn-chat-launcher{font-size:17px!important}}
 </style>
 </head>
 <body class="a-site s-page brand-2026 country-site" id="page-top" data-machote="costa-rica" data-oficina="el-salvador">
@@ -250,10 +277,7 @@ body.country-site[data-oficina] .machote-chat-host .tia{bottom:32px!important;ri
 </svg>Seguir por WhatsApp</a>
 </div>
 </div>
-<button class="tia-fab" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="tia-panel" aria-label="Abrir el chat con Truly AI">
-<img class="tia-carro" src="/truly-nolen-el-salvador/oficinas/assets/carro-truly.png" alt="" width="64" height="41"/>
-<span class="tia-fab-txt">Asistente<small>Converse aquí</small>
-</span>
+<button class="tia-fab tn-chat-launcher" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="tia-panel" aria-label="Abrir el chat con Truly AI"><span class="tn-chat-car-scene" aria-hidden="true"><img src="/truly-nolen-el-salvador/oficinas/assets/carro-truly.png" alt="" width="92" height="59" class="tn-chat-car"/><span class="tn-chat-lamp tn-chat-lamp-near"></span><span class="tn-chat-lamp tn-chat-lamp-far"></span></span><span class="tn-chat-cue" aria-hidden="true"><span class="tn-chat-cue-label">Chat</span></span>
 <svg class="tia-fx" viewBox="0 0 24 24" aria-hidden="true">
 <path d="M6 6l12 12M18 6L6 18"/>
 </svg>
