@@ -5,7 +5,7 @@
   var film = document.querySelector('#inicio .film');
   if (!film || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
   var FUNDIDO = 0.8, CARRO = 10, MUNDO = 10;
-  var movil = matchMedia('(max-width:760px)').matches;
+  var movil = matchMedia('(max-width:1023px)').matches;  // mismo corte que globaltni
   // Con el video horizontal ya instalado, este script solo atiende al celular (mientras falta el video vertical).
   if (film.hasAttribute('data-sin-movil') && !movil) return;
   var inicio = document.getElementById('inicio');
@@ -26,12 +26,12 @@
     mundo.currentTime = 0;
     var p = mundo.play(); if (p && p.catch) p.catch(function () {});
     mundo.style.opacity = '1';
-    if (inicio) inicio.classList.add('en-mundo');
+    if (inicio) { inicio.classList.add('en-mundo'); inicio.dataset.scene = 'world'; }
     setTimeout(aCarro, MUNDO * 1000);
   }
   function aCarro() {
     mundo.style.opacity = '0';
-    if (inicio) inicio.classList.remove('en-mundo');
+    if (inicio) { inicio.classList.remove('en-mundo'); inicio.dataset.scene = 'car'; }
     setTimeout(function () { mundo.pause(); }, FUNDIDO * 1000);
     setTimeout(aMundo, CARRO * 1000);
   }

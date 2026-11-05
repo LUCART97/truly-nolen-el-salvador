@@ -1,0 +1,76 @@
+/* Trust strip and services: proposal approved by Pablo, 3 October 2026. */
+body.brand-2026 .home-brand-band{display:block;background:#f6f6f3;border-top:0;border-bottom:1px solid #e2e3de;padding:40px max(44px,calc((100vw - 1312px)/2));margin:0}
+body.brand-2026 .home-brand-band .tn-band-facts{display:grid;grid-template-columns:1fr 1.1fr 1fr 1.25fr;gap:0;align-items:center;max-width:1312px;margin:auto}
+body.brand-2026 .home-brand-band .tn-band-fact{padding:0 36px;min-height:85px;border-inline-start:1px solid #d9ddd7;text-align:start}
+body.brand-2026 .home-brand-band .tn-band-fact:first-child{padding-inline-start:0;border:0}
+body.brand-2026 .home-brand-band .tn-band-fact strong{display:block;color:#222824;font:500 39px/1.15 var(--body);letter-spacing:-.035em;text-transform:none;min-height:0;margin:0}
+body.brand-2026 .home-brand-band .tn-band-fact span{display:block;color:#5b625c;font:400 14px/1.55 var(--body);letter-spacing:0;text-transform:none;margin:9px 0 0}
+body.brand-2026 .home-brand-band .tn-band-fact small{font:500 19px/1.3 var(--body);letter-spacing:0}
+body.brand-2026 .home-brand-band .trust-signature{display:flex;gap:18px;align-items:center;padding-inline-end:0}
+body.brand-2026 .home-brand-band .trust-signature img{width:100px;height:65px;object-fit:contain;margin:0;max-height:none}
+body.brand-2026 .home-brand-band .trust-signature strong{font:500 17px/1.4 var(--body);letter-spacing:0}
+body.brand-2026 .home-brand-band .trust-signature span{font-size:12px;margin-top:5px}
+body.brand-2026.a-home .service-opening{padding-top:64px;padding-bottom:62px}
+body.brand-2026.a-home .service-opening .section-heading h2{font-weight:650;font-size:38px;letter-spacing:-.025em}
+body.brand-2026.a-home .service-opening .section-heading p{font-size:17px;line-height:1.65;max-width:940px;color:#646b65}
+body.brand-2026.a-home .service-icon{background:none;color:#515c52;border-radius:0;width:44px;height:44px;top:20px;right:18px}
+body.brand-2026.a-home .service-icon:has(img),body.brand-2026.a-home .service-icon img{width:44px;height:44px}
+body.brand-2026.a-home .service-index strong{font-size:25px;font-weight:600;letter-spacing:-.02em}
+body.brand-2026.a-home .service-index>a{padding-inline-end:74px}
+body.brand-2026.a-home .service-index>a>span:first-child{font-size:16px;line-height:1.6;color:#646b65}
+body.brand-2026.a-home .service-index small{font-size:13px;line-height:1.6;color:#646b65}
+@media(max-width:1199px){
+ body.brand-2026 .home-brand-band{padding:32px}
+ body.brand-2026 .home-brand-band .tn-band-facts{grid-template-columns:1fr 1fr;gap:26px 0}
+ body.brand-2026 .home-brand-band .tn-band-fact{padding:0 24px;min-height:82px}
+ body.brand-2026 .home-brand-band .tn-band-fact:nth-child(odd){padding-inline-start:0;border-inline-start:0}
+ body.brand-2026 .home-brand-band .trust-signature{gap:8px}
+ body.brand-2026 .home-brand-band .trust-signature img{width:72px;height:50px}
+}
+@media(max-width:599px){
+ body.brand-2026 .home-brand-band{padding:30px 24px}
+ body.brand-2026 .home-brand-band .tn-band-fact{padding:0;padding-inline-start:20px;min-height:98px}
+ body.brand-2026 .home-brand-band .tn-band-fact strong{font-size:30px}
+ body.brand-2026 .home-brand-band .tn-band-fact small{font-size:15px}
+ body.brand-2026 .home-brand-band .tn-band-fact span{font-size:12px;max-width:125px}
+ body.brand-2026 .home-brand-band .trust-signature{display:block}
+ body.brand-2026 .home-brand-band .trust-signature img{width:62px;height:40px;margin:0 0 4px}
+ body.brand-2026 .home-brand-band .trust-signature strong{font-size:13px}
+ body.brand-2026 .home-brand-band .trust-signature span{font-size:11px}
+ body.brand-2026.a-home .service-opening{padding-top:40px;padding-bottom:38px}
+ body.brand-2026.a-home .service-opening .section-heading h2{font-size:29px;line-height:1.2}
+ body.brand-2026.a-home .service-opening .section-heading p{font-size:15px}
+ body.brand-2026.a-home .service-index strong{font-size:19px}
+ body.brand-2026.a-home .service-index>a{padding-inline-end:42px}
+ body.brand-2026.a-home .service-icon,body.brand-2026.a-home .service-icon:has(img),body.brand-2026.a-home .service-icon img{width:30px;height:30px;right:4px}
+ body.brand-2026.a-home .service-index>a>span:first-child{font-size:13px}
+}
+@media(max-width:599px){
+ body.brand-2026.a-home .service-index{grid-template-columns:1fr;gap:0}
+ body.brand-2026.a-home .service-index>a{display:flex;flex-direction:column;gap:8px;min-height:145px;padding:22px 52px 25px 0;border-inline-start:0;border-inline-end:0}
+ body.brand-2026.a-home .service-index strong{order:-1;font-size:22px;margin:0}
+ body.brand-2026.a-home .service-index>a>span:first-child{font-size:14px;max-width:260px;margin:0}
+ body.brand-2026.a-home .service-index small{font-size:12px;max-width:250px;margin:0}
+ body.brand-2026.a-home .service-index>a>span[aria-hidden]{position:absolute;right:8px;bottom:20px}
+}
+@media(max-width:599px){
+ body.brand-2026.a-home .service-index>a{position:relative}
+ body.brand-2026.a-home .service-index .service-icon{position:absolute;top:22px;right:4px;margin:0}
+}
+
+/* Preserve the approved composition in RTL, without mirroring the car. */
+html[dir=rtl] body.brand-2026.a-home .service-index>a{padding-right:0;padding-left:74px}
+html[dir=rtl] body.brand-2026.a-home .service-icon{right:auto;left:18px}
+@media(max-width:599px){
+ html[dir=rtl] body.brand-2026.a-home .service-index>a{padding:22px 0 25px 52px}
+ html[dir=rtl] body.brand-2026.a-home .service-index .service-icon{right:auto;left:4px}
+ html[dir=rtl] body.brand-2026.a-home .service-index>a>span[aria-hidden]{right:auto;left:8px}
+}
+
+/* Keep the numerals readable in RTL and give tablet service labels room. */
+.home-brand-band bdi{direction:ltr;unicode-bidi:isolate}
+@media(min-width:600px) and (max-width:1199px){
+ body.brand-2026.a-home .service-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.brand-2026.a-home .service-index>a:nth-child(even){border-inline-end:0}
+ body.brand-2026.a-home .service-index>a:nth-child(n+3){border-top:1px solid #e2e3de}
+}

@@ -1,0 +1,80 @@
+/* Tipografía compartida por los cuatro idiomas.
+
+   Nació el 24-sep como un intento de que EN/PT/AR se parecieran al español a
+   base de CSS. No podía funcionar: el marcado era distinto —«Nuestra historia»
+   tenía 22 secciones en español y 6 en inglés— y ninguna regla inventa una
+   sección. Lo que sí hacía era ESCONDER lo que el español no tenía: la
+   cronología, el índice de preguntas y la columna «How can we help?» salían del
+   sitio con `display:none`.
+
+   Desde que EN/PT/AR se generan desde el español (scripts/build-locales.py), el
+   marcado es el mismo en los cuatro y aquellas reglas quedaron sin nada que
+   ocultar: los selectores `.c-timeline`, `.c-faq-index`, `.c-faq-layout`,
+   `.c-privacy-layout`, `.c-history`, `.c-editorial-pair` y `.c-franchise-intro`
+   no aparecen ya en ninguna página. Se retiran en vez de quedarse como una
+   trampa dormida para el próximo que añada un bloque con ese nombre.
+
+   Queda sólo la tipografía, que es lo que Xavi aprobó y ahora rige en los
+   cuatro idiomas por construcción, no por perseguir diferencias una a una. */
+
+/* Cabecera de página: un solo relleno para todas las páginas interiores. */
+.a-site:not(.a-home) main > :is(section,header,div):first-child,
+.a-site:not(.a-home) main :is(.c-hero,.s-intro,.pest-masthead,.franchise-masthead,.source-hero,.c-story-title,.s-hero,.feedback-teps-hero){padding-block:16px 18px}
+
+/* Titular de página: una sola escala. */
+.a-site:not(.a-home) main h1{font-size:clamp(43px,4.7vw,72px);line-height:1.05;letter-spacing:-.012em}
+
+/* Cuerpo: 19px, interlineado 1,65 y justificado en todas las páginas. */
+.a-site:not(.a-home) main :is(p,li){font-size:19px;line-height:1.65;text-align:justify}
+
+/* Excepciones, iguales en los cuatro idiomas: pies, entradillas y los
+   componentes en rejilla, donde justificar abre ríos. */
+.a-site main :is(figcaption,.c-eyebrow,.section-tag,.pest-eyebrow,.pest-lead,
+ .hero-description,.hero-kicker){text-align:start}
+.a-site main :is(.teps-flow,.program,.service-index,.sector-list,.franchise-points,
+ .home-zones,.history-timeline,.pest-list,.resource-links,.network-numbers,
+ .tn-band-facts,.feedback-audit,.section-heading,.resource-heading,.mega-links,
+ .footer-grid,.office-card,.s-office-card,.search-results,.c-timeline,
+ .s-process,.c-video-grid) :is(p,li,span,strong,small){text-align:start}
+
+/* El árabe se lee de derecha a izquierda y no se justifica igual: el justificado
+   latino abre espacios entre palabras donde la tipografía árabe alarga trazos. */
+[lang="ar"] .a-site main :is(p,li){text-align:start}
+
+/* El sitio no declaraba esquema de color, así que Chrome en Android aplicaba
+   su modo oscuro automático y reoscurecía la página: el amarillo de marca
+   salía marrón y los fondos blancos, negros. Al declarar el esquema claro el
+   navegador respeta los colores tal cual. */
+:root{color-scheme:only light}
+
+/* En móvil las tarjetas de servicio miden unos 163px y los iconos quedaban
+   demasiado grandes: se montaban sobre el texto. El sello TEPS además tenía su
+   propia medida sin versión móvil. Se reducen y se reserva relleno suficiente
+   para que no se toquen. */
+@media(max-width:620px){
+ body.brand-2026 .service-icon,
+ body.brand-2026 .service-icon:has(img){width:36px;height:36px;top:14px;right:4px}
+ body.brand-2026 .service-icon img{width:36px;height:36px}
+ body.brand-2026 .service-icon svg{width:20px;height:20px}
+ body.brand-2026 .service-index>a{padding-right:50px}
+ html[dir=rtl] body.brand-2026 .service-icon{right:auto;left:4px}
+ html[dir=rtl] body.brand-2026 .service-index>a{padding-right:0;padding-left:50px}
+}
+
+/* Por debajo de 430px la tarjeta es tan estrecha que el título y el icono no
+   caben en la misma línea —«Sanitización» invadía el icono—, así que el icono
+   sale del posicionamiento absoluto y pasa a ir encima del título. Así no hay
+   solape posible por estrecha que sea la pantalla. */
+@media(max-width:430px){
+ body.brand-2026 .service-icon,
+ body.brand-2026 .service-icon:has(img){position:static;order:-1;margin-bottom:12px;top:auto;right:auto}
+ body.brand-2026 .service-index>a{padding-right:0}
+ html[dir=rtl] body.brand-2026 .service-index>a{padding-left:0}
+}
+
+/* Fuera el recuadro amarillo que asomaba tras la foto de cabecera de servicios
+   comerciales, y el pie que iba dentro. El recuadro es un pseudoelemento, así
+   que basta con anularlo; el marcado del pie queda intacto por si se quiere
+   recuperar. */
+body.brand-2026 .ct-hero-photo:before{display:none}
+body.brand-2026 .ct-hero-photo figcaption{display:none}

@@ -16,7 +16,7 @@
   // Receta (regla 9): el carro va en 4K en la web, sin excepción.
   var grande = (window.innerWidth || 0) * (window.devicePixelRatio || 1) > 1920;
   // Celular: videos recortados al formato del teléfono (carro completo y el monumento).
-  var movil = (window.innerWidth || 0) <= 760;
+  var movil = (window.innerWidth || 0) <= 1023;  // mismo corte que globaltni (car-hero.js: max-width 1023 = foto y video verticales)
   // El video vertical se lee de data-movil (gen.py lo pone solo cuando el archivo existe); sin él, en celular sigue la foto del carro con el mundo (escenas-foto.js).
   if (movil && !film.getAttribute('data-movil')) return;
   var inicio = document.getElementById('inicio');
@@ -30,12 +30,12 @@
   function cargar() { if (!mundo.getAttribute('src')) { mundo.src = MUNDO_SRC; mundo.load(); } }
   function aMundo() {
     if (enMundo || cambiando) return; cambiando = true; cargar();
-    mundo.currentTime = 0; play(mundo); mundo.style.opacity = '1'; if (inicio) inicio.classList.add('en-mundo');
+    mundo.currentTime = 0; play(mundo); mundo.style.opacity = '1'; if (inicio) { inicio.classList.add('en-mundo'); inicio.dataset.scene = 'world'; }
     setTimeout(function () { carro.pause(); enMundo = true; cambiando = false; }, FUNDIDO * 1000);
   }
   function aCarro() {
     if (!enMundo || cambiando) return; cambiando = true;
-    carro.currentTime = 0; play(carro); mundo.style.opacity = '0'; if (inicio) inicio.classList.remove('en-mundo');
+    carro.currentTime = 0; play(carro); mundo.style.opacity = '0'; if (inicio) { inicio.classList.remove('en-mundo'); inicio.dataset.scene = 'car'; }
     setTimeout(function () { mundo.pause(); enMundo = false; cambiando = false; }, FUNDIDO * 1000);
   }
   carro.addEventListener('playing', function () { carro.style.opacity = '1'; }, { once: true });

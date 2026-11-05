@@ -1,0 +1,305 @@
+/* El contenido del hero se ancla en absoluto a bottom:135px y crece hacia
+   arriba, sin tope superior. La escena "global" es la más larga (kicker +
+   titular de dos líneas + párrafo de cuatro + botón) y en ventanas de poca
+   altura se salía por encima del hero, quedando el titular cortado bajo la
+   cabecera. La escala se reduce por tramos de altura disponible. */
+@media (min-width:960px) and (max-height:899px){
+ .a-home .feedback-slide[data-scene] .hero-content{bottom:112px}
+ .a-home .feedback-slide[data-scene] :is(h1,h2).feedback-scene-title,
+ .a-home .feedback-slide[data-scene] h1{font-size:68px}
+ .a-home .feedback-slide[data-scene] .hero-kicker{margin-bottom:14px}
+ .a-home .feedback-slide[data-scene] .hero-description{font-size:19px;margin:18px 0 20px}
+}
+@media (min-width:960px) and (max-height:799px){
+ .a-home .feedback-slide[data-scene] .hero-content{bottom:96px}
+ .a-home .feedback-slide[data-scene] :is(h1,h2).feedback-scene-title,
+ .a-home .feedback-slide[data-scene] h1{font-size:56px}
+ .a-home .feedback-slide[data-scene] .hero-kicker{margin-bottom:11px}
+ .a-home .feedback-slide[data-scene] .hero-description{font-size:17px;line-height:1.45;margin:14px 0 16px}
+ .a-home .feedback-slide[data-scene] .hero-content>.button{min-height:52px;padding:12px 20px;font-size:16px}
+}
+@media (min-width:960px) and (max-height:699px){
+ .a-home .feedback-slide[data-scene] .hero-content{bottom:84px}
+ .a-home .feedback-slide[data-scene] :is(h1,h2).feedback-scene-title,
+ .a-home .feedback-slide[data-scene] h1{font-size:46px}
+ .a-home .feedback-slide[data-scene] .hero-description{font-size:16px;margin:12px 0 14px}
+}
+
+/* ============================================================
+   Cambios pedidos el 24/09
+   ============================================================ */
+
+/* 1 · Carrusel del hero: menú de slides visible. Los botones ya existían
+   (feedback-carousel.js los gestiona) pero estaban ocultos con clip-path y
+   solo emergían al tabular. El intervalo pasó de 12 s a 10 s en el JS. */
+.a-home .feedback-carousel-controls{width:auto;height:auto;left:0;right:0;bottom:26px;max-width:none;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.a-home .feedback-carousel-tabs{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal;display:flex;justify-content:center;flex:0 0 auto;gap:9px;padding:0;background:none;pointer-events:auto}
+.a-home .feedback-carousel-tabs button{flex:0 0 auto;font-size:0;line-height:0;width:56px;min-width:0;height:30px;min-height:30px;padding:0;border:0!important;background:none;display:grid;align-items:center}
+.a-home .feedback-carousel-tabs button>span{display:none}
+/* La barra es un pseudoelemento: el botón conserva 30px de area tactil. */
+.a-home .feedback-carousel-tabs button:before{content:'';display:block;width:100%;height:5px;border-radius:999px;background:#ffffff5c;transition:background .25s,transform .25s}
+.a-home .feedback-carousel-tabs button:hover:before{background:#ffffff9c}
+.a-home .feedback-carousel-tabs button[aria-pressed=true]:before{background:var(--yellow);transform:scaleY(1.6)}
+.a-home .feedback-carousel-tabs button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:620px){
+ .a-home .feedback-carousel-controls{bottom:20px}
+ .a-home .feedback-carousel-tabs button{width:40px}
+}
+
+/* 2 · Iconos en las tarjetas de servicio. El icono va como <i> al final del
+   enlace para no desplazar los selectores :first-child/:last-of-type que ya
+   posicionan la descripción y la flecha. */
+.a-home .service-index>a{padding-right:70px}
+.a-home .service-index>a>span:last-of-type{position:absolute;right:20px;bottom:29px;font-size:20px}
+.a-home .service-icon{position:absolute;top:20px;right:14px;width:42px;height:42px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:var(--ink)}
+.a-home .service-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.a-home .service-icon img{width:42px;height:42px;border-radius:50%;object-fit:contain;background:#fff}
+html[dir=rtl] .a-home .service-icon{right:auto;left:14px}
+html[dir=rtl] .a-home .service-index>a{padding-right:0;padding-left:70px}
+@media(max-width:620px){
+ .a-home .service-icon{width:34px;height:34px;top:16px;right:6px}
+ .a-home .service-icon svg,.a-home .service-icon img{width:19px;height:19px}
+ .a-home .service-index>a{padding-right:46px}
+}
+
+/* 3 · La banda de cifras va a sangre completa, también cuando está anidada
+   dentro de un .wrap (Nuestra historia). overflow-x:clip evita la barra
+   horizontal que provocaría el 100vw sin crear contexto de scroll. */
+body{overflow-x:clip}
+.tn-brand-band{margin-block:0;padding-inline:max(44px,calc((100vw - 1312px)/2))}
+[data-coverage-id]>.tn-brand-band{width:auto;margin-inline:calc(50% - 50vw)}
+.tn-band-fact strong{-webkit-hyphens:none;hyphens:none;word-break:keep-all;overflow-wrap:normal;text-wrap:balance}
+.home-brand-band{margin:0}
+
+/* 4 · Espacio muerto: los párrafos estaban topados entre 330 y 440 px dentro
+   de columnas mucho más anchas, dejando huecos vacíos a su derecha. */
+.a-home .section-heading>p{max-width:34em}
+.a-home .teps-intro>p,
+.a-home .franchise-content>p,
+.a-home .home-copy>p,
+.a-home .history-copy>p,
+.a-home .confidence p,
+.a-home .sector-list p,
+.a-home .network-layout>div:first-child>p{max-width:none}
+
+/* 5 · Sin texto pegado al borde. En escritorio las celdas del flujo TEPS no
+   tenían relleno propio (solo lo tenían por debajo de 1199 px). */
+@media(min-width:1200px){
+ .a-home .teps-flow>li{padding:22px 24px}
+ .a-home .teps-flow .teps-step-copy{padding-inline:0}
+}
+.a-site main :is(td,th){padding:13px 18px}
+
+/* 6 · Nunca partir palabras con guion. La regla global de feedback-20260922
+   aplicaba hyphens:auto a toda la web y producía cortes como «iden-tifica»,
+   «garan-tizando» o «RECONOCIMIEN-TO». Se conserva el justificado. */
+.a-site main :is(p,li,blockquote,dt,figcaption,h1,h2,h3,strong){-webkit-hyphens:none;hyphens:none}
+.a-site main :is(p,li,blockquote){text-align-last:start}
+
+/* Alinea las etiquetas del banner cuando un titular ocupa dos lineas. */
+.tn-band-facts{align-items:start}
+.tn-band-fact strong{min-height:2.3em}
+@media(max-width:960px){.tn-band-fact strong{min-height:0}}
+
+/* 7 · Sin guiones, el justificado abre ríos enormes en columnas estrechas y
+   llegaba a estirar titulares. El documento pide no estirar la frase, así que
+   el justificado se reserva para la prosa ancha: titulares y componentes en
+   rejilla pasan a alineación normal. */
+.a-site main :is(h1,h2,h3,h4,h5,h6,dt,figcaption,summary){text-align:start}
+.a-site main :is(.teps-flow,.program,.service-index,.sector-list,.franchise-points,
+ .home-zones,.history-timeline,.pest-list,.resource-links,.network-numbers,
+ .tn-band-facts,.feedback-audit,.section-heading,.mega-links,.footer-grid,
+ .office-card,.s-office-card,.search-results) :is(p,li,span,strong,small){text-align:start}
+
+/* Banda de cifras en móvil: imágenes centradas y menos alto. */
+@media(max-width:620px){
+ .tn-brand-band{padding-block:24px;gap:14px}
+ .tn-brand-band img{max-height:104px;margin-inline:auto}
+}
+
+/* 2 · «Documentada.» se desbordaba del viewport en móvil y el punto final
+   quedaba cortado fuera de pantalla. El titular usa <br/>, así que la palabra
+   debe caber entera en una línea: se reduce la escala solo en esta escena. */
+@media(max-width:620px){
+ .a-home .feedback-slide[data-scene=teps] :is(h1,h2).feedback-scene-title{font-size:clamp(30px,10vw,60px)}
+}
+
+/* ============ Feedback 24/09 (segunda tanda) ============ */
+
+/* Espacio muerto entre un titular en negrita y el texto que lo acompaña a la
+   derecha: lo causaba justify-content:space-between, que empuja el párrafo al
+   extremo opuesto. Se agrupan con una separación fija y moderada. */
+/* REGLA: titular y descripción
+   1. El titular va a la izquierda, grande, y llena su columna: sin holgura
+      entre el final del texto y la descripción.
+   2. La descripción tiene un ancho mínimo garantizado, así que el titular no
+      puede estrujarla hasta convertirla en una columna alta y estrecha.
+   3. Se alinean por ARRIBA. Con align-items:end la descripción crecía hacia
+      arriba y quedaba flotando por encima del titular. */
+.a-site main :is(.section-heading,.resource-heading){display:grid;grid-template-columns:minmax(0,1fr);justify-content:flex-start;align-items:start;gap:18px}
+/* text-wrap:balance reparte las líneas del titular pero la caja conserva el
+   ancho de una línea completa, así que siempre queda holgura antes del
+   párrafo. Con el ajuste normal la caja se ciñe a la línea más larga y el
+   hueco queda reducido al gap. Los titulares que ya traen <br/> conservan sus
+   dos líneas. */
+.a-site main :is(.section-heading,.resource-heading) :is(h1,h2,h3){text-wrap:wrap;max-width:none}
+.a-site main :is(.section-heading,.resource-heading)>p{max-width:none}
+.a-site main .teps-intro{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:0 44px}
+
+/* Relleno simétrico en las tarjetas del programa: el texto iba desplazado a la
+   derecha (37px a la izquierda, 35 a la derecha, y 50 al abrirse). */
+.a-site main .program details>p{padding:0 28px 24px}
+.a-site main .program details[open]>p{padding-left:28px}
+.a-site main .program details[open] summary{padding-inline:28px}
+.a-site main .program summary{padding-inline:28px}
+
+/* Imágenes sin caja ni marco: la foto ocupa su hueco entera. */
+.a-site main :is(.home-photo,.franchise-photo){background:none;padding:0}
+
+/* Por debajo de 1200px la columna del titular ya no cabe a su ancho natural y
+   volvería a aparecer holgura: se apilan titular y descripción. */
+
+/* Imágenes sin recuadro: .s-figure pintaba un fondo gris que se veía como un
+   marco alrededor de la foto. La imagen ocupa su hueco entera. */
+.a-site main .s-figure{background:none}
+
+/* La descripción debe arrancar a la altura del TITULAR, no de la etiqueta
+   pequeña que lo precede. Cuando el titular viene envuelto en un div junto a
+   esa etiqueta, alinear por el tope de la columna enganchaba la descripción a
+   la etiqueta y la dejaba flotando por encima del titular. Con subgrid la
+   etiqueta ocupa la primera fila y titular y descripción comparten la segunda.
+   Los bloques sin etiqueta ya alineaban bien y no se tocan. */
+
+/* La foto de la convención va de extremo a extremo, como el hero de la home.
+   La figura llevaba .wrap, que la encajonaba en la columna de texto. El pie
+   conserva los márgenes de la columna para que siga alineado con el texto. */
+.a-site main .feedback-convention{width:auto;max-width:none;margin-inline:0}
+.a-site main .feedback-convention>img{width:100%;max-width:none;height:clamp(320px,42vw,680px);max-height:none;object-fit:cover;object-position:center 62%}
+.a-site main .feedback-convention>figcaption{max-width:1312px;width:calc(100% - 128px);margin-inline:auto}
+@media(max-width:620px){
+ .a-site main .feedback-convention>figcaption{width:calc(100% - 44px)}
+}
+
+/* ---- Feedback del 24/09 (documento Word) ---- */
+
+/* Iconos de las tarjetas de servicio un 50% mayores. */
+.a-site main .service-icon{width:63px;height:63px;top:16px}
+.a-site main .service-icon svg{width:34px;height:34px}
+.a-site main .service-index>a{padding-right:92px}
+html[dir=rtl] .a-site main .service-index>a{padding-right:0;padding-left:92px}
+@media(max-width:620px){
+ .a-site main .service-icon{width:51px;height:51px}
+ .a-site main .service-icon svg{width:28px;height:28px}
+ .a-site main .service-index>a{padding-right:64px}
+}
+
+/* Preguntas de la FAQ más pequeñas. */
+.a-site main .ux-answer>summary h2{font-size:clamp(18px,1.9vw,23px)}
+
+/* Menos aire sobre y bajo el título de página, en todas las páginas. */
+.a-site main .s-intro{padding-block:16px 18px}
+.a-site main .s-intro nav{margin-bottom:14px}
+
+/* Bloque TEPS: el sello a la izquierda y, a su derecha, titular, texto y botón
+   apilados. La frase pedida va subrayada dentro del titular. */
+.a-site main .teps-intro{grid-template-columns:auto minmax(0,1fr);gap:0 52px;align-items:center}
+.a-site main .teps-seal{grid-row:1/3;width:clamp(150px,16vw,230px);height:auto}
+.a-site main .teps-heading{grid-column:2;align-self:end}
+.a-site main .teps-description{grid-column:2;align-self:start;margin-top:18px}
+.a-site main .subrayado{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:4px}
+@media(max-width:959px){
+ .a-site main .teps-intro{grid-template-columns:minmax(0,1fr)}
+ .a-site main .teps-seal{grid-row:auto;grid-column:1;width:132px;margin-bottom:20px}
+ .a-site main :is(.teps-heading,.teps-description){grid-column:1}
+}
+
+/* Iconos de las seis tarjetas del programa, junto a cada título. */
+.a-site main .program summary{gap:16px}
+.a-site main .program-icon{flex:0 0 auto;width:52px;height:52px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:var(--ink)}
+.a-site main .program-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:620px){
+ .a-site main .program-icon{width:42px;height:42px}
+ .a-site main .program-icon svg{width:23px;height:23px}
+}
+
+/* El titular y el párrafo del bloque TEPS estaban topados a 490px y dejaban
+   vacía media columna. El titular llena su columna; el párrafo conserva una
+   medida legible en vez de estirarse a los 1030px disponibles. */
+.a-site main .teps-heading h2{max-width:none}
+.a-site main .teps-description p{max-width:68ch}
+
+/* Los enlaces de .service-index son ítems de rejilla con min-width:auto: al
+   subir el relleno para el icono mayor, su contenido mínimo superaba la
+   columna y se salían de la página. Además el relleno se reduce en el tramo
+   intermedio, donde las columnas son más estrechas. */
+.a-site main .service-index>a{min-width:0}
+@media(min-width:621px) and (max-width:1199px){
+ .a-site main .service-icon{width:52px;height:52px}
+ .a-site main .service-icon svg{width:28px;height:28px}
+ .a-site main .service-index>a{padding-right:68px}
+ html[dir=rtl] .a-site main .service-index>a{padding-right:0;padding-left:68px}
+}
+
+/* Las franjas de cierre y de formulario van de extremo a extremo. En nueve
+   páginas cuelgan dentro de un .wrap, que las encajonaba a 1312px mientras en
+   el resto del sitio ocupaban todo el ancho. El contenido interior conserva su
+   propio .wrap, así que sigue alineado con el texto de la página. */
+.a-site main .wrap>:is(.s-closing,.tn-form-section,.contact-band){width:auto;margin-inline:calc(50% - 50vw)}
+
+/* Al retirar el bloque del coche de Nuestra historia en EN/PT/AR, la sección
+   queda solo con el h1: se le da el mismo aire que al título de página del
+   resto del sitio en vez de heredar la rejilla del hero que ya no existe. */
+.a-site main .c-story-title{display:block;padding-block:16px 18px}
+.a-site main .c-story-title h1{max-width:none}
+
+/* ---- Igualar el formato de EN/PT/AR al español ----
+   36 páginas (12 por idioma) usan un segundo sistema de diseño, c-*, con una
+   escala tipográfica propia: h1 a 5,6vw frente a 4,7vw del español y cuerpo a
+   17px sin justificar frente a 19px justificado. Se alinean con el español,
+   que es la referencia de formato. */
+.a-site main .c-hero h1{font-size:clamp(43px,4.7vw,72px);line-height:1.05;letter-spacing:-.012em}
+.a-site main .c-prose{font-size:19px;line-height:1.65;max-width:none}
+.a-site main .c-prose p{font-size:19px;line-height:1.65;text-align:justify}
+
+/* El español usa body.s-page y EN/PT/AR body.c-page. Se alinea la escala del
+   segundo con la del primero: titulares de sección a 30px y cuerpo a 19px
+   justificado, como en español. La cronología conserva sus 45px porque ese
+   bloque debe seguir al inglés. */
+.c-page main h2{font-size:30px;line-height:1.2}
+.c-page main p{font-size:19px;line-height:1.65;text-align:justify}
+.c-page main .c-section-heading{font-size:30px;line-height:1.2}
+.c-page main h1{font-size:clamp(43px,4.7vw,72px);line-height:1.05;letter-spacing:-.012em}
+
+/* La prosa llevaba un tope de 65ch (855px dentro de una sección de 1312), lo
+   que dejaba vacío el tercio derecho cuando no hay imagen al lado. Se libera:
+   donde el bloque sí comparte fila con una imagen, es la propia rejilla la que
+   marca el ancho, así que esos casos no cambian. */
+.a-site main :is(.s-prose,.c-prose,.feedback-component-copy,.closeout-news-entry,.s-answer){max-width:none!important}
+.a-site main :is(.s-prose,.c-prose) :is(p,ul,ol,li,blockquote,dl,h2,h3,figcaption){max-width:none!important}
+.a-site main :is(.s-section,.s-flow,.s-component,.s-lead-pair)>:is(p,ul,ol){max-width:none!important}
+
+/* Ninguna imagen lleva fondo gris detrás, en todo el sitio. */
+.a-site main figure{background:none}
+
+/* El texto ocupa su columna de extremo a extremo, haya o no imagen al lado.
+   Se acota a las zonas de contenido: los heros y las bandas conservan sus
+   medidas, que ahí el tope sí es intencionado. */
+.a-site main :is(.article-body,.pest-layout,.feedback-component-copy,.s-answer,.ux-answer){max-width:none!important}
+.a-site main :is(.s-prose,.c-prose,.article-body,.pest-layout,.feedback-component-copy,.s-section,.s-flow,.ux-answer) :is(p,ul,ol,li,blockquote,dd){max-width:none!important}
+
+/* REGLA GENERAL: el texto usa todo el ancho de su sección.
+   El barrido de las 104 páginas señaló el tope de p (65ch) como causa en 176
+   casos, más h2 y h3. Se retira en todo el contenido. Quedan fuera los heros,
+   las bandas y las cabeceras de sección, donde la medida corta es deliberada,
+   y las rejillas de tarjetas, donde el ancho lo marca la columna. */
+.a-site main :is(p,li,h1,h2,h3,h4,dd,dt,blockquote,figcaption,summary):not(
+  :is(.hero-content,.feedback-slide,.tn-brand-band,.contact-band,.s-closing,.c-closing,
+      .tn-form-section,.section-heading,.resource-heading,.teps-flow,.pest-list,
+      .s-process,.service-index,.program,.home-zones,.footer,.site-header) *
+){max-width:none!important}
+
+/* Varias secciones son rejillas de dos columnas donde la segunda solo aloja un
+   enlace de vuelta al índice: el texto quedaba encajonado en la primera. Si la
+   sección no tiene imagen al lado, el contenido ocupa todas las columnas.
+   Donde sí hay figura o media, la rejilla se respeta. */
+.a-site main .s-section:not(:has(> figure, > img, > .feedback-component-media, > .s-figure)) > :is(.s-prose, .article-body, .c-prose){grid-column:1/-1}

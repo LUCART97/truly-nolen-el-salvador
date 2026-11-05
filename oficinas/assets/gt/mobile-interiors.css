@@ -1,0 +1,252 @@
+/* Proposal A · mobile reading and journeys.
+   Imported last by mobile.css. Family scopes are deliberate: ES and EN reuse
+   several s-* names for different structures. Desktop rules remain untouched. */
+@media (max-width:959px) {
+  .c-page .c-policy { overflow-wrap:anywhere; }
+  .a-site:not(.a-home) {
+    --interior-title:clamp(34px,6.5vw,48px);
+    --interior-heading:clamp(28px,4.6vw,36px);
+    --interior-subheading:clamp(23px,3.6vw,28px);
+  }
+  .a-site:not(.a-home) main { font-size:17px;line-height:1.65; }
+  .a-site:not(.a-home) main :is(section,article,aside,figure,div) { min-width:0; }
+  .a-site:not(.a-home) main :is(h1,h2,h3) { text-wrap:balance; }
+  .s-page .s-intro h1,
+  .c-page .c-hero h1,
+  .a-site .service-page h1,
+  .office-page .directory-heading h1,
+  .journal-page :is(.journal-heading,.article-masthead) h1,
+  .pest-page .pest-masthead h1 {
+    font-size:var(--interior-title);line-height:1.09;letter-spacing:-.012em;
+    max-width:24ch;margin-bottom:0;
+  }
+  .s-page :is(.s-section>h2,.s-closing h2,.s-contact-grid h2,.s-answer h2),
+  .c-page :is(.c-section-heading,.c-editorial-pair,.c-franchise-intro,.c-contact-options,.c-closing) h2,
+  .a-site .service-page h2,
+  .office-page :is(.directory-help,.directory-empty) h2,
+  .journal-page :is(.article-body,.journal-help,.journal-next,.story-copy) h2,
+  .pest-page :is(.pest-content,.pest-support) h2 {
+    font-size:var(--interior-heading);line-height:1.16;max-width:28ch;
+  }
+  .s-page .s-prose :is(h2,h3),
+  .c-page .c-prose :is(h2,h3),
+  .a-site .service-page h3,
+  .pest-page .species-description h3 {
+    font-size:var(--interior-subheading);line-height:1.24;max-width:32ch;
+  }
+  .s-page .s-prose,
+  .c-page :is(.c-prose,.c-person .c-prose,.c-biography-row>.c-prose,.c-testimonials .c-prose),
+  .a-site .service-page p,
+  .journal-page .article-body,
+  .pest-page .pest-content { font-size:17px;line-height:1.65; }
+  .s-page .s-intro>p,
+  .c-page .c-hero p,
+  .office-page .directory-heading p,
+  .journal-page .journal-heading>p,
+  .pest-page .pest-lead { font-size:18px;line-height:1.6;max-width:56ch; }
+  .s-page :is(.s-closing p,.s-journal article>p),
+  .c-page :is(.c-closing p,.c-contact-options p,.c-benefits p,.c-surveys p),
+  .office-page :is(.directory-help p,.market-note),
+  .journal-page :is(.story-copy>p,.article-body>p:first-child),
+  .pest-page .pest-copy:first-child>p:first-of-type { font-size:17px;line-height:1.65; }
+  .a-site:not(.a-home) main .button {
+    font-size:16px;line-height:1.4;min-height:52px;max-width:100%;
+    padding:15px 20px;gap:20px;white-space:normal;text-align:left;
+  }
+  .a-site:not(.a-home) main .button>span { flex:none; }
+  .a-site:not(.a-home) main .text-link {
+    font-size:16px;line-height:1.5;min-height:44px;max-width:100%;
+    padding-block:9px;white-space:normal;gap:16px;
+  }
+  .s-page .s-intro nav,
+  .c-page .c-breadcrumb,
+  .service-page .s-breadcrumb,
+  .office-page .directory-breadcrumb,
+  .journal-page .journal-breadcrumb,
+  .pest-page .pest-breadcrumb { font-size:14px;line-height:1.55;gap:9px 12px; }
+  .s-page .s-intro nav a,
+  .c-page .c-breadcrumb a,
+  .service-page .s-breadcrumb a,
+  .office-page .directory-breadcrumb a,
+  .journal-page .journal-breadcrumb a,
+  .pest-page .pest-breadcrumb a { min-height:36px;display:inline-flex;align-items:center; }
+  .s-page .s-index a,
+  .service-page :is(.s-service-nav a,.s-program-index>a,.s-back-index,.s-jump a),
+  .c-page .c-section-nav a,
+  .journal-page :is(.reading-index a,.article-inline-index),
+  .pest-page :is(.pest-index a,.pest-families a) {
+    font-size:16px;line-height:1.5;min-height:48px;padding-block:12px;
+    text-underline-offset:4px;
+  }
+  .s-page .s-back { font-size:16px;min-height:44px;line-height:1.5;padding-block:10px; }
+  .s-page .s-detail summary,
+  .c-page :is(.c-person summary,.c-questions summary h2),
+  .journal-page .reading-index summary,
+  .pest-page .pest-index summary { font-size:17px;line-height:1.5;min-height:52px; }
+  .s-page .s-detail summary { padding-right:12px; }
+  .s-page .s-detail[open]>div { padding-top:20px; }
+
+  /* The directory gives search, results and the next step separate space. */
+  .s-page .s-office-search { padding-bottom:28px; }
+  .s-page .s-office-search label,
+  .office-page .directory-search>label { font-size:17px;line-height:1.45;margin-bottom:14px; }
+  .s-page .s-office-search input { font-size:17px;line-height:1.5;padding:16px; }
+  .s-page .s-office-search p { font-size:15px;line-height:1.6;margin-top:16px; }
+  .s-page .s-office-search #office-count { font-size:16px;color:var(--ink);margin-top:18px; }
+  .office-page :is(.directory-count,.directory-scope) { font-size:15px;line-height:1.6; }
+  .s-page .s-office-market>summary { font-size:23px;line-height:1.35;min-height:74px;align-items:center;gap:16px; }
+  .s-page .s-office-market>summary span { flex:0 1 46%;min-width:0;font-size:14px;text-align:end;overflow-wrap:normal; }
+  .s-page .s-office-card { padding:24px; }
+  .s-page .s-office-card :is(h2,h3),
+  .office-page .office-card h3 { font-size:24px;line-height:1.2;margin-bottom:22px; }
+  .s-page .s-office-card dl,
+  .office-page .office-card dd { font-size:16px;line-height:1.6; }
+  .office-page .office-card dt { font-size:14px; }
+  .office-page .office-card a,
+  .s-page .s-office-card a { display:inline-block;padding-block:5px; }
+  .office-page .copy-phone { font-size:14px;min-height:44px; }
+  .office-page .directory-help { gap:40px;padding-block:48px; }
+
+  /* TEPS has a readable index before its component explanations on mobile. */
+  .service-page .s-program { display:block; }
+  .service-page .s-program-index {
+    position:static;max-height:none;display:grid;grid-template-columns:1fr 1fr;
+    gap:0 28px;margin-bottom:36px;padding-top:20px;
+  }
+  .service-page .s-program-index>span { grid-column:1/-1;font-size:15px;line-height:1.5;margin-bottom:8px; }
+  .service-page .s-program-index>a>span { font-size:13px;min-width:20px; }
+  .service-page .s-component-text :is(p,li),
+  .service-page .s-list>li { font-size:16px;line-height:1.65; }
+  .service-page .s-component-text ul { columns:1; }
+  .service-page .s-component { padding-block:34px; }
+  .service-page .s-component-number { font-size:14px; }
+  .service-page .s-back-index { display:inline-block; }
+  .service-page :is(.s-contact-actions small,.s-hero figcaption,.s-footprint>p) { font-size:13px;line-height:1.6; }
+  .s-page .s-index { padding-block:24px; }
+  .s-page .s-index>div { gap:0 26px; }
+  .s-page .s-index a { display:flex;align-items:center; }
+  .s-page .s-component>.s-back { margin-top:0; }
+  .s-page :is(.s-article .article-body,.s-article p) { font-size:17px;line-height:1.65; }
+  .s-page :is(.s-note,.s-source,.s-date),
+  .c-page :is(.c-outbound-note,.c-note,.c-eyebrow),
+  .service-page :is(.s-eyebrow,.s-zone>span:last-child),
+  .journal-page :is(.article-meta,.article-cover figcaption,.article-source,.article-body figcaption),
+  .pest-page :is(.pest-figure figcaption,.pest-source,.pest-eyebrow) { font-size:14px;line-height:1.6; }
+}
+
+@media (max-width:620px) {
+  .a-site:not(.a-home) { --interior-title:clamp(32px,8.9vw,40px);--interior-heading:30px;--interior-subheading:25px; }
+  .s-page .s-intro { padding-block:26px 34px; }
+  .s-page .s-intro nav { margin-bottom:22px; }
+  .s-page .s-section { padding-block:36px; }
+  .s-page .s-section>h2 { margin-bottom:25px; }
+  .s-page .s-flow { gap:24px; }
+  .s-page .s-prose :is(h2,h3) { margin-bottom:20px; }
+  .s-page .s-lead-pair { gap:24px; }
+  .s-page .s-index>div { display:block; }
+  .s-page .s-index a { max-width:none;border-bottom:1px solid #d8d5c9; }
+  .s-page .s-index a:last-child { border-bottom:0; }
+  .s-page .s-closing { padding-block:46px; }
+  .s-page .s-closing .wrap>div { width:100%;gap:12px; }
+  .s-page .s-closing h2 { margin-bottom:20px; }
+  .s-page .s-closing p { margin-bottom:24px; }
+  .s-page .s-person,
+  .s-page .s-person:has(details[open]) { grid-template-columns:88px minmax(0,1fr);gap:18px; }
+  .s-page .s-person h2 { font-size:25px; }
+  .s-page .s-role { font-size:15px; }
+  .s-page .s-stats { gap:28px; }
+  .s-page .s-office-search { padding-bottom:24px; }
+  .s-page .s-office-market>summary { min-height:76px;padding-block:22px; }
+  .s-page .s-office-cards { padding-top:8px; }
+  .s-page .s-office-card { padding:22px; }
+  .c-page .c-hero { padding-block:32px 40px; }
+  .c-page .c-hero p { margin-top:22px; }
+  .c-page .c-section { padding-block:44px; }
+  .c-page .c-contact-options { gap:22px; }
+  .c-page .c-contact-options article { padding:26px 22px; }
+  .c-page .c-contact-options h2 { font-size:30px; }
+  .c-page .c-contact-options p { margin-block:20px 25px; }
+  .c-page .c-closing { padding-block:46px; }
+  .c-page .c-closing>.wrap { gap:28px; }
+  .c-page .c-closing .c-outbound-note { font-size:14px;margin-top:14px; }
+  .c-page .c-closing .text-link { margin-top:12px; }
+  .c-page .c-section-nav { gap:0 20px; }
+  .c-page .c-questions summary { padding-block:18px; }
+  .c-page .c-questions summary h2 { margin:0;min-height:0; }
+  .c-page .c-questions .c-prose { padding-inline:0;font-size:17px; }
+  .c-page .c-benefits { gap:30px; }
+  .c-page .c-benefits p { font-size:17px; }
+  .c-page .c-surveys strong { font-size:48px; }
+  .office-page .directory-intro { padding-top:26px; }
+  .office-page .directory-breadcrumb { margin-bottom:24px; }
+  .office-page .directory-heading { gap:22px;margin-bottom:30px; }
+  .office-page .directory-search>div { min-height:60px;padding-inline:14px;gap:10px; }
+  .office-page .directory-search input { padding-block:16px;font-size:17px; }
+  .office-page .directory-search button { min-height:44px; }
+  .office-page .office-card { padding:24px 22px; }
+  .office-page .office-market>summary { min-height:76px; }
+  .office-page .office-market>summary>span:first-child { font-size:24px;line-height:1.25; }
+  .service-page .s-hero { padding-block:30px 40px;gap:28px; }
+  .service-page .s-service-nav { gap:0 20px; }
+  .service-page .s-program-index { grid-template-columns:1fr;gap:0; }
+  .service-page .s-program-index>a { gap:14px; }
+  .service-page .s-component h2 { margin-bottom:24px; }
+  .service-page .s-sector-applications .s-list { grid-template-columns:1fr; }
+  .service-page .s-sector-applications .s-list>li { padding-block:12px; }
+  .service-page .s-contact { padding-block:46px; }
+  .service-page .s-contact-actions { gap:12px;align-items:stretch; }
+  .service-page .s-contact-actions small { margin-top:2px; }
+  .journal-page .article-masthead { padding-block:24px 34px; }
+  .journal-page .article-layout { margin-top:28px; }
+  .journal-page .reading-index a { padding-block:13px; }
+  .journal-page .article-body h2 { margin-top:38px;margin-bottom:22px; }
+  .journal-page .article-body>p:first-child { margin-bottom:26px; }
+  .journal-page .filter-buttons button { min-height:44px;font-size:15px; }
+  .pest-page .pest-families { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 12px; }
+  .pest-page .pest-families a { padding-inline:0; }
+  .pest-page .species-facts { grid-template-columns:86px minmax(0,1fr);font-size:16px; }
+  .pest-page .pest-support { padding:28px 22px; }
+  .a-site:not(.a-home) main :is(.s-closing,.s-inquiry,.c-closing,.c-contact-options,.directory-help,.s-contact-actions,.support-actions) .button {
+    display:flex;width:100%;justify-content:space-between;
+  }
+}
+
+@media (max-width:959px) {
+  /* Override the shared [hidden] !important only for mobile wayfinding.
+     The native hidden state keeps these extra actions out of desktop layouts. */
+  .a-site:not(.a-home) main .mobile-interior-actions[hidden] {
+    display:flex!important;flex-wrap:wrap;align-items:center;gap:8px 24px;
+    font-size:16px;margin:26px 0 0;
+  }
+  .a-site:not(.a-home) main .mobile-interior-actions .button { margin-top:0; }
+  .s-page .s-office-empty { padding-block:26px 40px; }
+  .s-page .s-office-empty h2,
+  .office-page .directory-empty h2 {
+    font-size:28px;line-height:1.2;max-width:22ch;margin-bottom:18px;text-wrap:balance;
+  }
+  .s-page .s-office-empty p,
+  .office-page .directory-empty p { font-size:17px;line-height:1.6;margin:0 0 24px;max-width:54ch; }
+  .s-page .s-office-empty .text-link { display:flex;width:max-content;margin-top:12px; }
+}
+@media (max-width:620px) {
+  .a-site:not(.a-home) main .mobile-interior-actions[hidden] {
+    display:grid!important;grid-template-columns:1fr;gap:4px;margin-top:24px;
+  }
+  .a-site:not(.a-home) main .mobile-interior-actions .button { justify-content:space-between;width:100%; }
+  .a-site:not(.a-home) main .mobile-interior-actions .text-link { justify-self:start; }
+}
+@media (max-width:959px) {
+  .s-page .s-lead-pair>.s-prose>h2:only-child { margin-bottom:0; }
+  .s-page .s-directory { padding-top:0;border-top:0; }
+  .s-page :is(#indice,#solicitud),
+  .service-page #program-components,
+  .c-page #inquiry { scroll-margin-top:112px; }
+}
+@media (max-width:959px) {
+  .s-page .s-office-search button[data-office-reset] {
+    appearance:none;border:0;background:none;padding:8px 0;cursor:pointer;
+    font:600 16px/1.5 var(--body);color:var(--ink);text-decoration:underline;
+    text-underline-offset:4px;min-height:44px;
+  }
+  .s-page .s-directory:not(:has(.s-office-market:not([hidden]))) { padding-block:0;border:0; }
+}

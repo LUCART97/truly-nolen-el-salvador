@@ -1,0 +1,107 @@
+.tn-chat-launcher{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(12px + env(safe-area-inset-bottom));z-index:55;display:grid;place-items:center;width:88px;height:112px;align-items:end;background:transparent;border:0;padding:0 0 2px;cursor:pointer;filter:drop-shadow(0 1px 0 #8b780033) drop-shadow(0 3px 5px #151b1626);transition:transform .2s ease}
+.tn-chat-launcher img{display:block;width:82px;height:55px;object-fit:contain}.tn-chat-launcher:hover{transform:scale(1.035)}.tn-chat-launcher[aria-expanded=true]{display:none}
+.tn-chat-launcher:focus-visible,#tn-franchise-chat :focus-visible{outline:3px solid #986f00;outline-offset:4px}
+.tn-chat-entry{background:none;border:0;padding:8px 0;font:600 14px/1.4 var(--body);color:inherit;cursor:pointer;text-align:left}.tn-chat-entry:hover{text-decoration:underline;text-underline-offset:4px}
+#tn-franchise-chat{position:fixed;z-index:65;inset:auto 24px 24px auto;width:410px;height:min(660px,calc(100dvh - 48px));background:#fffef9;color:#272b26;border:1px solid #c8ccbf;border-radius:16px;box-shadow:0 15px 70px #1c251b30;overflow:hidden;display:flex;flex-direction:column;font:400 16px/1.55 var(--body);letter-spacing:0}
+#tn-franchise-chat[hidden],#tn-franchise-chat [hidden]{display:none!important}#tn-franchise-chat *{box-sizing:border-box}#tn-franchise-chat button,#tn-franchise-chat input{font:inherit;color:inherit}#tn-franchise-chat button{cursor:pointer}#tn-franchise-chat button:disabled{cursor:wait;opacity:.55}
+#tn-franchise-chat .tn-chat-heading{display:flex;gap:14px;align-items:center;flex-shrink:0;padding:21px 16px;background:#242d27;color:#fff}
+#tn-franchise-chat .tn-chat-heading img{width:64px;height:44px;max-width:none;flex-shrink:0}#tn-franchise-chat .tn-chat-identity{min-width:0}#tn-franchise-chat h2{font:700 24px/1.15 var(--display);color:#fff;letter-spacing:-.009em;margin:0;text-wrap:initial}#tn-franchise-chat .tn-chat-heading p{font-size:13px;line-height:1.5;color:#e1e7dc;margin:5px 0 0}
+#tn-franchise-chat .tn-chat-close{display:grid;place-items:center;flex-shrink:0;align-self:flex-start;margin:-9px -7px 0 auto;width:44px;height:44px;background:transparent;border:0;padding:0;font-size:28px;line-height:1;color:white}
+#tn-franchise-chat .tn-chat-change{border:0;background:none;color:inherit;font-size:13px;text-decoration:underline;text-underline-offset:3px;padding:6px 0;min-height:44px}
+#tn-franchise-chat .tn-chat-suggestions{flex-shrink:0;padding:0 20px 8px}
+#tn-franchise-chat .tn-chat-suggestions .tn-chat-choices{padding:4px 0 0}
+#tn-franchise-chat .tn-chat-log{padding:22px 20px 8px;overflow-y:auto;overscroll-behavior:contain;flex:1;min-height:100px;scrollbar-width:thin}#tn-franchise-chat .tn-chat-message{margin:0 20px 15px 0}#tn-franchise-chat .tn-chat-bubble{margin:0;padding:14px 16px;background:#efefe6;border-radius:2px 13px 13px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.6}
+#tn-franchise-chat .tn-chat-message[data-role=user]{margin:0 0 15px 24px}#tn-franchise-chat .tn-chat-message[data-role=user] .tn-chat-bubble{background:#fff0a3;border-radius:13px 2px 13px 13px}
+#tn-franchise-chat .tn-chat-links{display:grid;margin:7px 0 0;gap:4px}#tn-franchise-chat .tn-chat-links a{display:flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid #bdc5b5;border-radius:5px;font-size:15px;text-decoration:underline;text-underline-offset:3px;background:white}#tn-franchise-chat .tn-chat-links a:hover{background:#f5f5e8}
+#tn-franchise-chat .tn-chat-status{font-size:14px;color:#5a6657;margin:8px 0 15px}#tn-franchise-chat .tn-chat-choices{display:grid;gap:10px;padding:0 20px 18px;flex-shrink:0}#tn-franchise-chat .tn-chat-choices button{background:white;border:1px solid #9fae95;border-radius:6px;padding:12px 16px;min-height:48px;text-align:left;font-weight:600;font-size:16px;line-height:1.4;transition:background .15s,border-color .15s}#tn-franchise-chat .tn-chat-choices button:hover{background:#fff1a4;border-color:#827224}
+#tn-franchise-chat .tn-chat-form{display:flex;gap:9px;margin:0;padding:8px 18px 12px;flex-shrink:0}#tn-franchise-chat input{width:100%;min-width:0;min-height:50px;padding:12px 16px;border:1px solid #aeb7a8;border-radius:25px;background:#fff;font-size:16px}#tn-franchise-chat input:disabled{background:#f1f1e9;color:#6b7366;opacity:1}#tn-franchise-chat .tn-chat-send{width:50px;height:50px;border:1px solid #ba9d00;background:#ffda00;border-radius:50%;font-size:25px;flex-shrink:0}#tn-franchise-chat .tn-chat-send:disabled{opacity:.45}
+#tn-franchise-chat .tn-chat-bottom{flex-shrink:0;padding:0 20px 18px}#tn-franchise-chat .tn-chat-bottom p{font-size:12px;line-height:1.5;margin:0;color:#5c6657}#tn-franchise-chat .tn-chat-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px}#tn-franchise-chat .tn-chat-resources{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin-bottom:7px}#tn-franchise-chat .tn-chat-resources a{display:inline-flex;align-items:center;min-height:36px}
+#tn-franchise-chat .tn-chat-retry{padding:8px 13px;min-height:44px;background:transparent;border:1px solid #8f9e85;border-radius:5px;margin-bottom:15px;font-size:14px}.tn-chat-sr{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.tn-chat-launcher,#tn-franchise-chat .tn-chat-choices button{transition:none;transform:none}}
+
+/* A recognizable chat entry: a complete car and a prominent speech bubble. */
+.tn-chat-cue{position:absolute;left:1px;top:2px;width:64px;height:46px;display:flex;align-items:center;justify-content:center;gap:5px;background:#fffef6;border:2px solid #344b50;border-radius:16px;box-shadow:0 3px 10px #15251824}
+.tn-chat-cue:after{content:'';position:absolute;right:16px;bottom:-8px;width:11px;height:11px;transform:skewY(-38deg);background:#fffef6;border-right:2px solid #344b50;border-bottom:2px solid #344b50}
+.tn-chat-cue i{width:5px;height:5px;border-radius:50%;background:#344b50}
+
+/* A two-tone focus ring remains visible on both photography and paper. */
+.tn-chat-launcher:focus-visible{outline:3px solid #272b26;outline-offset:2px;box-shadow:0 0 0 6px #fffef9;border-radius:12px}
+
+/* The phone panel has one reading surface; header and composer stay in view. */
+#tn-franchise-chat .tn-chat-content{display:flex;flex:1;min-height:0;flex-direction:column}
+#tn-franchise-chat .tn-chat-heading :focus-visible{outline-color:#FFD900}
+@media(max-width:600px){
+  .tn-chat-launcher{width:64px;height:80px;right:max(10px,env(safe-area-inset-right));bottom:calc(10px + env(safe-area-inset-bottom))}
+  .tn-chat-launcher img{width:60px;height:41px}
+  .tn-chat-cue{left:2px;top:0;width:42px;height:32px;border-radius:12px;gap:4px;border-width:1.5px}
+  .tn-chat-cue:after{right:10px;bottom:-6px;width:8px;height:8px;border-width:1.5px}
+  .tn-chat-cue i{width:4px;height:4px}
+  .tn-chat-entry{font-size:16px}
+  #tn-franchise-chat{inset:auto 16px max(var(--tn-chat-bottom,12px),env(safe-area-inset-bottom)) auto;width:min(360px,calc(100% - 32px));height:min(520px,68svh,var(--tn-chat-available-height,calc(100dvh - 24px)));max-height:min(520px,68svh,var(--tn-chat-available-height,calc(100dvh - 24px)));border-radius:16px}
+  #tn-franchise-chat[data-conversation=true]{height:min(520px,68svh,var(--tn-chat-available-height,calc(100dvh - 24px)))}
+  #tn-franchise-chat .tn-chat-heading{padding:12px;gap:8px}
+  #tn-franchise-chat .tn-chat-heading img{width:38px;height:29px}
+  #tn-franchise-chat h2{font-size:20px;line-height:1.15}
+  #tn-franchise-chat .tn-chat-heading p{font-size:12px;line-height:1.35;margin-top:4px}
+  #tn-franchise-chat .tn-chat-close{margin:-3px -4px 0 auto;align-self:flex-start}
+  #tn-franchise-chat .tn-chat-change{min-height:36px;padding-top:3px}
+  #tn-franchise-chat .tn-chat-content{position:relative;display:block;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+  #tn-franchise-chat .tn-chat-log{overflow:visible;min-height:0;padding:16px 12px 4px}
+  #tn-franchise-chat .tn-chat-message{margin:0 8px 12px 0}
+  #tn-franchise-chat .tn-chat-message[data-role=user]{margin-left:16px;margin-right:0}
+  #tn-franchise-chat .tn-chat-bubble{font-size:16px;line-height:1.5;padding:11px 12px}
+  #tn-franchise-chat .tn-chat-choices{gap:8px;padding:0 12px 12px}
+  #tn-franchise-chat .tn-chat-suggestions{padding:0 12px 8px}
+  #tn-franchise-chat .tn-chat-choices button{padding:10px 12px;min-height:46px}
+  #tn-franchise-chat .tn-chat-bottom{padding:0 12px 14px}
+  #tn-franchise-chat .tn-chat-resources{gap:4px 12px;margin-bottom:4px}
+  #tn-franchise-chat .tn-chat-resources a{min-height:40px}
+  #tn-franchise-chat .tn-chat-form{padding:8px 10px 10px;gap:8px;border-top:1px solid #dedfd5;background:#fffef9}
+  #tn-franchise-chat input{min-height:44px;padding:10px 12px}
+  #tn-franchise-chat .tn-chat-send{width:44px;height:44px}
+  #tn-franchise-chat[data-keyboard=true]{height:min(520px,var(--tn-chat-available-height))}
+  #tn-franchise-chat[data-keyboard=true] .tn-chat-heading{padding:8px 12px}
+  #tn-franchise-chat[data-keyboard=true] .tn-chat-heading img,
+  #tn-franchise-chat[data-keyboard=true] .tn-chat-heading p{display:none}
+  #tn-franchise-chat[data-keyboard=true] h2{font-size:18px}
+  #tn-franchise-chat[data-keyboard=true] .tn-chat-change{min-height:30px}
+}
+
+/* User-initiated handoff to the verified Truly IA WhatsApp channel. */
+#tn-franchise-chat .tn-chat-handoff{flex-shrink:0;padding:0 18px 12px;background:#fff}
+#tn-franchise-chat .tn-chat-handoff .tn-chat-whatsapp{margin:0;min-height:44px}
+#tn-franchise-chat .tn-chat-whatsapp{display:flex;align-items:center;justify-content:center;min-height:42px;margin:0 0 10px;border:1px solid #c8d6c9;border-radius:8px;background:#f2f6f1;color:#234830;font-size:14px;font-weight:600;text-decoration:none;padding:7px 12px}
+#tn-franchise-chat .tn-chat-whatsapp[hidden]{display:none}
+#tn-franchise-chat .tn-chat-whatsapp:hover{background:#e6eee4}
+@media(max-width:600px){#tn-franchise-chat .tn-chat-handoff{padding:0 10px 10px}}
+
+/* Pre-chat 3-step lead capture & intent filter */
+#tn-franchise-chat:has(.tn-chat-intake:not([hidden])) :is(.tn-chat-form,.tn-chat-bottom){display:none!important}
+#tn-franchise-chat:has(.tn-chat-intake:not([hidden])) .tn-chat-content{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+#tn-franchise-chat:has(.tn-chat-intake:not([hidden])) .tn-chat-log{flex:0 0 auto;min-height:0;overflow:visible;padding-bottom:10px}
+#tn-franchise-chat .tn-chat-intake{padding:0 20px 14px;flex-shrink:0}
+#tn-franchise-chat .tn-chat-intake-card{background:#f7f7f0;border:1px solid #c9d1c2;border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+#tn-franchise-chat .tn-chat-intake-step{margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#4a5848}
+#tn-franchise-chat .tn-chat-intake-label{margin:0;font-size:14px;font-weight:600;color:#1e261f;line-height:1.35}
+#tn-franchise-chat input.tn-chat-intake-input{width:100%;min-height:44px;padding:10px 14px;border:1px solid #9eab95;border-radius:10px;background:#fff;font-size:15px}
+#tn-franchise-chat input.tn-chat-intake-input:focus-visible{outline:none!important;border-color:#010007;box-shadow:0 0 0 3px #ffd80073}
+#tn-franchise-chat .tn-chat-intake-toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:#333d32;cursor:pointer;line-height:1.35;margin-top:2px}
+#tn-franchise-chat .tn-chat-intake-toggle input[type=checkbox]{width:18px;height:18px;min-height:18px;padding:0;margin:0;flex-shrink:0;border-radius:4px;accent-color:#242d27}
+#tn-franchise-chat .tn-chat-intake-error{margin:0;font-size:13px;color:#9e1c1c;font-weight:600}
+#tn-franchise-chat .tn-chat-intake-wagate{margin:0;padding:8px 10px;border-radius:8px;background:#e6f4ea;border:1px solid #84b893;color:#184226;font-size:13px;font-weight:600;line-height:1.35}
+#tn-franchise-chat .tn-chat-handoff{border-top:1px solid #e6e8df;padding-top:8px}
+#tn-franchise-chat .tn-chat-whatsapp[data-locked=true]{background:#f7f8f5;border-style:dashed;color:#2c4a35}
+@media(max-width:600px){
+  #tn-franchise-chat{height:min(620px,80svh,var(--tn-chat-available-height,calc(100dvh - 24px)));max-height:min(620px,80svh,var(--tn-chat-available-height,calc(100dvh - 24px)))}
+  #tn-franchise-chat .tn-chat-content{display:flex;flex:1 1 auto;min-height:0;overflow-y:auto}
+  #tn-franchise-chat:has(.tn-chat-intake:not([hidden])) .tn-chat-bubble{font-size:14.5px;line-height:1.42;padding:10px 12px}
+  #tn-franchise-chat:has(.tn-chat-intake:not([hidden])) .tn-chat-log{padding:12px 12px 6px}
+}
+#tn-franchise-chat .tn-chat-intake-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:4px}
+#tn-franchise-chat .tn-chat-intake-next{background:#ffda00;border:1px solid #b59800;border-radius:8px;padding:9px 16px;min-height:42px;font-weight:700;font-size:14px;color:#1d241e}
+#tn-franchise-chat .tn-chat-intake-next:hover{background:#f2ce00}
+#tn-franchise-chat .tn-chat-intake-back{background:#fff;border:1px solid #adb8a6;border-radius:8px;padding:9px 14px;min-height:42px;font-weight:600;font-size:14px;color:#272b26}
+#tn-franchise-chat .tn-chat-intake-filters{display:grid;gap:8px}
+#tn-franchise-chat .tn-chat-filter-btn{background:#fff;border:1px solid #9fae95;border-radius:8px;padding:11px 14px;min-height:44px;text-align:left;font-weight:600;font-size:14px;line-height:1.35;transition:background .15s,border-color .15s}
+#tn-franchise-chat .tn-chat-filter-btn:hover{background:#fff1a4;border-color:#827224}
+@media(max-width:600px){#tn-franchise-chat .tn-chat-intake{padding:0 12px 10px}#tn-franchise-chat .tn-chat-intake-card{padding:12px}}

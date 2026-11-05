@@ -1,0 +1,60 @@
+/* Feedback sitio web 22/09 · Montserrat, texto justificado y cierre con el técnico apoyado. */
+
+/* 1 · Tipografía de marca. Las caras y los tokens viven en style.css; aquí sólo los roles
+   que ninguna regla anterior fija: Display = Black 900 para el titular de cada página,
+   pies de foto en Italic 400. Los demás títulos resuelven a ExtraBold 800 por la familia
+   «Montserrat Display», y la interfaz a SemiBold 600 por «Montserrat». */
+.a-site h1{font-weight:900!important}
+.a-site main figcaption{font-style:italic;font-weight:400}
+
+/* 6 · Texto justificado en todas las páginas. Sólo el texto corrido: los títulos, la portada,
+   los párrafos de entrada junto a los títulos (cabeceras, introducciones y portadas de sección: en columnas
+   angostas y pocas líneas el justificado abría huecos), las franjas de llamada a la acción (una sola frase), los formularios, las fichas de
+   oficinas, las cifras y las migas conservan su alineación.
+   La división silábica por idioma evita los huecos entre palabras en columnas angostas. */
+.a-site main :is(p,li,blockquote){text-align:justify;-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:7 3 3}
+.a-site main :is(.hero,header,[class*=heading],[class*=intro],[class*=hero],[class*=masthead],.s-closing,.c-closing) :is(p,li){text-align:start}
+.a-site main :is(form,.tn-form-section,.office-card,.s-office-card,.network-numbers,.feedback-network-strip,.search-results,[class*=breadcrumb],.feedback-carousel-controls) :is(p,li){text-align:start;-webkit-hyphens:manual;hyphens:manual}
+.a-site main :is(p,li) :is(a[href^="mailto:"],a[href^="tel:"],a[href^="http"]){-webkit-hyphens:none;hyphens:none}
+
+/* 3 · El técnico toca el fondo del rectángulo amarillo: el relleno inferior de la franja
+   pasa al contenedor que lleva la figura, así el texto no se mueve y la figura se apoya. */
+.a-site:not(.a-home) main .s-closing{padding-bottom:0}
+.a-site:not(.a-home) main .s-closing>.wrap{padding-bottom:calc(clamp(28px,5vw,64px) + 70px);background-size:auto 88%}
+@media(max-width:760px){.a-site:not(.a-home) main .s-closing>.wrap{padding-bottom:210px;background-size:auto 205px}}
+
+/* 1b · Montserrat es más ancha que la fuente anterior: en pantallas angostas las palabras largas
+   (Cucarachas, internacional, experiência, acompanhamento, Schvartzman, 300+) no entraban.
+   Tamaños medidos a 320 px (lo que debe entrar ÷ lo que ocupaba); de 390 px en adelante no cambia nada. */
+.a-site main :is(h1,h2,h3,h4){overflow-wrap:break-word}
+.a-site main figcaption{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}
+.a-site main :is(li,dt,dd){overflow-wrap:break-word}
+.a-site main dt{-webkit-hyphens:auto;hyphens:auto}
+.a-site main dd :is(a[href^="mailto:"],a[href^="http"],a[href^="tel:"]){overflow-wrap:anywhere}
+@media(max-width:380px){
+ .a-site main .pest-masthead h1{font-size:44px}
+ .a-site main .franchise-masthead h1{font-size:33px}
+ .a-site main .c-footprint strong{font-size:31px}
+ .a-site main .feedback-network-strip strong{font-size:28px}
+ .a-site main .c-person-heading h3{font-size:22px}
+ .a-site.a-home .teps-heading h2{font-size:27px}
+ .a-site.a-home .network-numbers strong{font-size:30px}
+}
+@media(min-width:700px) and (max-width:900px){.a-site main .c-surveys strong{font-size:78px}}
+@media(min-width:700px) and (max-width:900px){.a-site.a-home .teps-heading h2{font-size:32px}}
+/* Índice de servicios de la portada en tableta: 2 × 2 con el tamaño de siempre. En cuatro columnas
+   las palabras largas («Monitoramento», «Sanitização») empujaban la página o se partían. */
+@media(min-width:621px) and (max-width:960px){
+ .a-site.a-home .service-opening .service-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* Menú de escritorio recién aparecido (960–1080 px): con Montserrat los cinco ítems, la lupa y
+   «Hablemos» no entraban en una línea. Los ítems no se parten y, hasta 1040 px, el logotipo va sin
+   el nombre en texto (que sigue disponible para lectores de pantalla). */
+@media(min-width:960px) and (max-width:1080px){
+ html[lang] body.a-site .navigation{gap:14px}
+ html[lang] body.a-site :is(.nav-trigger,.nav-office,.nav-cta){white-space:nowrap}
+}
+@media(min-width:960px) and (max-width:1040px){
+ html[lang] body.a-site .brand{width:auto}
+ html[lang] body.a-site .brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}

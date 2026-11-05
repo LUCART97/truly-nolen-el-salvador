@@ -1,0 +1,31 @@
+/* A: motion follows the existing native state; content is never reveal-gated. */
+.service-index>a,.sector-list>a{transition:background-color .3s ease,box-shadow .3s ease,color .125s linear}
+.service-index>a:is(:hover,:focus-visible){box-shadow:inset 0 -3px #ffd900}
+.service-index>a>span[aria-hidden],.hero-routes a>span{display:inline-block;transition:transform .3s ease}
+.service-index>a:is(:hover,:focus-visible)>span[aria-hidden],.hero-routes a:is(:hover,:focus-visible)>span{transform:translateY(3px)}
+.sector-list>a:focus-visible,.service-index>a:focus-visible,.hero-routes a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.nav-trigger[aria-expanded=true]{text-decoration:underline;text-decoration-color:#d3ac00;text-decoration-thickness:2px;text-underline-offset:8px}
+.program summary,.knowledge-faq summary{transition:color .125s linear,background-color .3s ease}
+.program summary:is(:hover,:focus-visible),.knowledge-faq summary:is(:hover,:focus-visible){color:#6d4e00}
+.program summary:focus-visible,.knowledge-faq summary:focus-visible{outline:2px solid #8b6800;outline-offset:3px}
+.program .expand,.knowledge-faq summary>span{transition:transform .3s ease}
+@media(prefers-reduced-motion:no-preference){
+ .program details[open]>p,.knowledge-faq details[open]>p{animation:a-detail-response .22s ease-out}
+ @keyframes a-detail-response{from{opacity:.65;transform:translateY(-3px)}to{opacity:1;transform:none}}
+}
+@media(prefers-reduced-motion:reduce){
+ .service-index>a,.sector-list>a,.service-index>a>span[aria-hidden],.hero-routes a>span,.program summary,.knowledge-faq summary,.program .expand,.knowledge-faq summary>span{transition:none;animation:none}
+ .service-index>a:is(:hover,:focus-visible)>span[aria-hidden],.hero-routes a:is(:hover,:focus-visible)>span{transform:none}
+}
+
+/* Make the result of an action visible, while retaining the approved A layout. */
+.a-site .button{transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.a-site .button:active{transform:translateY(1px);box-shadow:none}
+.a-site a[href^="/"].text-link>span[aria-hidden],.a-site a[href^="/"].button>span[aria-hidden]{transition:transform .22s ease}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .a-site .button:hover{transform:translateY(-2px);box-shadow:0 5px 0 #172a2014}
+ .a-site a[href^="/"].text-link:hover>span[aria-hidden],.a-site a[href^="/"].button:hover>span[aria-hidden]{transform:translateX(4px)}
+ .a-site .pest-list>a{transition:background-color .2s ease}
+ .a-site .pest-list>a:hover{background:#f2f4ed}
+}
+@media(prefers-reduced-motion:reduce){.a-site .button,.a-site a[href^="/"].text-link>span[aria-hidden],.a-site a[href^="/"].button>span[aria-hidden]{transition:none;transform:none}}

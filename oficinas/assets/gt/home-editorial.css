@@ -1,0 +1,125 @@
+/* Content-specific composition; the approved car hero and trust strip keep their own styles. */
+body.brand-2026.a-home{--editorial-space:clamp(56px,5vw,80px)}
+body.brand-2026.a-home main :is(.home-service,.commercial-section,.sanitization,.teps,.network,.franchise,.history,.pests,.resources){padding-block:var(--editorial-space)}
+body.brand-2026.a-home main :is(.home-copy h2,.commercial-section h2,.sanitization h2,.teps h2,.network h2,.franchise h2,.history h2,.pests h2,.resources h2){font-family:var(--body);font-weight:600;font-size:clamp(30px,3vw,43px);line-height:1.16;letter-spacing:-.035em;text-wrap:balance;max-width:24ch}
+body.brand-2026.a-home main :is(.section-tag,.program-label){font-size:13px;line-height:1.5;font-weight:600;letter-spacing:0;margin-bottom:16px}
+body.brand-2026.a-home main :is(.section-heading,.resource-heading){margin-bottom:34px;gap:16px}
+body.brand-2026.a-home main :is(.section-heading>p,.resource-heading>p){max-width:65ch;font-size:17px;line-height:1.65}
+body.brand-2026.a-home main :is(.home-copy>p,.sanitization-copy>p,.teps-description p,.franchise-content>p,.history-copy>p,.network-layout>div:first-child>p){font-size:17px;line-height:1.7;max-width:58ch}
+body.brand-2026.a-home main :is(.home-copy h2,.sanitization h2,.history h2,.network h2){margin-bottom:22px}
+body.brand-2026.a-home main :is(.sector-list h3,.franchise-content h3,.knowledge-faq h3,.office-directory h3){font-family:var(--body);font-weight:600;font-size:clamp(23px,2vw,29px);line-height:1.24;letter-spacing:-.025em}
+body.brand-2026.a-home main .home-service{grid-template-columns:1.12fr 1fr;gap:64px;align-items:center}
+body.brand-2026.a-home .home-photo{height:auto;min-height:0;align-self:center}
+body.brand-2026.a-home .home-photo img{position:static;width:100%;height:auto;object-fit:contain;aspect-ratio:763/573}
+body.brand-2026.a-home .home-zones{margin-block:22px}
+body.brand-2026.a-home .home-zones>div{padding-block:12px}
+body.brand-2026.a-home .home-zones strong{font-size:16px}
+body.brand-2026.a-home .home-zones span{font-size:15px;line-height:1.5}
+body.brand-2026.a-home .commercial-layout{grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
+body.brand-2026.a-home .commercial-photo{min-height:420px}
+body.brand-2026.a-home .sector-list>a{padding-block:20px}
+body.brand-2026.a-home .sector-list p{font-size:16px;line-height:1.6}
+body.brand-2026.a-home .sector-footnote{font-size:14px;line-height:1.6}
+body.brand-2026.a-home .sanitization{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+body.brand-2026.a-home .sanitization-visual>img{height:auto;width:100%;aspect-ratio:1783/1082;object-fit:contain}
+body.brand-2026.a-home .sanitization-environments{margin-top:0;padding:22px 0 0;background:transparent;border-top:1px solid var(--line)}
+body.brand-2026.a-home .sanitization-environments h3{font-family:var(--body);font-size:18px;line-height:1.4;font-weight:600}
+body.brand-2026.a-home .sanitization-environments p{font-size:15px;line-height:1.65;margin-top:8px}
+body.brand-2026.a-home .teps-intro{display:grid;grid-template-columns:112px minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:start}
+body.brand-2026.a-home .teps-intro .teps-seal{width:112px;height:112px;grid-column:1;grid-row:1;align-self:start}
+body.brand-2026.a-home .teps-heading{grid-column:2;grid-row:1;align-self:start}
+body.brand-2026.a-home .teps-heading h2{margin-bottom:0}
+body.brand-2026.a-home .teps-description{grid-column:3;grid-row:1;padding:0;margin-top:0}
+body.brand-2026.a-home .teps-description p{font-size:16px;line-height:1.65}
+body.brand-2026.a-home .teps-description .button{margin-top:22px}
+body.brand-2026.a-home .teps h2{font-size:clamp(30px,2.8vw,40px);max-width:19ch}
+body.brand-2026.a-home .teps-flow{background:transparent;margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.brand-2026.a-home .teps-flow>li{padding:24px}
+body.brand-2026.a-home .teps-flow>li:first-child{padding-inline-start:0}
+body.brand-2026.a-home .teps-flow>li:last-child{padding-inline-end:0}
+body.brand-2026.a-home .teps-flow>li:not(:last-child):after{display:none}
+body.brand-2026.a-home .teps-flow h3{font-family:var(--body);font-size:22px;line-height:1.25;font-weight:600;min-height:2.5em;letter-spacing:-.02em}
+body.brand-2026.a-home .teps-flow .flow-number{font-size:13px;color:var(--muted);margin-bottom:18px}
+body.brand-2026.a-home .teps-step-copy{padding:0}
+body.brand-2026.a-home .teps-step-copy strong{font-size:14px;line-height:1.5}
+body.brand-2026.a-home .teps-step-copy p{font-size:15px;line-height:1.65;margin-top:10px}
+body.brand-2026.a-home .program-overview{border-bottom:1px solid var(--line)}
+body.brand-2026.a-home .program-overview>summary{display:flex;justify-content:space-between;gap:24px;align-items:center;cursor:pointer;padding:22px 0;list-style:none}
+body.brand-2026.a-home .program-overview>summary::-webkit-details-marker{display:none}
+body.brand-2026.a-home .program-overview>summary:after{content:'+';font:400 24px/1 var(--body)}
+body.brand-2026.a-home .program-overview[open]>summary:after{content:'−'}
+body.brand-2026.a-home .program-overview .program-label{margin:0;font-size:16px;line-height:1.5;font-weight:500}
+body.brand-2026.a-home .program{margin:0 0 22px}
+body.brand-2026.a-home .program summary{padding:18px 16px;min-height:72px;gap:12px}
+body.brand-2026.a-home .program summary h3{font-size:16px;font-weight:600;line-height:1.4}
+body.brand-2026.a-home .program-icon{width:28px;height:28px;background:transparent;border-radius:0}
+body.brand-2026.a-home .program-icon svg{width:24px;height:24px}
+body.brand-2026.a-home .program details>p{font-size:15px;padding:0 16px 20px;line-height:1.65}
+body.brand-2026.a-home .franchise-layout{grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+body.brand-2026.a-home .franchise-photo{margin:0;align-self:center}
+body.brand-2026.a-home .franchise-photo img{width:100%;height:auto;max-height:none;aspect-ratio:1402/1125;object-fit:contain}
+body.brand-2026.a-home .franchise-points{margin-block:22px;gap:0}
+body.brand-2026.a-home .franchise-points>div{padding-block:14px}
+body.brand-2026.a-home .franchise-points strong{font-size:16px;line-height:1.4}
+body.brand-2026.a-home .franchise-points p{font-size:15px;line-height:1.6}
+body.brand-2026.a-home .pest-list{gap:24px}
+body.brand-2026.a-home .pest-list h3{font-family:var(--body);font-size:23px;font-weight:600;line-height:1.25;letter-spacing:-.025em}
+body.brand-2026.a-home .pest-list p{font-size:15px;line-height:1.65}
+body.brand-2026.a-home .pest-list strong{font-size:13px;line-height:1.5}
+body.brand-2026.a-home .knowledge-story{padding:28px}
+body.brand-2026.a-home .knowledge-story h3{font-family:var(--body);font-size:29px;font-weight:600;line-height:1.2;letter-spacing:-.025em}
+body.brand-2026.a-home .knowledge-story>p{font-size:16px;line-height:1.7}
+body.brand-2026.a-home .knowledge-story>.resource-archive-link{display:flex;margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;font-weight:500}
+body.brand-2026.a-home .knowledge-faq summary{font-size:16px;font-weight:500;line-height:1.5;padding-block:22px}
+body.brand-2026.a-home .contact-band{padding-block:64px}
+body.brand-2026.a-home .contact-band h2{font-family:var(--body);font-size:clamp(36px,4vw,58px);font-weight:600;line-height:1.12;letter-spacing:-.035em}
+@media(max-width:1023px){
+ body.brand-2026.a-home main :is(.home-service,.commercial-layout,.sanitization,.franchise-layout){gap:36px}
+ body.brand-2026.a-home .teps-intro{grid-template-columns:88px minmax(0,1fr);gap:20px 26px}
+ body.brand-2026.a-home .teps-intro .teps-seal{width:88px;height:88px}
+ body.brand-2026.a-home .teps-description{grid-column:2;grid-row:2}
+}
+@media(max-width:620px){
+ body.brand-2026.a-home{--editorial-space:44px}
+ body.brand-2026.a-home main :is(.home-copy h2,.commercial-section h2,.sanitization h2,.teps h2,.network h2,.franchise h2,.history h2,.pests h2,.resources h2){font-size:30px;line-height:1.2;letter-spacing:-.025em;max-width:23ch}
+ body.brand-2026.a-home main :is(.section-heading,.resource-heading){margin-bottom:24px;gap:14px}
+ body.brand-2026.a-home main :is(.section-heading>p,.resource-heading>p,.home-copy>p,.sanitization-copy>p,.teps-description p,.franchise-content>p,.history-copy>p,.network-layout>div:first-child>p){font-size:16px;line-height:1.65}
+ body.brand-2026.a-home main .home-service{gap:0;align-items:stretch}
+ body.brand-2026.a-home .home-photo{margin-top:24px}
+ body.brand-2026.a-home .home-zones{margin-block:12px}
+ body.brand-2026.a-home .home-zones>div{padding-block:12px}
+ body.brand-2026.a-home .commercial-photo{min-height:270px}
+ body.brand-2026.a-home .sector-list>a{padding-block:17px}
+ body.brand-2026.a-home .sector-list h3{font-size:23px;margin-bottom:6px}
+ body.brand-2026.a-home .sector-list p{font-size:15px}
+ body.brand-2026.a-home .teps-intro{grid-template-columns:64px minmax(0,1fr);gap:18px}
+ body.brand-2026.a-home .teps-intro .teps-seal{width:64px;height:64px}
+ body.brand-2026.a-home .teps-heading .section-tag{font-size:11px;margin-bottom:10px}
+ body.brand-2026.a-home .teps h2{font-size:28px;max-width:none}
+ body.brand-2026.a-home .teps-description{grid-column:1/-1;grid-row:2}
+ body.brand-2026.a-home .teps-flow{margin-top:28px}
+ body.brand-2026.a-home .teps-flow>li,body.brand-2026.a-home .teps-flow>li:first-child,body.brand-2026.a-home .teps-flow>li:last-child{padding:0}
+ body.brand-2026.a-home .teps-step>summary{padding:18px 0;grid-template-columns:28px minmax(0,1fr) 20px;min-height:64px;gap:12px}
+ body.brand-2026.a-home .teps-flow h3{font-size:20px;min-height:0;margin:0}
+ body.brand-2026.a-home .teps-flow .flow-number{margin:0}
+ body.brand-2026.a-home .teps-step-copy{padding:0 0 20px 40px}
+ html[dir=rtl] body.brand-2026.a-home .teps-step-copy{padding:0 40px 20px 0}
+ body.brand-2026.a-home .program-overview .program-label{font-size:14px}
+ body.brand-2026.a-home .program{grid-template-columns:1fr}
+ body.brand-2026.a-home .franchise-content h3{font-size:24px}
+ body.brand-2026.a-home .franchise-content>p{margin-bottom:20px}
+ body.brand-2026.a-home .franchise-photo img{max-height:none}
+ body.brand-2026.a-home .pest-list{gap:0}
+ body.brand-2026.a-home .pest-list>a,body.brand-2026.a-home .pest-list>a:last-child{grid-template-columns:80px minmax(0,1fr);gap:20px;padding-block:20px}
+ body.brand-2026.a-home .pest-list>a>img,body.brand-2026.a-home .pest-list>a:last-child>img{width:80px;height:86px;object-fit:contain}
+ body.brand-2026.a-home .pest-list h3{font-size:22px}
+ body.brand-2026.a-home .knowledge-story{padding:22px}
+ body.brand-2026.a-home .knowledge-story h3{font-size:27px}
+ body.brand-2026.a-home .knowledge-story>p{font-size:15px}
+ body.brand-2026.a-home .contact-band{padding-block:44px}
+ body.brand-2026.a-home .contact-band h2{font-size:34px}
+}
+html[dir=rtl] body.brand-2026.a-home main :is(h2,h3){letter-spacing:0;line-height:1.4}
+@media(max-width:620px){
+ body.brand-2026.a-home main :is(.commercial-layout,.sanitization,.franchise-layout){grid-template-columns:minmax(0,1fr)}
+}

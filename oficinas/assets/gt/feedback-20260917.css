@@ -1,0 +1,110 @@
+/* Feedback de Xavi · 17 septiembre 2026 («Adaptaciones sitio web»). Se carga después de closeout.css en las páginas A. */
+
+/* 1 · Los bloques de texto aprovechan el ancho disponible, salvo cuando una imagen justifica columnas. */
+.s-page .s-prose,.s-page .s-flow>.s-prose,.s-page .s-answer,.s-page .s-intro>p,.s-page .s-closing p,
+.s-page .s-section>h2,.s-page .s-intro h1,.closeout-news-entry p,.ux-answer .s-prose,.s-intro>.closeout-reference>p{max-width:none}
+.s-page .s-prose :is(h2,h3),.s-page :is(.s-section>h2,.s-closing h2,.s-contact-grid h2,.s-answer h2){max-width:none}
+.closeout-editorial-pair{grid-template-columns:1fr;gap:14px}
+.closeout-editorial-pair>article:first-child,.closeout-editorial-pair>article:not(:first-child){grid-column:1;grid-row:auto}
+.closeout-editorial-pair>article:first-child h2,.closeout-editorial-pair>article:first-child h3{max-width:none;margin-bottom:6px}
+.closeout-editorial-stack{display:grid;grid-template-columns:1fr;gap:14px}
+.closeout-editorial-stack>article:first-child h2{border-top:3px solid #dbc528;padding-top:24px;max-width:none;margin-bottom:6px}
+.closeout-editorial-stack>article h3{font-size:clamp(22px,2.2vw,28px);margin:6px 0 16px}
+.c-editorial-pair{grid-template-columns:1fr!important}
+.source-completion .source-chapter{grid-template-columns:1fr;gap:14px}
+.source-completion .source-chapter>h2{max-width:none}
+.source-form p,.source-completion .source-form h2{max-width:none}
+.history-copy>p{max-width:none}
+/* style.css limita todo <p> a 65ch; en las páginas interiores el texto usa el ancho disponible (doc. p.7, 10, 11). */
+.s-page main p,.c-page main p,.source-completion p,.s-page main li,.c-page main li{max-width:none}
+
+/* 2 · Nuestra historia: la foto de la convención ocupa el ancho del contenido. */
+.feedback-convention img{width:100%;height:clamp(300px,44vw,640px);max-height:none;object-fit:cover;object-position:center 42%;background:none}
+
+/* 3 · Franja de marca con los dos coches y las cuatro cifras (como en el sitio actual, con las cifras corregidas). */
+.tn-brand-band{display:grid;grid-template-columns:minmax(140px,.85fr) minmax(0,3.1fr) minmax(140px,.85fr);align-items:center;gap:28px;background:#ffd900;border-top:4px solid #173124;padding:26px 34px;margin:34px 0 10px}
+.tn-brand-band img{width:100%;height:auto;max-height:150px;object-fit:contain;display:block}
+.tn-band-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 26px}
+.tn-band-fact strong{display:block;font:800 clamp(15px,1.35vw,21px)/1.14 var(--display);color:#a10f26;letter-spacing:-.003em;text-wrap:pretty;hyphens:none;word-break:keep-all;overflow-wrap:normal}
+.tn-band-fact span{display:block;font:600 12px/1.35 var(--body);color:#173124;margin-top:7px;letter-spacing:.04em}
+@media (max-width:960px){.tn-brand-band{grid-template-columns:1fr 1fr;gap:20px;padding:22px}.tn-band-facts{grid-column:1/-1;grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.tn-band-facts{grid-template-columns:1fr}}
+
+/* 4 · Nuestro equipo: todas las tarjetas iguales — nombre, cargo, línea, «Leer biografía». */
+.s-page .s-person>div>.s-role,.c-page .c-person-heading>div>p{margin:0 0 12px;padding-bottom:14px;border-bottom:1px solid #d8d8ce}
+.s-page .s-person details>summary,.c-page .c-person details>summary{cursor:pointer;font-weight:600;padding:4px 0;min-height:32px}
+.closeout-person .feedback-portrait-frame,.feedback-portrait-frame{border-top:0}
+.s-page .s-person>div>h2{margin-bottom:8px}
+
+/* 5 · Conozca la franquicia: portada sin marco amarillo, capítulos en tarjetas con fotografía, cifras con iconos y bloque de confianza. */
+.source-completion[data-source-family=franchise] .source-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.source-completion[data-source-family=franchise] .source-hero-image{background:none;padding:0;border-radius:0;min-height:0;place-items:center stretch}
+.source-completion[data-source-family=franchise] .source-hero-image img{width:100%;max-width:none;height:clamp(260px,30vw,420px);object-fit:cover;object-position:center 35%;border-radius:2px}
+.source-completion[data-source-family=franchise] .source-hero h1{max-width:none}
+.source-completion .source-chapter.tn-chapter-card,.tn-chapter-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);grid-template-rows:auto 1fr;gap:12px 36px;align-items:start;background:#f6f5ee;padding:34px 36px;border-top:0;margin-block:22px;border-radius:2px}
+.tn-chapter-card>h2{grid-column:1;grid-row:1;max-width:none;margin:0 0 6px;font-size:clamp(26px,2.7vw,36px)}
+.tn-chapter-card>.source-chapter-body{grid-column:1;grid-row:2}
+.tn-chapter-card>.source-chapter-body p{line-height:1.7}
+.tn-chapter-card>.tn-chapter-photo{grid-column:2;grid-row:1/3;margin:0;min-height:280px;align-self:stretch}
+.tn-chapter-photo img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block;border-radius:2px}
+.tn-pillar{display:flex;gap:12px;align-items:center;padding:11px 14px;background:#fff;border:1px solid #dfe3d6;border-radius:6px;margin:8px 0!important;font-weight:600}
+.tn-pillar::before{content:'';width:10px;height:10px;border-radius:50%;background:#ffd900;border:2px solid #173124;flex-shrink:0}
+.tn-facts-row{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 24px;padding:30px 0;border-block:1px solid #d4d7cc}
+.tn-facts-row .source-fact{display:grid;grid-template-columns:46px minmax(0,1fr);grid-template-rows:auto auto;column-gap:14px;row-gap:4px;align-items:center}
+.tn-fact-icon{grid-row:1/3;width:46px;height:46px;border-radius:50%;background:#e9f0e2 center/24px 24px no-repeat}
+.tn-fact-icon-globe{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18'/%3E%3C/svg%3E")}
+.tn-fact-icon-pin{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Cpath d='M12 21s-6-5.3-6-11a6 6 0 0 1 12 0c0 5.7-6 11-6 11z'/%3E%3Ccircle cx='12' cy='10' r='2.3'/%3E%3C/svg%3E")}
+.tn-fact-icon-award{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Ccircle cx='12' cy='9' r='5.5'/%3E%3Cpath d='M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5'/%3E%3C/svg%3E")}
+.tn-fact-icon-years{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Crect x='3.5' y='5' width='17' height='15' rx='2'/%3E%3Cpath d='M3.5 10h17M8 3v4M16 3v4'/%3E%3C/svg%3E")}
+.tn-facts-row .source-fact-value{font:800 clamp(19px,1.7vw,25px)/1.1 var(--display);color:#173124;letter-spacing:-.003em}
+.tn-facts-row .source-fact-label{font-size:12px;letter-spacing:.05em;color:#4c6148;font-weight:600}
+.tn-trust{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);grid-template-rows:auto 1fr;gap:10px 36px;align-items:center;background:#f6f5ee;padding:36px;margin-block:26px;border-top:0;border-radius:2px}
+.tn-trust>h2{grid-column:1;grid-row:1;max-width:none;font-size:clamp(24px,2.5vw,33px);line-height:1.2;position:relative;padding-top:18px;margin:0}
+.tn-trust>h2::before{content:'';position:absolute;left:0;top:0;width:44px;height:3px;background:#ffd900}
+.tn-trust>.source-chapter-body{grid-column:1;grid-row:2}
+.tn-trust>.source-chapter-body p{max-width:none;line-height:1.7}
+.tn-trust-cars{grid-column:2;grid-row:1/3;display:flex;gap:14px;align-items:flex-end;justify-content:center}
+.tn-trust-cars img{flex:0 1 48%;width:48%;max-width:48%;height:auto;object-fit:contain;display:block}
+@media (max-width:900px){.source-completion[data-source-family=franchise] .source-hero{grid-template-columns:1fr}.source-completion .source-chapter.tn-chapter-card,.tn-chapter-card,.tn-trust{grid-template-columns:1fr;grid-template-rows:auto;padding:24px}.tn-chapter-card>.tn-chapter-photo,.tn-trust-cars{grid-column:1;grid-row:auto}.tn-chapter-card>h2,.tn-chapter-card>.source-chapter-body,.tn-trust>h2,.tn-trust>.source-chapter-body{grid-column:1;grid-row:auto}.tn-chapter-photo img{min-height:200px;max-height:300px}.tn-facts-row{grid-template-columns:1fr 1fr}}
+
+/* 6 · Formularios de contacto dentro de la página (clientes y franquicias). */
+.tn-form-section{padding:clamp(30px,5vw,64px) 0;color:#18231d;background:#ffd900}
+.tn-form-section .tn-form-wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:20px 44px;align-items:start}
+.tn-form-section h2{color:#18231d;font-size:clamp(30px,3.4vw,46px);line-height:1.1;margin:0 0 14px;max-width:none}
+.tn-form-section p{line-height:1.6;max-width:none}
+.tn-form-section .text-link{display:inline-flex;gap:6px;margin-top:10px;color:#18231d}
+.source-completion .tn-form-section{margin-top:40px;padding:clamp(28px,5vw,60px);border-radius:2px 2px 44px 2px}
+.tn-form{display:block;margin-top:6px}
+.tn-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.tn-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;line-height:1.3}
+.tn-form label abbr{text-decoration:none;color:#a1140a}
+.tn-form input,.tn-form textarea{scroll-margin-block:24px 120px;font:inherit;font-size:16px;line-height:1.4;padding:12px 14px;border:1px solid #6d7c6b;border-radius:4px;background:#fff;color:#18231d;width:100%;box-sizing:border-box}
+.tn-form input:focus-visible,.tn-form textarea:focus-visible{outline:3px solid #173124;outline-offset:2px}
+.tn-form [aria-invalid=true]{border-color:#a1140a;box-shadow:0 0 0 2px #a1140a33}
+.tn-form textarea{resize:vertical;min-height:130px}
+.tn-form-full{grid-column:1/-1}
+.tn-form-hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.tn-form-actions{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center;margin-top:20px}
+.tn-form-actions .button{min-height:48px}
+.tn-form-privacy{font-size:13px;margin:0;line-height:1.5}
+.tn-form-privacy a{text-decoration:underline;text-underline-offset:3px}
+.tn-form-status{margin:14px 0 0;font-weight:600;min-height:1.4em;line-height:1.45}
+.tn-form-status:empty{display:none}
+.tn-form-status[data-state=error]{color:#8f1208}
+.tn-form-status[data-state=ok]{color:#173124}
+.tn-form[data-busy] button{cursor:wait;pointer-events:none}
+.tn-form-success{background:#fff;border-left:4px solid #173124;padding:20px 22px;font-size:17px;line-height:1.6;border-radius:2px}
+.tn-form-success strong{display:block;margin-bottom:6px;font-size:20px}
+.tn-form-status a,.tn-form-success a{text-decoration:underline;text-underline-offset:3px}
+.tn-contact-grid{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}
+.tn-form-col .tn-form-intro h2{font-size:36px;line-height:1.15;margin-bottom:10px}
+.tn-form-col .tn-form-intro p{max-width:none}
+.tn-form-col .tn-form input,.tn-form-col .tn-form textarea{border-color:#9aa596}
+.c-prose.tn-form-col .tn-form-intro h2{margin-top:0}
+@media (max-width:800px){.tn-form-grid{grid-template-columns:1fr}.tn-form-section .tn-form-wrap,.tn-contact-grid{grid-template-columns:1fr}.tn-form-section{padding:28px 0}.source-completion .tn-form-section{padding:24px}}
+
+/* 7 · El coche real del ratón como lanzador del chat (la burbuja se mantiene). */
+.tn-chat-launcher{width:104px;height:124px}
+.tn-chat-launcher img.tn-chat-car{width:98px;height:63px;object-fit:contain;object-position:center bottom}
+#tn-franchise-chat .tn-chat-heading img.tn-chat-car{width:64px;height:41px;object-fit:contain}
+@media (max-width:600px){.tn-chat-launcher{width:76px;height:92px}.tn-chat-launcher img.tn-chat-car{width:72px;height:46px}}

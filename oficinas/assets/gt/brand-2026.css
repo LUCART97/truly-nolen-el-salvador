@@ -1,0 +1,1012 @@
+/* Marca 2026 (body.brand-2026).
+   Tru Yellow #FFD800, Tru Red #E82227, Tru Black #010007. El brand book
+   no define grises: los neutros se derivan desaturando a la misma
+   luminosidad. Capa generada a partir de las hojas existentes, en su
+   orden real de carga. */
+body.brand-2026{--ink:#010007;--muted:#5e5e5e;--yellow:#ffd800;--paper:#ffffff;--sage:#efefef;--line:#dedede;--sky:#e2e2e2;--deep:#010007;--body:Montserrat,Arial,sans-serif;--display:'Montserrat Display',Montserrat,Arial,sans-serif}
+body.brand-2026{background:var(--paper);color:var(--ink)}
+body.brand-2026 a{color:inherit}
+body.brand-2026 button{color:inherit}
+body.brand-2026 a:focus-visible,body.brand-2026 button:focus-visible,body.brand-2026 input:focus-visible,body.brand-2026 summary:focus-visible{outline:3px solid #010007;outline-offset:5px}
+body.brand-2026 .button{background:var(--yellow);color:var(--ink);border:1px solid transparent;border-radius:4px}
+body.brand-2026 .button:hover{background:#ffd800;box-shadow:0 3px 0 #01000720}
+body.brand-2026 .button-dark{background:var(--ink);color:#ffffff}
+body.brand-2026 .button-dark:hover{background:#464646}
+body.brand-2026 .button-outline{background:transparent;border-color:#bcbcbc}
+body.brand-2026 .button-outline:hover{background:var(--sage)}
+body.brand-2026 .section-heading>p{color:var(--muted)}
+body.brand-2026 .skip{background:var(--yellow)}
+body.brand-2026 .site-header{background:#ffffff;border-bottom:1px solid #dadada}
+body.brand-2026 .utility{background:#f2f2f2}
+body.brand-2026 .nav-trigger{border:0;background:none}
+body.brand-2026 .nav-trigger svg{fill:none;stroke:currentColor;stroke-width:1.4}
+body.brand-2026 .nav-trigger[aria-expanded=true]{box-shadow:inset 0 -3px var(--yellow)}
+body.brand-2026 .gt-buscar{border:0;background:none}
+body.brand-2026 .gt-buscar svg{fill:none;stroke:currentColor;stroke-width:1.5}
+body.brand-2026 .mega{background:#ffffff;box-shadow:0 25px 30px #01000718;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.brand-2026 .mega-links>a{border-radius:3px}
+body.brand-2026 .mega-links>a:hover{background:var(--sage)}
+body.brand-2026 .mega-links span{color:var(--muted)}
+body.brand-2026 .hero{background:var(--sky)}
+body.brand-2026 .hero-wash{background:linear-gradient(90deg,rgba(220,232,230,.83) 0,rgba(220,232,230,.52) 27%,rgba(220,232,230,0) 48%)}
+body.brand-2026 .scene-note{color:#4c4c4c}
+body.brand-2026 .service-index{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.brand-2026 .service-index>a:not(:last-child){border-right:1px solid var(--line)}
+body.brand-2026 .service-index>a>span:first-child{color:var(--muted)}
+body.brand-2026 .service-index a:hover strong{text-decoration-color:var(--yellow)}
+body.brand-2026 .image-caption{background:#ffffff}
+body.brand-2026 .home-copy>p{color:var(--muted)}
+body.brand-2026 .home-zones>div{border-bottom:1px solid var(--line)}
+body.brand-2026 i.green{background:#6e6e6e}
+body.brand-2026 i.yellow{background:#ffd800}
+body.brand-2026 i.red{background:#e82227}
+body.brand-2026 .home-zones i{border-radius:50%}
+body.brand-2026 .home-zones span{color:var(--muted)}
+body.brand-2026 .commercial-section{background:#f1f1f1}
+body.brand-2026 .commercial-photo{background:#010007}
+body.brand-2026 .commercial-photo:after{background:linear-gradient(transparent,#010007d9)}
+body.brand-2026 .photo-label{color:#ffffff}
+body.brand-2026 .sector-list>a{border-top:1px solid #cccccc}
+body.brand-2026 .sector-list p{color:var(--muted)}
+body.brand-2026 .sector-footnote{border-top:1px solid #cccccc;color:var(--muted)}
+body.brand-2026 .sanitization-copy>p{color:var(--muted)}
+body.brand-2026 .sanitization-environments{background:#e6e6e6}
+body.brand-2026 .sanitization-environments p{color:#4c4c4c}
+body.brand-2026 .confidence{background:#f2f2f2;border-block:1px solid var(--line)}
+body.brand-2026 .confidence-symbol{color:#b4b4b4}
+body.brand-2026 .confidence p{color:var(--muted)}
+body.brand-2026 .teps-intro>p{color:var(--muted)}
+body.brand-2026 .teps-signature{background:var(--sage)}
+body.brand-2026 .teps-signature i{border-radius:50%}
+body.brand-2026 .teps-signature>p{color:var(--muted)}
+body.brand-2026 .program details{border-top:1px solid var(--line)}
+body.brand-2026 .program details:last-child{border-bottom:1px solid var(--line)}
+body.brand-2026 .program-number{color:#7a7a7a}
+body.brand-2026 .program details>p{color:var(--muted)}
+body.brand-2026 .program details[open]{background:#f6f6f6}
+body.brand-2026 .network{background:var(--deep);color:#ffffff}
+body.brand-2026 .network .section-tag{color:#d3d3d3}
+body.brand-2026 .network-layout>div:first-child>p{color:#cbcbcb}
+body.brand-2026 .network-orbit>strong{color:#bababa}
+body.brand-2026 .network-orbit>span{border:1px solid #868686;border-radius:50%}
+body.brand-2026 .network-numbers strong{color:#ffffff}
+body.brand-2026 .network-numbers span{color:#d3d3d3}
+body.brand-2026 .source-note{color:#b8b8b8}
+body.brand-2026 .franchise-content>p{color:var(--muted)}
+body.brand-2026 .franchise-points>div{border-bottom:1px solid var(--line)}
+body.brand-2026 .franchise-points p{color:var(--muted)}
+body.brand-2026 .history{background:#f0f0f0}
+body.brand-2026 .history-copy>p{color:var(--muted)}
+body.brand-2026 .history-timeline{border-top:1px solid #c7c7c7}
+body.brand-2026 .history-timeline p{color:var(--muted)}
+body.brand-2026 .pest-list{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.brand-2026 .pest-list>a{border-right:1px solid var(--line)}
+body.brand-2026 .pest-list>a:last-child{border:0}
+body.brand-2026 .pest-list>a:hover{background:#f0f0f0}
+body.brand-2026 .pest-list svg{fill:none;stroke:#565656;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body.brand-2026 .pest-list p{color:var(--muted)}
+body.brand-2026 .resources{background:#f1f1f1}
+body.brand-2026 .resource-heading>p{color:var(--muted)}
+body.brand-2026 .resource-links a{border-top:1px solid #c8c8c8}
+body.brand-2026 .resource-links a>span:first-child{color:var(--muted)}
+body.brand-2026 .contact-band{background:var(--yellow)}
+body.brand-2026 .footer{background:#010007;color:#f2f2f2}
+body.brand-2026 .footer-top{border-bottom:1px solid #494949}
+body.brand-2026 .footer-brand{background:#ffffff;border-radius:3px}
+body.brand-2026 .footer-top>p{color:#d4d4d4}
+body.brand-2026 .footer-contact span{color:var(--yellow)}
+body.brand-2026 .footer-grid a{color:#c5c5c5}
+body.brand-2026 .footer a:hover{color:var(--yellow)}
+body.brand-2026 .footer address{color:#c5c5c5}
+body.brand-2026 .footer-bottom{border-top:1px solid #494949;color:#bebebe}
+body.brand-2026 .proposal-note{color:#b8b8b8}
+body.brand-2026 .design-switch{border-radius:5px;border:1px solid #c8c8c8;background:#ffffff;box-shadow:0 3px 16px #01000714}
+body.brand-2026 .design-switch [aria-current=page]{background:#e6e6e6;border-radius:3px}
+body.brand-2026 .search-dialog{border:0;border-radius:7px;color:var(--ink);box-shadow:0 35px 90px #0100074d}
+body.brand-2026 .search-dialog::backdrop{background:#01000766}
+body.brand-2026 .search-close{border:0;background:var(--sage);border-radius:50%}
+body.brand-2026 .search-dialog input{border:1px solid #aeaeae;border-radius:3px}
+body.brand-2026 .search-count{color:var(--muted)}
+body.brand-2026 .search-results a{border-bottom:1px solid var(--line)}
+body.brand-2026 .search-results a:hover{background:var(--sage)}
+body.brand-2026 .search-results small{color:var(--muted)}
+body.brand-2026 .network-map img{background:#ffffff;border-radius:3px}
+body.brand-2026 .network-map figcaption{color:#cbcbcb}
+body.brand-2026 .photographic-hero{background:#010007;color:#ffffff}
+body.brand-2026 .photographic-hero .hero-wash{background:linear-gradient(90deg,rgba(10,24,15,.55),rgba(10,24,15,.14) 40%,rgba(10,24,15,0) 62%)}
+body.brand-2026 .photographic-hero .hero-kicker{color:#f0f0f0}
+body.brand-2026 .photographic-hero .hero-description{color:#f0f0f0}
+body.brand-2026 .hero-routes{border-top:1px solid #ffffff57}
+body.brand-2026 .hero-routes a:hover{color:var(--yellow)}
+body.brand-2026 .photographic-hero .scene-note{color:#ffffff;background:#010007a6;border-radius:2px}
+body.brand-2026 .confidence-symbol>span{color:var(--ink)}
+body.brand-2026 .photographic-hero .scene-note{color:#ffffff;background:#010007e6;border-radius:2px}
+body.brand-2026 .program-number{color:#5d5d5d}
+body.brand-2026 .footer .design-switch a{color:var(--ink)}
+body.brand-2026 .footer .design-switch a:hover{background:#efefef;color:#010007}
+body.brand-2026 .office-mark svg{fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+body.brand-2026 /* Compact confidence belongs to the international network,body.brand-2026 with its source. */ .network-confidence{border-top:1px solid #707070}
+body.brand-2026 .network-confidence>span{color:#d2d2d2}
+body.brand-2026 .knowledge-story{background:#ffffff}
+body.brand-2026 .story-meta time{color:var(--muted)}
+body.brand-2026 .knowledge-story>p{color:var(--muted)}
+body.brand-2026 .knowledge-story>small{color:var(--muted)}
+body.brand-2026 .archive-story{border-top:1px solid var(--line)}
+body.brand-2026 .archive-story>span,body.brand-2026 .archive-story>time{color:var(--muted)}
+body.brand-2026 .archive-story p{color:var(--muted)}
+body.brand-2026 .faq-intro{color:var(--muted)}
+body.brand-2026 .knowledge-faq details{border-top:1px solid #c8c8c8}
+body.brand-2026 .knowledge-faq details p{color:var(--muted)}
+body.brand-2026 /* Keyboard focus stays distinct on dark brand surfaces. */ .photographic-hero :is(a,body.brand-2026 button):focus-visible,body.brand-2026 .network :is(a,body.brand-2026 button):focus-visible,body.brand-2026 .footer :is(a,body.brand-2026 button,body.brand-2026 summary):focus-visible{outline-color:#ffd800}
+body.brand-2026 .footer .design-switch a:focus-visible{outline-color:#010007}
+body.brand-2026 /* User-selected SEOmade reference: a warm paper ending and original landscape. */ .footer-paper{--footer-paper:#f2f2f2;background:var(--footer-paper);color:#010007;border-top:1px solid #d8d8d8}
+body.brand-2026 .footer-paper .footer-top{border-color:#cdcdcd}
+body.brand-2026 .footer-paper .footer-brand{background:transparent;border-radius:0}
+body.brand-2026 .footer-paper .footer-top>p{color:#585858}
+body.brand-2026 .footer-paper .footer-contact span{color:#666666}
+body.brand-2026 .footer-paper .footer-grid summary{color:#010007}
+body.brand-2026 .footer-paper .footer-grid a,body.brand-2026 .footer-paper address{color:#585858}
+body.brand-2026 .footer-paper a:hover{color:#010007}
+body.brand-2026 .footer-paper .footer-grid details{border-color:#c7c7c7}
+body.brand-2026 .footer-paper .footer-bottom{border-color:#cdcdcd;color:#585858}
+body.brand-2026 .footer-paper .proposal-note{color:#5b5b5b}
+body.brand-2026 .footer-paper :is(a,body.brand-2026 button,body.brand-2026 summary):focus-visible{outline:3px solid #010007;outline-offset:5px}
+body.brand-2026 .footer-paper .design-switch{border-color:#c7c7c7;background:#ffffff;box-shadow:none}
+body.brand-2026 .footer-paper .design-switch [aria-current=page]{background:#e4e4e4}
+body.brand-2026 /* Pablo selected the technician photo; the residential section uses TNI's actual diagram. */ .home-photo{background:#ededed}
+body.brand-2026 .home-photo .image-caption{background:none;color:#585858}
+body.brand-2026 .photographic-hero .hero-wash{background:linear-gradient(90deg,#010007c2 0,#0100075c 39%,transparent 67%)}
+body.brand-2026 .teps{border-top:1px solid var(--line)}
+body.brand-2026 .teps-flow{background:#ededed;border-block:1px solid #d4d4d4}
+body.brand-2026 .teps-flow li:not(:last-child){border-right:1px solid #c9c9c9}
+body.brand-2026 .flow-number{color:#686868}
+body.brand-2026 .teps-flow p{color:#565656}
+body.brand-2026 .teps-flow li:not(:last-child):after{background:#ededed;color:#4c4c4c}
+body.brand-2026 .program details{border-top:1px solid #d9d9d9;border-bottom:0}
+body.brand-2026 .office-directory{border-bottom:1px solid #737373}
+body.brand-2026 .office-directory>p{color:#cecece}
+body.brand-2026 .office-regions h4{color:#c0c0c0}
+body.brand-2026 .office-regions a{border-bottom:1px solid #5c5c5c}
+body.brand-2026 .office-regions a:hover{color:#ffd800}
+body.brand-2026 .franchise-photo{background:#f1f1f1}
+body.brand-2026 .franchise-photo figcaption{color:#595959}
+body.brand-2026 .pest-list{border:0}
+body.brand-2026 .pest-list>a{border:0;background:#ffffff}
+body.brand-2026 .pest-list>a>img{background:#ffffff}
+body.brand-2026 .pest-list>a>div{border-top:1px solid var(--line)}
+body.brand-2026 .pest-list strong{color:#5c5c5c}
+body.brand-2026 .pest-list .pest-guide-link{color:var(--ink)}
+body.brand-2026 .pest-list a:hover{background:none}
+body.brand-2026 .flow-number{color:#505050}
+body.brand-2026 .teps-description p{color:var(--muted)}
+body.brand-2026 .corporate-scope{color:#d2d2d2}
+body.brand-2026 /* Home refinement: comfortable reading,body.brand-2026 a visible menu and a full-width invitation. Scoped so the shared interior-page styles retain their own measured hierarchy. */ .a-home{--muted:#565656}
+body.brand-2026.a-home .home-photo{background:#f0f0f0}
+body.brand-2026.a-home .sanitization-environments{background:#ebebeb}
+body.brand-2026.a-home .teps-flow{background:#ececec;border-color:#cdcdcd}
+body.brand-2026.a-home .teps-flow li:not(:last-child){border-color:#cdcdcd}
+body.brand-2026.a-home .teps-flow li:not(:last-child):after{background:#ececec;color:#010007}
+body.brand-2026.a-home .teps-flow p{color:#565656}
+body.brand-2026.a-home .flow-number{color:#010007}
+body.brand-2026.a-home .history{background:#e8e8e8;color:var(--ink)}
+body.brand-2026.a-home .history-car-link{border-radius:4px}
+body.brand-2026.a-home .history-timeline{border-color:#ffd800}
+body.brand-2026.a-home .history-timeline p{color:#565656}
+body.brand-2026.a-home .resources{background:#f0f0f0}
+body.brand-2026.a-home .contact-band{border-radius:0;background:#ffd800}
+body.brand-2026.a-home .contact-actions .button{background:#010007;color:#ffffff}
+body.brand-2026.a-home .contact-actions .text-link{border-bottom:1px solid #010007}
+body.brand-2026.a-site .footer-grid .language-indicator{border:1px solid #bfbfbf;border-radius:2px}
+body.brand-2026.a-home .pest-list>a>img{background:#f0f0f0}
+body.brand-2026.a-home .pest-list>a>img.flea-specimen{background:#ffffff}
+body.brand-2026.a-home .archive-story .archive-content>span,body.brand-2026.a-home .archive-story .archive-content>time{color:var(--muted)}
+body.brand-2026 /* A · one editorial field-guide treatment across all five pest illustrations. */ .a-home .pest-list>a>img,body.brand-2026.a-home .pest-list>a:last-child>img{background:#f2f2f2}
+body.brand-2026.a-home .pest-list>a:is(:hover,body.brand-2026 :focus-visible){background:transparent}
+body.brand-2026.a-home .pest-list>a>div{border-top-color:#d0d0d0}
+body.brand-2026.a-home .pest-list strong{color:#545454}
+body.brand-2026 .archive-story summary small{color:var(--muted)}
+
+body.brand-2026 /* Editorial interiors: shared A typography and chrome,body.brand-2026 content-specific layouts. */ .c-page main{background:#ffffff}
+body.brand-2026 .c-breadcrumb{color:var(--muted)}
+body.brand-2026 .c-hero p{color:var(--muted)}
+body.brand-2026 .c-eyebrow{color:#5b5b5b}
+body.brand-2026 .c-hero figcaption{color:var(--muted)}
+body.brand-2026 .c-fleet{background:#f2f2f2}
+body.brand-2026 .c-section-lead{color:var(--muted)}
+body.brand-2026 .c-color-band{background:#efefef}
+body.brand-2026 .c-closing{background:#ffd800}
+body.brand-2026 .c-closing .c-eyebrow{color:#3e3e3e}
+body.brand-2026 .c-footprint{border-block:1px solid var(--line)}
+body.brand-2026 .c-footprint span{color:var(--muted)}
+body.brand-2026 .c-footprint p{color:var(--muted)}
+body.brand-2026 .c-note{background:#f2f2f2;color:#585858}
+body.brand-2026 .c-note strong{color:var(--ink)}
+body.brand-2026 .c-section-nav{border-block:1px solid var(--line)}
+body.brand-2026 .c-person{border-top:1px solid #d0d0d0}
+body.brand-2026 .c-person-heading img{background:#f3f3f3}
+body.brand-2026 .c-person-heading p{color:var(--muted)}
+body.brand-2026 .c-timeline li{border-top:1px solid var(--line)}
+body.brand-2026 .c-timeline span{color:var(--muted)}
+body.brand-2026 .c-faq-layout>aside{background:#f2f2f2}
+body.brand-2026 .c-faq-layout aside p{color:var(--muted)}
+body.brand-2026 .c-questions details{border-top:1px solid var(--line)}
+body.brand-2026 .c-questions details:last-child{border-bottom:1px solid var(--line)}
+body.brand-2026 .c-question-number{color:var(--muted)}
+body.brand-2026 .c-news-list article{border-bottom:1px solid var(--line)}
+body.brand-2026 .c-news-list time{background:#f0f0f0}
+body.brand-2026 .c-video-poster{background:#e3e3e3}
+body.brand-2026 .c-video-poster>span{border-radius:50%;background:#ffd800;color:#010007;box-shadow:0 2px 12px #010007}
+body.brand-2026 .c-video-card .c-prose{color:var(--muted)}
+body.brand-2026 .c-benefits article{border-top:1px solid #c9c9c9}
+body.brand-2026 .c-benefits article>span{color:var(--muted)}
+body.brand-2026 .c-benefits p{color:var(--muted)}
+body.brand-2026 .c-testimonials>article{border-top:1px solid var(--line)}
+body.brand-2026 .c-testimonials .c-prose strong{color:var(--ink)}
+body.brand-2026 .c-contact-options article{background:#efefef}
+body.brand-2026 .c-contact-options article+article{background:#f2f2f2}
+body.brand-2026 .c-contact-options p{color:var(--muted)}
+body.brand-2026 .c-surveys article{border-top:1px solid var(--line)}
+body.brand-2026 .c-surveys p{color:var(--muted)}
+body.brand-2026 .c-privacy-layout>aside{background:#efefef}
+body.brand-2026 .c-privacy-layout aside p{color:var(--muted)}
+body.brand-2026 .c-film-description{color:var(--muted)}
+body.brand-2026 .c-franchise-film{border-bottom:1px solid var(--line)}
+body.brand-2026 .c-page .sr-only{border:0!important}
+body.brand-2026 .c-biography-row{border-left:3px solid #ffd800;background:#f3f3f3}
+body.brand-2026 .c-person details[open] summary{color:#010007}
+body.brand-2026 .office-page .directory-main{background:#ffffff}
+body.brand-2026 .directory-breadcrumb{color:#606060}
+body.brand-2026 .directory-heading p{color:#5a5a5a}
+body.brand-2026 .directory-search>div{border:1px solid #727272;border-radius:4px;background:#ffffff}
+body.brand-2026 .directory-search:focus-within>div{outline:3px solid #010007;outline-offset:3px}
+body.brand-2026 .directory-search svg{fill:none;stroke:currentColor;stroke-width:1.5}
+body.brand-2026 .directory-search input{border:0;color:#010007;outline:0;background:transparent}
+body.brand-2026 .directory-search input::placeholder{color:#666666}
+body.brand-2026 .directory-search button{background:transparent;border:0;color:#010007}
+body.brand-2026 .directory-count{color:#606060}
+body.brand-2026 .directory-scope{color:#606060}
+body.brand-2026 .office-market{border-top:1px solid #cccccc}
+body.brand-2026 .office-market:last-child{border-bottom:1px solid #cccccc}
+body.brand-2026 .market-count{color:#606060}
+body.brand-2026 .market-note{color:#5a5a5a}
+body.brand-2026 .office-card{background:#f3f3f3;border-top:3px solid #ffd800}
+body.brand-2026 .office-card dt{color:#606060}
+body.brand-2026 .office-card dd{color:#010007}
+body.brand-2026 .office-card a{text-decoration-color:#929292}
+body.brand-2026 .office-card a:hover{color:#444444;text-decoration-color:currentColor}
+body.brand-2026 .copy-phone{border:0;background:none;color:#454545}
+body.brand-2026 .directory-empty p{color:#5a5a5a}
+body.brand-2026 .directory-help{border-top:1px solid #cccccc}
+body.brand-2026 .directory-help p{color:#5a5a5a}
+body.brand-2026 .directory-source p{color:#606060}
+body.brand-2026 .office-page .sr-only{border:0}
+body.brand-2026 /* Shared service-page language. The home and directory keep their own composition. */ .service-page{--service-line:#d9d9d9;--service-soft:#ededed}
+body.brand-2026 .service-page p{color:#585858}
+body.brand-2026 .service-page figcaption{color:#5a5a5a}
+body.brand-2026 .s-breadcrumb{color:#595959}
+body.brand-2026 .s-service-nav{border-bottom:1px solid var(--service-line)}
+body.brand-2026 .s-service-nav [aria-current=page]{box-shadow:inset 0 -3px #ffd800;color:#010007}
+body.brand-2026 .s-service-nav a:hover{color:#010007}
+body.brand-2026 .s-residential-hero>figure{background:#ededed}
+body.brand-2026 .s-zone-section{background:#f1f1f1}
+body.brand-2026 .s-zones{border-top:1px solid #cbcbcb;border-bottom:1px solid #cbcbcb}
+body.brand-2026 .s-zone:not(:first-child){border-left:1px solid #cbcbcb}
+body.brand-2026 .s-zone-dot{border-radius:50%}
+body.brand-2026 .s-zone-green .s-zone-dot{background:#686868}
+body.brand-2026 .s-zone-yellow .s-zone-dot{background:#ffd800}
+body.brand-2026 .s-zone-red .s-zone-dot{background:#e82227}
+body.brand-2026 .s-zone .s-zone-place{color:#010007}
+body.brand-2026 .s-zone>span:last-child{color:#5d5d5d}
+body.brand-2026 .s-footprint>div{border-left:1px solid var(--service-line)}
+body.brand-2026 .s-footprint span{color:#595959}
+body.brand-2026 .s-contact{background:#ffd800}
+body.brand-2026 .s-contact p{color:#010007}
+body.brand-2026 .s-related .text-link{border-top:1px solid var(--service-line)}
+body.brand-2026 .s-jump{border-block:1px solid var(--service-line)}
+body.brand-2026 .s-jump a:not(:last-child){border-right:1px solid var(--service-line)}
+body.brand-2026 .s-jump a:hover{background:#ededed}
+body.brand-2026 .s-sector-tinted{background:#f1f1f1}
+body.brand-2026 .s-list>li{border-top:1px solid #cccccc}
+body.brand-2026 .s-list>li:before{border-radius:50%;background:#6c6c6c}
+body.brand-2026 .s-protocol{background:#ededed}
+body.brand-2026 .s-process{border-top:1px solid #cccccc}
+body.brand-2026 .s-process li:not(:first-child){border-left:1px solid #cccccc}
+body.brand-2026 .s-process li>span{color:#505050}
+body.brand-2026 .s-product{background:#010007;color:#ffffff}
+body.brand-2026 .s-product p{color:#d7d7d7}
+body.brand-2026 .s-microbe-facts article{border-top:1px solid var(--service-line)}
+body.brand-2026 .s-program-index{border-top:1px solid #d9d9d9}
+body.brand-2026 .s-program-index>a{border-bottom:1px solid #e0e0e0}
+body.brand-2026 .s-program-index>a>span{color:#636363}
+body.brand-2026 .s-program-index>a:hover{color:#575757}
+body.brand-2026 .s-component{border-top:1px solid var(--service-line)}
+body.brand-2026 .s-component-number{color:#666666}
+body.brand-2026 .s-component-text li{color:#585858}
+body.brand-2026 .s-zone-connection{background:#ededed}
+body.brand-2026 .navigation .mega-links a[aria-current=page]{background:#ededed}
+body.brand-2026 .language-indicator{background:#ededed;border-radius:2px;color:#4c4c4c}
+body.brand-2026 .journal-breadcrumb{color:var(--muted)}
+body.brand-2026 .journal-eyebrow{color:var(--muted)}
+body.brand-2026 .journal-filter{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.brand-2026 .filter-buttons button{background:none;border:1px solid var(--line);border-radius:30px}
+body.brand-2026 .filter-buttons button:hover{border-color:var(--ink)}
+body.brand-2026 .filter-buttons button[aria-pressed=true]{background:var(--ink);color:#ffffff;border-color:var(--ink)}
+body.brand-2026 #article-count{color:var(--muted)}
+body.brand-2026 .journal-story{border-bottom:1px solid var(--line)}
+body.brand-2026 .story-edition{color:var(--muted)}
+body.brand-2026 .story-edition>span:first-child{color:var(--ink)}
+body.brand-2026 .story-copy>p{color:var(--muted)}
+body.brand-2026 .story-image-link{background:var(--sage)}
+body.brand-2026 .journal-archive-note{color:var(--muted)}
+body.brand-2026 .journal-help{background:var(--sage)}
+body.brand-2026 .journal-help p:not(.journal-eyebrow){color:var(--muted)}
+body.brand-2026 .article-masthead{border-bottom:1px solid var(--line)}
+body.brand-2026 .article-meta{color:var(--muted)}
+body.brand-2026 .article-cover figcaption{color:var(--muted)}
+body.brand-2026 .reading-index{border-top:2px solid var(--ink)}
+body.brand-2026 .reading-index ol{border-bottom:1px solid var(--line)}
+body.brand-2026 .reading-index li{border-top:1px solid var(--line)}
+body.brand-2026 .reading-index a{color:var(--muted)}
+body.brand-2026 .reading-index a:hover,body.brand-2026 .reading-index a[aria-current]{color:var(--ink)}
+body.brand-2026 .article-body>p:first-child{color:var(--ink)}
+body.brand-2026 .wp-block-gallery{background:var(--sage)}
+body.brand-2026 .article-body blockquote{border-left:4px solid var(--yellow);background:var(--sage)}
+body.brand-2026 .article-source{border-top:1px solid var(--line);color:var(--muted)}
+body.brand-2026 .journal-next{border-top:2px solid var(--ink)}
+body.brand-2026 .journal-return{border-bottom:1px solid var(--ink)}
+body.brand-2026 .image-fallback{background:var(--sage);color:var(--muted)}
+body.brand-2026 .journal-page a:focus-visible,body.brand-2026 .journal-page button:focus-visible,body.brand-2026 .journal-page summary:focus-visible{outline:3px solid #e82227;outline-offset:4px}
+body.brand-2026 .article-body figcaption{color:var(--muted)}
+body.brand-2026 .tn-chat-launcher{background:transparent;border:0}
+body.brand-2026 .tn-chat-launcher:focus-visible,body.brand-2026 #tn-franchise-chat :focus-visible{outline:3px solid #010007;outline-offset:4px}
+body.brand-2026 .tn-chat-entry{background:none;border:0;color:inherit}
+body.brand-2026 #tn-franchise-chat{background:#ffffff;color:#010007;border:1px solid #c6c6c6;border-radius:16px;box-shadow:0 15px 70px #01000730}
+body.brand-2026 #tn-franchise-chat button,body.brand-2026 #tn-franchise-chat input{color:inherit}
+body.brand-2026 #tn-franchise-chat .tn-chat-heading{background:#010007;color:#ffffff}
+body.brand-2026 #tn-franchise-chat h2{color:#ffffff}
+body.brand-2026 #tn-franchise-chat .tn-chat-heading p{color:#e2e2e2}
+body.brand-2026 #tn-franchise-chat .tn-chat-close{background:transparent;border:0;color:white}
+body.brand-2026 #tn-franchise-chat .tn-chat-change{border:0;background:none;color:#ffd800}
+body.brand-2026 #tn-franchise-chat .tn-chat-bubble{background:#ebebeb;border-radius:2px 13px 13px}
+body.brand-2026 #tn-franchise-chat .tn-chat-message[data-role=user] .tn-chat-bubble{background:#ffd800;border-radius:13px 2px 13px 13px}
+body.brand-2026 #tn-franchise-chat .tn-chat-links a{border:1px solid #bdbdbd;border-radius:5px;background:white}
+body.brand-2026 #tn-franchise-chat .tn-chat-links a:hover{background:#eeeeee}
+body.brand-2026 #tn-franchise-chat .tn-chat-status{color:#5e5e5e}
+body.brand-2026 #tn-franchise-chat .tn-chat-choices button{background:white;border:1px solid #a2a2a2;border-radius:6px}
+body.brand-2026 #tn-franchise-chat .tn-chat-choices button:hover{background:#ffd800;border-color:#010007}
+body.brand-2026 #tn-franchise-chat input{border:1px solid #b0b0b0;border-radius:25px;background:#ffffff}
+body.brand-2026 #tn-franchise-chat input:disabled{background:#ededed;color:#6d6d6d}
+body.brand-2026 #tn-franchise-chat .tn-chat-send{border:1px solid #010007;background:#ffd800;border-radius:50%}
+body.brand-2026 #tn-franchise-chat .tn-chat-bottom p{color:#5e5e5e}
+body.brand-2026 #tn-franchise-chat .tn-chat-bottom a{color:inherit}
+body.brand-2026 #tn-franchise-chat .tn-chat-retry{background:transparent;border:1px solid #929292;border-radius:5px}
+body.brand-2026 /* A recognizable chat entry: a complete car and a prominent speech bubble. */ .tn-chat-cue{background:#ffffff;border:2px solid #424242;border-radius:16px;box-shadow:0 3px 10px #01000724}
+body.brand-2026 .tn-chat-cue:after{background:#ffffff;border-right:2px solid #424242;border-bottom:2px solid #424242}
+body.brand-2026 .tn-chat-cue i{border-radius:50%;background:#424242}
+body.brand-2026 /* A two-tone focus ring remains visible on both photography and paper. */ .tn-chat-launcher:focus-visible{outline:3px solid #010007;outline-offset:2px;box-shadow:0 0 0 6px #ffffff;border-radius:12px}
+body.brand-2026 #tn-franchise-chat .tn-chat-heading :focus-visible{outline-color:#ffd800}
+body.brand-2026 /* Complete pest guides: shared A chrome,body.brand-2026 independent reading and specimen layouts. */ .pest-breadcrumb{color:var(--muted)}
+body.brand-2026 .pest-eyebrow{color:var(--muted)}
+body.brand-2026 .pest-figure figcaption{color:var(--muted)}
+body.brand-2026 .pest-families{border-block:1px solid var(--line)}
+body.brand-2026 .pest-families a{color:var(--muted)}
+body.brand-2026 .pest-families a:hover{color:var(--ink)}
+body.brand-2026 .pest-families a[aria-current]{color:var(--ink)}
+body.brand-2026 .pest-families a[aria-current]:after{background:var(--yellow)}
+body.brand-2026 .pest-index{border-top:2px solid var(--ink)}
+body.brand-2026 .pest-index ol{border-bottom:1px solid var(--line)}
+body.brand-2026 .pest-index li{border-top:1px solid var(--line)}
+body.brand-2026 .pest-index a{color:var(--muted)}
+body.brand-2026 .pest-index a:hover{color:var(--ink)}
+body.brand-2026 .pest-group{border-top:2px solid var(--ink)}
+body.brand-2026 .species-section{border-bottom:1px solid var(--line)}
+body.brand-2026 .species-life{background:var(--sage)}
+body.brand-2026 .species-facts dt{border-top:1px solid var(--line)}
+body.brand-2026 .species-facts dd{border-top:1px solid var(--line)}
+body.brand-2026 .species-facts dt:first-child,body.brand-2026 .species-facts dt:first-child+dd{border-top:0}
+body.brand-2026 .pest-source{color:var(--muted);border-top:1px solid var(--line)}
+body.brand-2026 .flea-cycle{background:var(--sage)}
+body.brand-2026 .flea-cycle li{border-top:1px solid #8e8e8e}
+body.brand-2026 .cycle-order{color:var(--muted)}
+body.brand-2026 .pest-support{background:var(--sage)}
+body.brand-2026 .pest-reading{border-left:1px solid #c7c7c7}
+body.brand-2026 .pest-reading>p:not(.pest-eyebrow){color:var(--muted)}
+body.brand-2026 .pest-image-fallback{background:var(--sage);color:var(--muted)}
+body.brand-2026 .pest-page a:focus-visible,body.brand-2026 .pest-page button:focus-visible,body.brand-2026 .pest-page summary:focus-visible{outline:3px solid #e82227;outline-offset:4px}
+body.brand-2026 .service-index>a:is(:hover,body.brand-2026 :focus-visible){box-shadow:inset 0 -3px #ffd800}
+body.brand-2026 .sector-list>a:focus-visible,body.brand-2026 .service-index>a:focus-visible,body.brand-2026 .hero-routes a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+body.brand-2026 .nav-trigger[aria-expanded=true]{text-decoration-color:#ffd800}
+body.brand-2026 .program summary:is(:hover,body.brand-2026 :focus-visible),body.brand-2026 .knowledge-faq summary:is(:hover,body.brand-2026 :focus-visible){color:#010007}
+body.brand-2026 .program summary:focus-visible,body.brand-2026 .knowledge-faq summary:focus-visible{outline:2px solid #010007;outline-offset:3px}
+body.brand-2026.a-site .button:active{box-shadow:none}
+body.brand-2026 /* Spanish interiors: same brand and shell,body.brand-2026 source-driven reading layouts. */ .s-page main{color:#010007;background:#ffffff}
+body.brand-2026 .s-section{border-top:1px solid #d8d8d8}
+body.brand-2026 .s-prose table{border-collapse:collapse}
+body.brand-2026 .s-prose td,body.brand-2026 .s-prose th{border:1px solid #d3d3d3}
+body.brand-2026 .s-index{background:#f0f0f0;border-top:3px solid #ffd800}
+body.brand-2026 .s-person{border-bottom:1px solid #d3d3d3}
+body.brand-2026 .s-detail{border-top:1px solid #cccccc}
+body.brand-2026 .s-note{color:#525252}
+body.brand-2026 .s-closing{background:#ffd800}
+body.brand-2026 .s-source{color:#535353}
+body.brand-2026 .s-office-search input{border:1px solid #9b9b9b;border-radius:2px}
+body.brand-2026 .s-office-market{border-top:1px solid #cecece}
+body.brand-2026 .s-office-card{background:#f2f2f2}
+body.brand-2026 .s-page :focus-visible{outline:3px solid #010007;outline-offset:5px}
+body.brand-2026 .s-pest-portrait{border-top:0}
+body.brand-2026 .s-journal time{color:#575757}
+body.brand-2026 .s-prose .s-date{color:#575757}
+body.brand-2026 /* Shared A chrome: loaded last by refine-a-chrome.py on every local A route. */ .a-site .nav-trigger[data-current-section=true]{text-decoration-color:#010007}
+body.brand-2026.a-site .mega-links a[aria-current=page]{background:#f0f0f0;border-bottom-color:#010007}
+body.brand-2026.a-site .nav-office[aria-current=page]{text-decoration-color:#010007}
+body.brand-2026.a-site .mobile-group-label{color:#686868}
+body.brand-2026.a-site .mobile-languages-group{border-top:1px solid #dedede}
+body.brand-2026.a-site .footer-paper{--footer-paper:#f2f2f2}
+body.brand-2026.a-site .footer-grid>details{border:0}
+body.brand-2026.a-site .footer-grid a,body.brand-2026.a-site .footer-links .tn-chat-entry{color:#4a4a4a}
+body.brand-2026.a-site .footer-links .tn-chat-entry{border:0;border-radius:0;background:none;box-shadow:none}
+body.brand-2026.a-site .footer-links .tn-chat-entry:hover{color:#010007}
+body.brand-2026.a-site .footer-tail{background:var(--footer-paper)}
+body.brand-2026.a-site .footer-bottom{border-top-color:#cdcdcd}
+body.brand-2026.a-site .site-header.is-scrolled{background:#fffffff5;border-bottom-color:#cecece;box-shadow:0 8px 28px #01000717}
+body.brand-2026.a-site .nav-trigger:after{background:#010007}
+body.brand-2026.a-site .mega{box-shadow:0 18px 35px #01000717;border-bottom:1px solid #d6d6d6}
+body.brand-2026.a-site .mega-links>a:hover,body.brand-2026.a-site .mega-links>a:focus-visible{background:#f1f1f1;border-color:#010007}
+body.brand-2026.a-site .footer-tail .maker-credit{color:#686868}
+body.brand-2026.a-site .footer-tail .maker-credit a{color:inherit}
+body.brand-2026.a-site .footer-tail .maker-credit a:hover,body.brand-2026.a-site .footer-tail .maker-credit a:focus-visible{color:#808080}
+body.brand-2026 /* Proposal A: one responsive composition,body.brand-2026 applied after each page family. */ @import url('/truly-nolen-el-salvador/oficinas/assets/gt/mobile-interiors.css'); @media (max-width:959px){background:#ffffff;background:#ffffff;border:0;box-shadow:none;background:#f3f3f3;background:#010007;color:#ffffff;background:linear-gradient(180deg,#010007d9 0%,#010007a3 31%,#01000708 62%,#0100077d 100%);background:transparent;color:#ffffff;color:#ffffff;color:#ffffff}
+body.brand-2026 /* A: commercial chapters. Shared ES/EN composition; the established shell stays intact. */ .ct-commercial{--ct-ink:var(--ink);--ct-muted:var(--muted);--ct-paper:var(--paper);--ct-yellow:var(--yellow);--ct-deep:var(--deep);--ct-sage:var(--sage);color:var(--ct-ink);background:var(--ct-paper)}
+body.brand-2026 .ct-commercial .ct-intro{color:var(--ct-muted)}
+body.brand-2026 .ct-hero-photo:before{background:var(--ct-yellow)}
+body.brand-2026 .ct-sector-nav{background:var(--ct-yellow)}
+body.brand-2026 .ct-sector-nav a{border-left:1px solid var(--ct-ink)}
+body.brand-2026 .ct-sector-nav a:hover,body.brand-2026 .ct-sector-nav a[aria-current=location]{background:var(--ct-ink);color:var(--ct-yellow)}
+body.brand-2026 .ct-prose p{color:var(--ct-muted)}
+body.brand-2026 .ct-facilities{border-left:1px solid var(--line)}
+body.brand-2026 .ct-facilities li:before{background:currentColor;border-radius:50%}
+body.brand-2026 .ct-healthcare{background:var(--ct-deep);color:var(--ct-paper)}
+body.brand-2026 .ct-healthcare .ct-kicker{color:var(--ct-yellow)}
+body.brand-2026 .ct-healthcare .ct-prose p{color:var(--ct-paper)}
+body.brand-2026 .ct-healthcare .ct-facilities{border-color:var(--ct-paper)}
+body.brand-2026 .ct-healthcare .ct-facilities li:before{background:var(--ct-yellow)}
+body.brand-2026 .ct-food-processing{background:var(--ct-sage)}
+body.brand-2026 .ct-food-processing .ct-facilities{border:0}
+body.brand-2026 .ct-industrial .ct-facilities{border-left:0;border-top:1px solid var(--line)}
+body.brand-2026 .ct-logistics .ct-documentary{border-top:8px solid var(--ct-yellow);border-bottom:1px solid var(--line)}
+body.brand-2026 .ct-other{border-top:1px solid var(--line)}
+body.brand-2026 .ct-other p{color:var(--ct-muted)}
+body.brand-2026 .ct-contact{background:var(--ct-yellow)}
+body.brand-2026 .ct-commercial .ct-source{color:var(--ct-muted)}
+body.brand-2026 .ct-commercial :focus-visible{outline:3px solid currentColor;outline-offset:5px}
+body.brand-2026 .source-corporate{border-block:1px solid #d4d4d4}
+body.brand-2026 .source-status{border-left:4px solid var(--yellow);background:var(--sage)}
+body.brand-2026 .source-directory{border-block:1px solid #cdcdcd}
+body.brand-2026 .source-directory select{border:1px solid #666666;border-radius:6px;background:#ffffff;color:#010007}
+body.brand-2026 /* Existing A palette and type,body.brand-2026 with dedicated layouts for the recovered material. */ .source-completion .source-hero{border-bottom:1px solid #cbcbcb}
+body.brand-2026 .source-completion .source-kicker{color:#4a4a4a}
+body.brand-2026 .source-hero-image{background:#e5e5e5;border-radius:2px 2px 72px 2px}
+body.brand-2026 .source-completion[data-source-family=franchise] .source-hero-image{background:#ffd800}
+body.brand-2026 .source-chapter{border-top:1px solid #d2d2d2}
+body.brand-2026 .source-chapter-label{border:0}
+body.brand-2026 .source-question{border-bottom:1px solid #cbcbcb}
+body.brand-2026 .source-question summary::marker{color:#525252}
+body.brand-2026 .source-question summary:focus-visible,body.brand-2026 .source-archive summary:focus-visible{outline:3px solid #545454;outline-offset:6px}
+body.brand-2026 .source-archive{background:#ececec;border-left:4px solid #858585}
+body.brand-2026 .source-form{background:#010007;color:#ffffff;border-radius:2px 2px 44px 2px}
+body.brand-2026 .source-completion .source-form h2{color:inherit}
+body.brand-2026 .source-form .button{background:#ffd800;color:#010007;border-color:#ffd800}
+body.brand-2026 .source-completion .source-facts{border-block:1px solid #d2d2d2}
+body.brand-2026 .pest-hero-figure{background:#f0f0f0;border-radius:3px 3px 58px 3px}
+body.brand-2026 .pest-index ol ol{border-left:2px solid #dcdcdc;border-bottom:0}
+body.brand-2026 .pest-index ol ol li{border:0}
+body.brand-2026 .pest-index .index-group>a{color:#010007}
+body.brand-2026 .pest-index a[aria-current]{color:#010007;text-decoration-color:#ffd800}
+body.brand-2026 .pest-group{border-top:1px solid #b0b0b0}
+body.brand-2026 .pest-group h2{color:#484848}
+body.brand-2026 .species-specimen{border:1px solid #e0e0e0;background:white;border-radius:3px}
+body.brand-2026 /* No page index should become a wall of unstructured links. */ .s-index.ux-index{background:transparent;border:0}
+body.brand-2026 .ux-index details{border-block:1px solid #c5c5c5;background:#f2f2f2}
+body.brand-2026 .ux-index a{border-bottom:1px solid #dadada}
+body.brand-2026 .ux-index a:focus-visible{outline:3px solid #525252;outline-offset:3px}
+body.brand-2026 .ux-index .ux-index-number{color:#5c5c5c}
+body.brand-2026 .ux-answer{border-bottom:1px solid #d0d0d0}
+body.brand-2026 .ux-answer>summary::marker{color:#505050}
+body.brand-2026 .ux-answer summary:focus-visible{outline:3px solid #505050;outline-offset:5px}
+body.brand-2026 .franchise-masthead .c-eyebrow{color:#525252}
+body.brand-2026 .franchise-masthead figure{background:#eaeaea;border-radius:3px 3px 54px 3px}
+body.brand-2026 .franchise-masthead figcaption{color:#535353}
+body.brand-2026 .franchise-benefits>article:not(:first-child){background:#f0f0f0;border-top:3px solid #ffd800}
+body.brand-2026 .franchise-knowledge-panel{border-block:1px solid #cbcbcb}
+body.brand-2026 .franchise-story{border-top:1px solid #cacaca}
+body.brand-2026 .franchise-film{border-block:1px solid #cacaca}
+body.brand-2026.a-site .feedback-social a{color:#010007}
+body.brand-2026 .feedback-social svg{fill:currentColor}
+body.brand-2026 .feedback-social a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+body.brand-2026.a-home .service-index a[href="#teps"]{border-top:2px solid #ffd800}
+body.brand-2026.a-home [data-feedback-carousel]{background:#010007}
+body.brand-2026 .feedback-premium{color:#f0f0f0}
+body.brand-2026.a-home .feedback-carousel-controls{color:white}
+body.brand-2026 .feedback-carousel-controls button{border:0;background:none;color:inherit}
+body.brand-2026 .feedback-carousel-tabs button{border-top:2px solid #ffffff55}
+body.brand-2026 .feedback-carousel-tabs button[aria-pressed=true]{border-color:#ffd800;color:#ffd800}
+body.brand-2026 .feedback-carousel-controls .feedback-carousel-pause{border:1px solid #ffffff80;border-radius:50%}
+body.brand-2026 .feedback-carousel-controls button:focus-visible{outline:2px solid #ffd800;outline-offset:5px}
+body.brand-2026.a-home .feedback-editorial-slide{background:radial-gradient(ellipse at 80% 30%,#474747 0,transparent 65%),#010007}
+body.brand-2026.a-home .feedback-editorial-slide :is(h1,body.brand-2026 h2).feedback-scene-title{color:#ffffff}
+body.brand-2026.a-home .feedback-editorial-slide .hero-description{color:#eeeeee}
+body.brand-2026 .feedback-map{background:#f2f2f2;border-radius:3px 3px 48px 3px;box-shadow:0 24px 70px #010007}
+body.brand-2026 .feedback-map-stats{color:#010007;border-top:1px solid #d6d6d6}
+body.brand-2026 .feedback-audit{background:#f3f3f3;border-radius:3px 3px 48px 3px;box-shadow:0 24px 70px #010007;color:#010007}
+body.brand-2026 .feedback-audit li{border-top:1px solid #d2d2d2}
+body.brand-2026 .feedback-audit li span{color:#595959}
+body.brand-2026 .feedback-audit li b{background:#ffd800;border-radius:50%}
+body.brand-2026 .feedback-audit>p:last-child{color:#565656}
+body.brand-2026 .feedback-convention img{background:#f0f0f0}
+body.brand-2026 .feedback-convention figcaption{color:#535353}
+body.brand-2026 .feedback-monogram{background:#e6e6e6;color:#010007;border-top:3px solid #ffd800}
+body.brand-2026 .feedback-person-heading>.feedback-team-portrait{border-top:3px solid #ffd800}
+body.brand-2026 .feedback-portrait-frame{background:#f3f3f3;border-top:3px solid #ffd800}
+body.brand-2026 [data-feedback-pest] .pest-index{background:#f0f0f0;border-block:1px solid #d0d0d0}
+body.brand-2026 .feedback-network-strip{background:#eaeaea;border-top:3px solid #ffd800}
+body.brand-2026 .feedback-network-strip strong{color:#010007}
+body.brand-2026 [data-feedback-franchise] .franchise-story,body.brand-2026 [data-feedback-franchise] .c-testimonials>article{background:#f2f2f2;border:1px solid #dbdbdb;border-top:3px solid #ffd800;border-radius:3px;box-shadow:0 8px 24px #01000708}
+body.brand-2026 .feedback-letter-more{border-top:1px solid #d0d0d0}
+body.brand-2026 .feedback-letter-more summary:focus-visible{outline:2px solid #434343;outline-offset:3px}
+body.brand-2026 /* Final editorial pass: the existing A design vocabulary,body.brand-2026 no new visual theme. */ .closeout-reference{border-block:1px solid #d4d4d4;color:#585858}
+body.brand-2026 .closeout-reference>summary:focus-visible{outline:2px solid #505050;outline-offset:4px}
+body.brand-2026 .closeout-reference>.wrap,body.brand-2026 .closeout-reference>.source-corporate{border:0}
+body.brand-2026 .closeout-editorial-pair>article:first-child h2,body.brand-2026 .closeout-editorial-pair>article:first-child h3{border-top:3px solid #ffd800}
+body.brand-2026 .closeout-person.s-person>.s-figure{background:#f1f1f1}
+body.brand-2026 .closeout-person.c-person .c-person-heading>img{background:#f1f1f1}
+body.brand-2026 .brand-flight{border-radius:3px 3px 54px 3px;background:radial-gradient(ellipse at 85% 10%,#444444,transparent 70%),#010007;color:#ffffff}
+body.brand-2026 .brand-flight-label{color:#dedede}
+body.brand-2026 .brand-flight-route{fill:#ffd800}
+body.brand-2026 .brand-flight-route path{fill:none;stroke:#bebebe;stroke-width:1.5;stroke-dasharray:4 7}
+body.brand-2026 .brand-flight-route .brand-flight-arrow{stroke:#ffd800;stroke-width:2;stroke-dasharray:none}
+body.brand-2026 .brand-flight-end{color:#e5e5e5}
+body.brand-2026 .closeout-brand-photo img{background:#f0f0f0}
+body.brand-2026 .closeout-brand-photo figcaption{border-top:2px solid #ffd800}
+body.brand-2026 .opportunity-main{color:#010007}
+body.brand-2026 .op-eyebrow{color:#535353}
+body.brand-2026 .op-hero figure{background:#eeeeee;border-radius:3px 3px 48px 3px}
+body.brand-2026 .op-hero figcaption{color:#545454}
+body.brand-2026 .op-film{background:#010007;color:#ffffff}
+body.brand-2026 .op-film .op-eyebrow{color:#e0e0e0}
+body.brand-2026 .op-film p:not(.op-eyebrow){color:#e2e2e2}
+body.brand-2026 .op-film .text-link{color:#ffffff}
+body.brand-2026 .op-video{background:#010007}
+body.brand-2026 .op-play{background:#ffd800;color:#010007;border-radius:50%}
+body.brand-2026 .op-video-label{color:#ffffff;text-shadow:0 2px 6px #010007}
+body.brand-2026 .op-benefit-grid article{background:#f0f0f0;border-top:3px solid #ffd800}
+body.brand-2026 .op-number{color:#5a5a5a}
+body.brand-2026 .op-attribution span{color:#5a5a5a}
+body.brand-2026 .op-inquiry{background:#ffd800}
+body.brand-2026 .op-inquiry .op-eyebrow{color:#3a3a3a}
+body.brand-2026 .op-video-dialog{border:0;background:#010007;color:#ffffff}
+body.brand-2026 .op-video-dialog::backdrop{background:#010007dc}
+body.brand-2026 .op-video-close{background:none;border:0;color:white}
+body.brand-2026 .op-video-player iframe{border:0}
+body.brand-2026 .closeout-news-entry{border-top:1px solid #d4d4d4}
+body.brand-2026 .closeout-news-entry::before{color:#5f5f5f}
+body.brand-2026 .feedback-network-strip figure figcaption{color:#545454}
+body.brand-2026 /* Article discovery and end-of-reading choices use the same editorial hierarchy in ES/EN. */ .a-site .mega-links a[aria-current=location]{background:#f0f0f0;border-bottom-color:#010007}
+body.brand-2026 .closeout-blog-next{border-top:1px solid #d4d4d4}
+body.brand-2026 .closeout-blog-eyebrow{color:#585858}
+body.brand-2026 /* Supplied team portraits: one frame,body.brand-2026 per-photo focal point; originals preserved. */ .closeout-person .team-portrait-frame{background:#f1f1f1}
+body.brand-2026 #marcela-f-pereira .team-portrait-frame{--portrait-scale:1.15;--portrait-origin:50% 40%}
+body.brand-2026 #marcus-f-rezende .team-portrait-frame{--portrait-scale:1.9;--portrait-origin:50% 25%}
+body.brand-2026 #paula-sojak .team-portrait-frame{--portrait-scale:1.7;--portrait-origin:50% 20%}
+body.brand-2026 #melina-schvartzman .team-portrait-frame{--portrait-scale:1.9;--portrait-origin:50% 30%}
+body.brand-2026 /* One photographic treatment for every team member and future portrait. */ .closeout-person .unified-team-portrait{background:#f1f1f1;border:0}
+body.brand-2026 /* The original hero-a image/composition is the reference,body.brand-2026 before the carousel. All three scenes share one type scale and one content anchor. */ .a-home [data-feedback-carousel]{--hero-inset:max(64px,calc((100% - 1312px)/2))}
+body.brand-2026.a-home .feedback-slide{background:#010007}
+body.brand-2026.a-home .feedback-slide[data-scene] :is(h1,body.brand-2026 h2).feedback-scene-title,body.brand-2026.a-home .feedback-slide[data-scene] h1{color:white}
+body.brand-2026.a-home .feedback-slide[data-scene] .hero-kicker{color:#f0f0f0}
+body.brand-2026.a-home .feedback-slide[data-scene] .hero-description{color:#f0f0f0}
+body.brand-2026.a-home .feedback-slide[data-scene] .hero-wash{background:linear-gradient(90deg,#010007c2 0,#0100075c 39%,transparent 67%)}
+body.brand-2026 /* Evidence is a discreet caption on the film,body.brand-2026 never a second photograph/card. */ .a-home .feedback-scene-art{background:none;box-shadow:none;border-radius:0;color:#ffffff}
+body.brand-2026.a-home .feedback-map-stats{border:0;color:white}
+body.brand-2026.a-home .feedback-audit li{border:0}
+body.brand-2026.a-home .feedback-audit li span{color:#f0f0f0}
+body.brand-2026.a-home .feedback-audit>p:last-child{color:#f0f0f0}
+body.brand-2026.a-home .feedback-carousel-tabs:focus-within{background:#010007}
+body.brand-2026.a-home .feedback-carousel-tabs button{border:0!important}
+body.brand-2026.a-home .feedback-audit .feedback-audit-label{color:white}
+body.brand-2026.a-home .feedback-audit>.feedback-audit-copy:last-child{color:#f0f0f0}
+body.brand-2026 .closeout-editorial-stack>article:first-child h2{border-top:3px solid #ffd800}
+body.brand-2026 /* 2 · Nuestra historia: la foto de la convención ocupa el ancho del contenido. */ .feedback-convention img{background:none}
+body.brand-2026 /* 3 · Franja de marca con los dos coches y las cuatro cifras (como en el sitio actual,body.brand-2026 con las cifras corregidas). */ .tn-brand-band{background:#ffd800;border-top:4px solid #010007}
+body.brand-2026 .tn-band-fact strong{color:#e82227}
+body.brand-2026 .tn-band-fact span{color:#010007}
+body.brand-2026 /* 4 · Nuestro equipo: todas las tarjetas iguales — nombre,body.brand-2026 cargo,body.brand-2026 línea,body.brand-2026 «Leer biografía». */ .s-page .s-person>div>.s-role,body.brand-2026 .c-page .c-person-heading>div>p{border-bottom:1px solid #d3d3d3}
+body.brand-2026 .closeout-person .feedback-portrait-frame,body.brand-2026 .feedback-portrait-frame{border-top:0}
+body.brand-2026 .source-completion[data-source-family=franchise] .source-hero-image{background:none;border-radius:0}
+body.brand-2026 .source-completion[data-source-family=franchise] .source-hero-image img{border-radius:2px}
+body.brand-2026 .source-completion .source-chapter.tn-chapter-card,body.brand-2026 .tn-chapter-card{background:#f2f2f2;border-top:0;border-radius:2px}
+body.brand-2026 .tn-chapter-photo img{border-radius:2px}
+body.brand-2026 .tn-pillar{background:#ffffff;border:1px solid #dcdcdc;border-radius:6px}
+body.brand-2026 .tn-pillar::before{border-radius:50%;background:#ffd800;border:2px solid #010007}
+body.brand-2026 .tn-facts-row{border-block:1px solid #d2d2d2}
+body.brand-2026 .tn-fact-icon{border-radius:50%;background:#e9e9e9 center/24px 24px no-repeat}
+body.brand-2026 .tn-fact-icon-globe{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18'/%3E%3C/svg%3E")}
+body.brand-2026 .tn-fact-icon-pin{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Cpath d='M12 21s-6-5.3-6-11a6 6 0 0 1 12 0c0 5.7-6 11-6 11z'/%3E%3Ccircle cx='12' cy='10' r='2.3'/%3E%3C/svg%3E")}
+body.brand-2026 .tn-fact-icon-award{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Ccircle cx='12' cy='9' r='5.5'/%3E%3Cpath d='M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5'/%3E%3C/svg%3E")}
+body.brand-2026 .tn-fact-icon-years{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173124' stroke-width='1.8'%3E%3Crect x='3.5' y='5' width='17' height='15' rx='2'/%3E%3Cpath d='M3.5 10h17M8 3v4M16 3v4'/%3E%3C/svg%3E")}
+body.brand-2026 .tn-facts-row .source-fact-value{color:#010007}
+body.brand-2026 .tn-facts-row .source-fact-label{color:#545454}
+body.brand-2026 .tn-trust{background:#f2f2f2;border-top:0;border-radius:2px}
+body.brand-2026 .tn-trust>h2::before{background:#ffd800}
+body.brand-2026 /* 6 · Formularios de contacto dentro de la página (clientes y franquicias). */ .tn-form-section{color:#010007;background:#ffd800}
+body.brand-2026 .tn-form-section h2{color:#010007}
+body.brand-2026 .tn-form-section .text-link{color:#010007}
+body.brand-2026 .source-completion .tn-form-section{border-radius:2px 2px 44px 2px}
+body.brand-2026 .tn-form label abbr{color:#e82227}
+body.brand-2026 .tn-form input,body.brand-2026 .tn-form textarea{border:1px solid #747474;border-radius:4px;background:#ffffff;color:#010007}
+body.brand-2026 .tn-form input:focus-visible,body.brand-2026 .tn-form textarea:focus-visible{outline:3px solid #010007;outline-offset:2px}
+body.brand-2026 .tn-form [aria-invalid=true]{border-color:#e82227;box-shadow:0 0 0 2px #e8222733}
+body.brand-2026 .tn-form-status[data-state=error]{color:#8f1208}
+body.brand-2026 .tn-form-status[data-state=ok]{color:#010007}
+body.brand-2026 .tn-form-success{background:#ffffff;border-left:4px solid #010007;border-radius:2px}
+body.brand-2026 .tn-form-col .tn-form input,body.brand-2026 .tn-form-col .tn-form textarea{border-color:#9e9e9e}
+body.brand-2026.a-site:not(.a-home) main .s-closing>.wrap{background:url('/truly-nolen-el-salvador/oficinas/assets/gt/contact-technician-20260924.webp') right 5% bottom/auto 94% no-repeat}
+body.brand-2026.a-site:not(.a-home) main .s-closing>.wrap{background-size:auto 88%}
+html[lang=ar] body.brand-2026{--body:NotoSansArabic,Montserrat,Tahoma,Arial,sans-serif;--display:NotoSansArabic,'Montserrat Display',Tahoma,Arial,sans-serif}
+html[dir=rtl] body.brand-2026 .s-process li:not(:first-child){border-left:0;border-right:1px solid #cccccc}
+html[dir=rtl] body.brand-2026 .a-site:not(.a-home) main .s-closing>.wrap{background-position:left 5% bottom}
+body.brand-2026.a-home .feedback-carousel-tabs{background:none}
+body.brand-2026.a-home .feedback-carousel-tabs button{border:0!important;background:none}
+body.brand-2026 /* La barra es un pseudoelemento: el botón conserva 30px de area tactil. */ .a-home .feedback-carousel-tabs button:before{border-radius:999px;background:#ffffff5c}
+body.brand-2026.a-home .feedback-carousel-tabs button:hover:before{background:#ffffff9c}
+body.brand-2026.a-home .feedback-carousel-tabs button[aria-pressed=true]:before{background:var(--yellow)}
+body.brand-2026.a-home .feedback-carousel-tabs button:focus-visible{outline:3px solid #ffffff;outline-offset:3px}
+body.brand-2026.a-home .service-icon{border-radius:50%;background:var(--yellow);color:var(--ink)}
+body.brand-2026.a-home .service-icon svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+body.brand-2026.a-home .service-icon img{border-radius:50%;background:#ffffff}
+body.brand-2026 /* Imágenes sin caja ni marco: la foto ocupa su hueco entera. */ .a-site main :is(.home-photo,body.brand-2026 .franchise-photo){background:none}
+body.brand-2026 /* Imágenes sin recuadro: .s-figure pintaba un fondo gris que se veía como un marco alrededor de la foto. La imagen ocupa su hueco entera. */ .a-site main .s-figure{background:none}
+@media(max-width:959px){
+body.brand-2026 .menu-toggle{border:0;background:none}
+body.brand-2026 .menu-toggle svg{stroke:currentColor;stroke-width:1.5;fill:none}
+body.brand-2026 .navigation{background:#ffffff;box-shadow:0 20px 30px #0100071a;border-top:1px solid var(--line)}
+body.brand-2026 .nav-trigger{border-bottom:1px solid var(--line)}
+body.brand-2026 .mega{box-shadow:none;border:0}
+body.brand-2026 .nav-office{border-bottom:1px solid var(--line)}
+body.brand-2026 .gt-buscar{border:1px solid var(--line);border-radius:4px}
+body.brand-2026 .hero-wash{background:linear-gradient(90deg,#e2e2e2cc 0,#e2e2e280 34%,#e2e2e200 60%)}
+body.brand-2026 .gt-buscar{border:0;border-bottom:1px solid var(--line);border-radius:0}
+body.brand-2026 .teps-flow li:nth-child(2){border-right:0}
+body.brand-2026 .teps-flow li:nth-child(-n+2){border-bottom:1px solid #c9c9c9}
+body.brand-2026 .s-process li:nth-child(odd){border-left:0}
+body.brand-2026 .s-process li:nth-child(-n+2){border-bottom:1px solid #cccccc}
+body.brand-2026 .pest-reading{border-left:0;border-top:1px solid #c7c7c7}
+body.brand-2026.a-site .footer-grid>details{border-bottom:1px solid #c7c7c7}
+body.brand-2026.a-site .mobile-language-shortcut{border:1px solid #dadada;border-radius:4px;background:#ffffff}
+body.brand-2026.a-site .mobile-language-shortcut:hover{background:var(--sage)}
+body.brand-2026 .ct-sector-nav a{border-left:0;border-bottom:3px solid transparent}
+body.brand-2026.a-site .mobile-portals .feedback-social{border-top:1px solid #d2d2d2}
+body.brand-2026.a-home [data-feedback-carousel]{--hero-inset:32px}
+body.brand-2026.a-home .feedback-slide[data-scene] .hero-wash{background:linear-gradient(180deg,#010007d9 0%,#010007a3 31%,#01000708 62%,#010007ba 100%)}
+body.brand-2026.a-site select.mobile-language-shortcut{border:1px solid #bababa;border-radius:4px;background:#ffffff;color:#010007}
+body.brand-2026 .mobile-language-shortcut:focus-visible{outline:3px solid #010007;outline-offset:3px}
+}
+@media(max-width:620px){
+body.brand-2026 .hero-wash{background:linear-gradient(180deg,#e2e2e2 0%,#e2e2e2eb 18%,#e2e2e277 38%,#e2e2e200 58%)}
+body.brand-2026 .service-index>a:nth-child(2){border-right:0}
+body.brand-2026 .service-index>a:nth-child(-n+2){border-bottom:1px solid var(--line)}
+body.brand-2026 .confidence-symbol{color:#b0b0b0}
+body.brand-2026 .pest-list>a{border-right:0;border-bottom:1px solid var(--line)}
+body.brand-2026 .hero-routes{border-top:0}
+body.brand-2026 .photographic-hero .scene-note{background:none;color:#c2c2c2;border-radius:0}
+body.brand-2026 .photographic-hero .scene-note{background:none;color:#d0d0d0}
+body.brand-2026 .footer-grid details{border-bottom:1px solid #494949}
+body.brand-2026 .teps-flow li{border-right:0!important;border-bottom:1px solid #c9c9c9}
+body.brand-2026 .teps-flow li:last-child{border-bottom:0}
+body.brand-2026 .s-zone{border-left:0!important}
+body.brand-2026 .s-zone:not(:last-child){border-bottom:1px solid #cccccc}
+body.brand-2026 .s-jump a:nth-child(2){border-right:0}
+body.brand-2026 .s-jump a:nth-child(-n+2){border-bottom:1px solid #d9d9d9}
+body.brand-2026 .s-process li{border-left:0!important;border-bottom:1px solid #cccccc}
+body.brand-2026 .ct-sector-nav a{border-bottom:1px solid var(--ct-ink)}
+body.brand-2026 .ct-sector-nav a:hover,body.brand-2026 .ct-sector-nav a[aria-current=location]{background:transparent;color:var(--ct-ink);box-shadow:inset 0 -3px var(--ct-ink)}
+body.brand-2026 .ct-facilities{border-left:0;border-top:1px solid var(--line)}
+body.brand-2026 .feedback-map{border-bottom-right-radius:30px}
+body.brand-2026 .feedback-audit{border-bottom-right-radius:30px}
+body.brand-2026.a-home .service-opening .service-index>a{border-bottom:1px solid #d4d4d4}
+body.brand-2026.a-home [data-feedback-carousel]{--hero-inset:22px}
+}
+@media(min-width:621px) and (max-width:959px){
+body.brand-2026 .photographic-hero .hero-routes{border-top:0}
+body.brand-2026 .photographic-hero .scene-note{background:none}
+body.brand-2026 .footer-grid details{border-bottom:1px solid #494949}
+}
+@media(prefers-reduced-motion:no-preference){
+body.brand-2026 .office-mark path{stroke-dasharray:66}
+body.brand-2026.a-home .service-index a:hover strong,body.brand-2026.a-home .sector-list a:hover h3{color:#e82227}
+}
+@media(max-width:600px){
+body.brand-2026 .article-cover{background:var(--sage)}
+body.brand-2026 .article-inline-index{background:none;color:var(--ink);border:0;border-bottom:1px solid var(--ink)}
+body.brand-2026 .tn-chat-cue{border-radius:12px;border-width:1.5px}
+body.brand-2026 .tn-chat-cue:after{border-width:1.5px}
+body.brand-2026 #tn-franchise-chat{border-radius:16px}
+body.brand-2026 #tn-franchise-chat .tn-chat-form{border-top:1px solid #dadada;background:#ffffff}
+body.brand-2026 .pest-mobile-index{background:var(--ink);color:white;border:1px solid var(--ink);border-radius:30px;box-shadow:0 2px 12px #01000720}
+body.brand-2026 .pest-mobile-index:hover{background:#484848}
+body.brand-2026 .source-corporate dl>div{border-bottom:1px solid #d4d4d4}
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+body.brand-2026.a-site .button:hover{box-shadow:0 5px 0 #01000714}
+body.brand-2026.a-site .pest-list>a:hover{background:#f0f0f0}
+}
+@media (max-width:620px){
+body.brand-2026.a-home .service-index{border-bottom:0}
+body.brand-2026.a-home .service-index>a,body.brand-2026.a-home .service-index>a:nth-child(even){border:0;border-bottom:1px solid var(--line)}
+body.brand-2026.a-home .home-photo .image-caption{background:none}
+body.brand-2026.a-home .history-timeline{border-top:1px solid #ffd800}
+body.brand-2026.a-home .history-timeline>div{border-bottom:1px solid #ffd800}
+body.brand-2026.a-home .pest-list>a,body.brand-2026.a-home .pest-list>a:last-child{border-top:1px solid var(--line);border-bottom:0}
+body.brand-2026.a-home .pest-list h3,body.brand-2026.a-home .pest-list>a:last-child h3{border:0}
+body.brand-2026.a-home .pest-list>a>div{border-top:0}
+}
+@media(max-width:760px){
+body.brand-2026.a-site:not(.a-home) main .s-closing>.wrap{background-position:right 18px bottom;background-size:auto 205px}
+body.brand-2026.a-site:not(.a-home) main .s-closing>.wrap{background-size:auto 205px}
+html[dir=rtl] body.brand-2026 .a-site:not(.a-home) main .s-closing>.wrap{background-position:left 18px bottom}
+html[dir=rtl] body.brand-2026 .s-process li,html[dir=rtl] body.brand-2026 .s-process li:not(:first-child){border:0}
+}
+
+/* ---- Tipografía del brand book ----
+   Montserrat Black 900 display · ExtraBold 800 titulares · SemiBold 600
+   subtítulos e interfaz · Regular 400 cuerpo · Italic 400 pies y énfasis.
+   Se conserva la familia óptica «Montserrat Display» para los tamaños
+   grandes: es la variante de display de Montserrat y cubre 1-1000. */
+body.brand-2026 :is(h1,.feedback-scene-title,.confidence-symbol,
+ .network-orbit>strong,.network-numbers strong,.teps-signature>span,
+ .footer-contact,.contact-band h2){font-weight:900}
+body.brand-2026 :is(h2,h3,h4,.service-index strong,.photo-label strong,
+ .mega-intro>p,.resource-links h3,.history-timeline strong){font-weight:800}
+body.brand-2026 :is(.button,.text-link,.nav-trigger,.nav-office,.nav-cta,
+ .section-tag,.hero-kicker,.utility,.mega-links strong,.footer-grid h3,.flow-number,
+ .program h3,.home-zones strong,.franchise-points strong,.feedback-audit-label,
+ .tn-band-fact span,.sanitization-environments h3,.search-heading h2){font-weight:600}
+body.brand-2026 :is(p,li,dd,address,.mega-links span,.home-zones span){font-weight:400}
+body.brand-2026 :is(figcaption,.image-caption,.source-note,.proposal-note){font-weight:400;font-style:italic}
+
+/* ---- Barra de navegación en Tru Yellow oscuro ----
+   La fila de navegación pasa a #FFD800; el texto ya era Tru Black, así que
+   contrasta de sobra. Lo que estaba en amarillo (el CTA «Hablemos» y el
+   subrayado del menú abierto) pasa a negro para seguir viéndose. El CTA queda
+   en negro con texto blanco. La franja gris superior se mantiene. */
+body.brand-2026 .nav-shell{background:var(--yellow)}
+/* Al hacer scroll la cabecera se volvía blanca translúcida y tapaba el amarillo. */
+body.brand-2026 .site-header.is-scrolled .nav-shell{background:var(--yellow)}
+body.brand-2026 .site-header{border-bottom-color:#010007}
+
+body.brand-2026 .nav-cta{background:#010007;color:#ffffff;border-color:#010007}
+body.brand-2026 .nav-cta span{color:#ffffff}
+body.brand-2026 .nav-cta:hover{background:#3d3d3d;box-shadow:none}
+
+/* Marcas de menú abierto: eran amarillas, invisibles sobre amarillo. */
+body.brand-2026 .nav-trigger[aria-expanded=true]{box-shadow:inset 0 -3px #010007;text-decoration-color:#010007}
+body.brand-2026 .nav-trigger:after{background:#010007}
+
+/* ---- Banda de cifras: etiquetas negras más grandes ----
+   Estaban a 12px, por debajo de cualquier etiqueta del resto del sitio
+   (.section-tag 13px, .hero-kicker 13-15px, cuerpo 17-18px). Se suben a 15px
+   y se reduce el tracking, que a ese tamaño ya no hace falta tan abierto.
+   Se mantienen en mayúsculas y en Tru Black. */
+body.brand-2026 .tn-band-fact span{font-size:15px;line-height:1.4;letter-spacing:.02em;margin-top:9px}
+@media(max-width:620px){
+ body.brand-2026 .tn-band-fact span{font-size:14px}
+}
+
+/* ---- Banda de cifras: texto negro pegado al rojo y más aire entre frases ----
+   El hueco venía del min-height:2.3em que reservaba dos líneas en los
+   titulares para alinear las etiquetas entre columnas. Se retira: cada frase
+   queda como un bloque compacto bajo su propio titular. Los coches se acercan
+   a los bordes y se abre la separación entre columnas. */
+body.brand-2026 .tn-brand-band{padding-inline:20px;gap:40px}
+body.brand-2026 .tn-band-facts{align-items:start}
+/* Columnas ajustadas al contenido solo en escritorio: por debajo de 960px
+   la banda colapsa a dos columnas y luego a una, y forzar cuatro
+   desbordaba el texto. */
+@media(min-width:961px){
+ body.brand-2026 .tn-band-facts{grid-template-columns:repeat(4,minmax(0,auto));justify-content:space-between;gap:20px 52px}
+}
+body.brand-2026 .tn-band-fact strong{min-height:0}
+body.brand-2026 .tn-band-fact span{margin-top:5px}
+
+/* Tru Red sobre Tru Yellow da 3,21:1. A 19px en negrita aplica el umbral de
+   texto grande (3:1) y cumple; por debajo exigiría 4,5:1. La regla cubría solo
+   hasta 620px y a 820px el titular bajaba de tamaño y fallaba. */
+@media(max-width:960px){
+ body.brand-2026 .tn-band-fact strong{font-size:19px}
+}
+
+/* ---- Correcciones del feedback del 24/09 ----
+   La ficha del slide TEPS tenía background:none en el original, sin hex, así
+   que el generador no lo reemitió y una regla anterior con fondo claro ganó
+   por especificidad: texto blanco sobre caja blanca, invisible. Se devuelve a
+   transparente; el texto sigue en blanco porque va sobre la fotografía oscura.
+   Mismo caso en el logo del pie, que ya era transparente en el pie de papel. */
+body.brand-2026 .feedback-scene-art{background:none}
+body.brand-2026 .footer-paper .footer-brand{background:transparent}
+
+/* El titular de la banda usa clamp(15px,1.35vw,21px) y entre 960 y 1200px caía
+   a 15px, por debajo del umbral de texto grande: Tru Red sobre Tru Yellow da
+   3,21:1 y ahí exigiría 4,5:1. Se sube el mínimo del clamp en vez de parchear
+   por tramos. */
+body.brand-2026 .tn-band-fact strong{font-size:clamp(19px,1.35vw,21px)}
+
+/* El asterisco de campo obligatorio en Tru Red sobre blanco da 4,49:1, justo
+   por debajo de 4,5. Se agranda para que aplique el umbral de texto grande
+   (3:1) en vez de alterar el rojo de marca. */
+body.brand-2026 abbr[title]{font-size:19px;font-weight:700;line-height:1}
+
+/* El sello TEPS ya es una insignia con su propio anillo amarillo: el disco
+   amarillo de la tarjeta lo emborronaba. Se retira y el sello se muestra algo
+   mayor, sin fondo. */
+body.brand-2026 .service-icon:has(img){background:none;width:48px;height:48px;top:16px}
+body.brand-2026 .service-icon img{width:48px;height:48px;background:none;border-radius:0}
+
+/* Los iconos de la franja de cifras iban en gris: pasan al amarillo de marca,
+   como el resto de iconos del sitio. */
+body.brand-2026 .tn-fact-icon{background-color:var(--yellow)}
+
+/* El sello TEPS de la tarjeta crece en la misma proporción que el resto. */
+body.brand-2026 .service-icon:has(img){width:72px;height:72px;top:12px}
+body.brand-2026 .service-icon img{width:72px;height:72px}
+
+/* Ninguna imagen lleva fondo detrás. Va aquí y no en la capa del 24/09 porque
+   esta hoja carga la última y es la que reemite los fondos de las figuras. */
+body.brand-2026 main figure{background:none!important}
+
+/* Editorial refinement, 3 October: natural reading and quieter shared controls. */
+body.brand-2026.a-site main :is(p,li,blockquote){text-align:start;text-align-last:auto}
+@media(min-width:1024px){
+ /* Let the utility row scroll away naturally, without changing document height. */
+ body.brand-2026.a-site .site-header{top:-44px}
+ body.brand-2026.a-site .site-header .utility{height:44px}
+ /* Reveal offscreen utility links only for keyboard focus; pointer focus must not move its target. */
+ body.brand-2026.a-site .site-header:has(.utility :focus-visible){top:0}
+ body.brand-2026.a-site .site-header.is-scrolled{box-shadow:0 3px 12px #0100070d;backdrop-filter:none}
+}
+
+/* Chat: the emblematic car stays in the scene; the colored speech tab names its action. */
+body.brand-2026.a-site .tn-chat-launcher{width:112px;height:108px;padding:0;display:flex;align-items:flex-end;justify-content:center;background:transparent;border:0;border-radius:0;box-shadow:none;filter:drop-shadow(0 2px 3px #01000729)}
+body.brand-2026.a-site .tn-chat-launcher img.tn-chat-car{width:108px;height:70px;object-fit:contain}
+body.brand-2026.a-site .tn-chat-launcher[aria-expanded=true]{display:none}
+body.brand-2026.a-site .tn-chat-cue{top:0;left:auto;right:0;width:auto;min-width:68px;height:36px;padding:0 13px;gap:0;background:#ffd800;color:#010007;border:1.5px solid #010007;border-radius:12px;box-shadow:none;font:700 14px/1 var(--body)}
+body.brand-2026.a-site .tn-chat-cue:after{right:19px;bottom:-6px;width:9px;height:9px;background:#ffd800;border-color:#010007;border-width:1.5px}
+body.brand-2026.a-site .tn-chat-launcher:focus-visible{outline:3px solid #010007;outline-offset:4px;box-shadow:0 0 0 7px white;border-radius:12px}
+body.brand-2026.a-site #tn-franchise-chat .tn-chat-heading{background:#ffd800;color:#010007;border-bottom:1px solid #cfb400;padding:18px 16px}
+body.brand-2026.a-site #tn-franchise-chat h2{color:#010007;font-size:23px;line-height:1.2}
+body.brand-2026.a-site #tn-franchise-chat .tn-chat-heading p{color:#292600}
+body.brand-2026.a-site #tn-franchise-chat .tn-chat-close,body.brand-2026.a-site #tn-franchise-chat .tn-chat-change{color:#010007}
+body.brand-2026.a-site #tn-franchise-chat .tn-chat-heading :focus-visible{outline-color:#010007}
+body.brand-2026.a-site #tn-franchise-chat .tn-chat-form{border-top:1px solid #ddd;background:#fff;padding-top:12px}
+@media(max-width:600px){
+ body.brand-2026.a-site .tn-chat-launcher{width:88px;height:89px;right:max(10px,env(safe-area-inset-right));bottom:calc(10px + env(safe-area-inset-bottom))}
+ body.brand-2026.a-site .tn-chat-launcher img.tn-chat-car{width:86px;height:56px}
+ body.brand-2026.a-site .tn-chat-cue{height:32px;min-width:62px;padding:0 10px;font-size:13px;border-radius:10px}
+ body.brand-2026.a-site #tn-franchise-chat .tn-chat-heading{padding:12px}
+ body.brand-2026.a-site #tn-franchise-chat h2{font-size:21px}
+ body.brand-2026.a-site #tn-franchise-chat[data-keyboard=true] .tn-chat-heading{padding:8px 12px}
+}
+html[dir=rtl] body.brand-2026.a-site .tn-chat-launcher{right:auto;left:max(16px,env(safe-area-inset-left))}
+html[dir=rtl] body.brand-2026.a-site #tn-franchise-chat .tn-chat-close{margin-inline-start:auto;margin-inline-end:-4px}
+@media(max-width:600px){
+ html[dir=rtl] body.brand-2026.a-site .tn-chat-launcher{left:max(10px,env(safe-area-inset-left))}
+ html[dir=rtl] body.brand-2026.a-site #tn-franchise-chat{left:16px;right:auto;bottom:max(var(--tn-chat-bottom,12px),env(safe-area-inset-bottom))}
+}
+
+/* Brief headlight glow, anchored to the original photograph's two lenses. */
+body.brand-2026.a-site .tn-chat-car-scene{position:relative;display:block;width:108px;height:70px;flex:none;pointer-events:none}
+body.brand-2026.a-site .tn-chat-lamp{position:absolute;display:block;pointer-events:none;opacity:0;border-radius:50%;background:radial-gradient(ellipse,#fffef3 0%,#fff9d7 36%,#fff3ba80 65%,#fff0b000 100%);box-shadow:0 0 4px 1px #fff1be66;transform:translate(-50%,-50%) rotate(22deg)}
+body.brand-2026.a-site .tn-chat-lamp-near{left:53.8%;top:58.5%;width:7.2%;height:7.8%}
+body.brand-2026.a-site .tn-chat-lamp-far{left:87%;top:55.7%;width:3.4%;height:8.5%;transform:translate(-50%,-50%) rotate(-25deg)}
+body.brand-2026.a-site .tn-chat-launcher:is(:hover,:focus-visible) .tn-chat-lamp{opacity:.62}
+@media(max-width:600px){body.brand-2026.a-site .tn-chat-car-scene{width:86px;height:56px}}
+@media(prefers-reduced-motion:no-preference){
+ body.brand-2026.a-site .tn-chat-lamp{animation:tn-chat-headlights 3.2s ease-in-out .5s 1;transition:opacity .35s ease}
+}
+@keyframes tn-chat-headlights{0%,100%{opacity:0}28%,60%{opacity:.62}}
+
+/* Quieter desktop navigation, preserving the original header and logo proportions. */
+@media(min-width:960px){
+ body.brand-2026.a-site .navigation :is(.nav-trigger,.nav-office){font-weight:500}
+ body.brand-2026.a-site .navigation .nav-cta{min-height:48px;padding:9px 18px;gap:16px}
+ body.brand-2026.a-site .navigation .nav-cta span{font-size:20px;line-height:1.2}
+}
+
+/* Comfortable disclosure and filter targets, including translated labels. */
+body.brand-2026 .s-detail>summary{min-height:44px;padding-block:10px}
+body.brand-2026 .filter-buttons button{min-height:44px}
+body.brand-2026 .s-office-market>summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.65fr) 16px;align-items:center}
+body.brand-2026 .s-office-market>summary span{text-align:end}
+body.brand-2026 .s-office-market>summary::after{content:"+";font-size:20px;text-align:center;font-weight:400}
+body.brand-2026 .s-office-market[open]>summary::after{content:"−"}
+
+/* ---- Visual & layout audit refinements (Oct 2026) ---- */
+body.brand-2026 .skip:not(:focus):not(:focus-visible){opacity:0;pointer-events:none}
+body.brand-2026 main [id]{scroll-margin-top:156px!important}
+@media(max-width:959px){body.brand-2026 main [id]{scroll-margin-top:96px!important}}
+body.brand-2026 .s-person .s-detail{border-top:0!important;padding-top:4px}
+body.brand-2026 .ux-answer>summary{display:flex;justify-content:space-between;align-items:center;gap:16px}
+body.brand-2026 .ux-answer>summary::after{content:"+";font-size:22px;font-weight:400;flex-shrink:0;color:#545454}
+body.brand-2026 .ux-answer[open]>summary::after{content:"−"}
+body.brand-2026 .pest-index summary>span[aria-hidden=true]{font-size:0}
+body.brand-2026 .pest-index summary>span[aria-hidden=true]::after{content:"+";font-size:20px;font-weight:400}
+body.brand-2026 .pest-index[open] summary>span[aria-hidden=true]::after{content:"−"}
+body.brand-2026 .pest-office-link{display:none!important}
+body.brand-2026 .s-video>.s-figure{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:6px;background:#141413!important;cursor:pointer}
+body.brand-2026 .s-video>.s-figure>img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .28s ease,opacity .28s ease}
+body.brand-2026 .s-video>.s-figure::after{content:"▶";position:absolute;inset:auto auto 14px 14px;width:44px;height:44px;border-radius:50%;background:#ffd800;color:#010007;display:grid;place-items:center;font-size:15px;padding-inline-start:2px;box-shadow:0 4px 14px #00000059;transition:transform .22s ease,background .22s ease}
+html[dir=rtl] body.brand-2026 .s-video>.s-figure::after{inset:auto 14px 14px auto}
+body.brand-2026 .s-video:hover>.s-figure>img{transform:scale(1.04);opacity:.92}
+body.brand-2026 .s-video:hover>.s-figure::after{transform:scale(1.08);background:#ffffff}
+body.brand-2026 .s-video h3{cursor:pointer}
+body.brand-2026 .tn-video-modal{border:0;border-radius:8px;padding:0;background:#010007;color:#fff;width:min(92vw,960px);box-shadow:0 24px 64px #00000080}
+body.brand-2026 .tn-video-modal::backdrop{background:#010007d9}
+body.brand-2026 .tn-video-modal-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:#141413}
+body.brand-2026 .tn-video-modal-title{font-size:15px;font-weight:600;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:74%}
+body.brand-2026 .tn-video-modal-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+body.brand-2026 .tn-video-modal-ext{color:#ffd800;font-size:13px;font-weight:600;text-decoration:none;padding:6px 10px;border:1px solid #ffd80059;border-radius:4px}
+body.brand-2026 .tn-video-modal-ext:hover{background:#ffd80026}
+body.brand-2026 .tn-video-modal-close{background:#ffd800;color:#010007;border:0;border-radius:4px;width:34px;height:34px;font-size:18px;font-weight:700;cursor:pointer;display:grid;place-items:center}
+body.brand-2026 .tn-video-modal-frame{aspect-ratio:16/9;width:100%;background:#000}
+body.brand-2026 .tn-video-modal-frame iframe{width:100%;height:100%;border:0;display:block}
+body.brand-2026 .s-office-card dt:has(+dd [data-unavailable-website]),
+body.brand-2026 .s-office-card dd:has([data-unavailable-website]),
+body.brand-2026 details.closeout-reference,
+body.brand-2026 :is(.s-closing,.tn-form-section,.ct-contact)~:is(.source-links,.ct-related),
+body.brand-2026 .source-citation,
+body.brand-2026 section.s-section.s-prose.s-note,
+body.brand-2026 section.s-flow:has(+section.s-note)>article.s-prose:nth-of-type(2),
+body.brand-2026 .closeout-news-list>article.s-prose:not(.closeout-news-entry),
+body.brand-2026 .source-chapter:has([data-source-unit="14"]),
+body.brand-2026 section.closeout-editorial-stack+section.s-flow:not(.closeout-editorial-stack)>article.s-prose>p:nth-of-type(2),
+body.brand-2026 section.s-flow:has([data-coverage-id="story-team-link-es"]),
+body.brand-2026.a-home .resource-editorial-card small{display:none!important}
+@media(min-width:960px){
+ body.brand-2026 .ct-industrial .ct-documentary{align-items:stretch}
+ body.brand-2026 .ct-industrial .ct-documentary figure{width:100%}
+ body.brand-2026 .ct-industrial .ct-documentary img{width:100%;height:190px;max-height:190px;object-fit:cover;border-radius:3px}
+}
+body.brand-2026 section.s-lead-pair:has(+#zonas) .s-prose p:nth-child(n+3),
+body.brand-2026 #zonas .s-prose p:nth-child(-n+2),
+body.brand-2026 #zonas .s-prose p:nth-child(7){display:none!important}
+body.brand-2026 #zonas .s-prose p:nth-child(3),
+body.brand-2026 #zonas .s-prose p:nth-child(4),
+body.brand-2026 #zonas .s-prose p:nth-child(5){background:#f5f4ef;border-inline-start:4px solid #ffd800;padding:16px 20px;border-radius:6px;margin-bottom:14px;font-weight:500}
+body.brand-2026 #zonas .s-prose p:nth-child(4){border-inline-start-color:#e82227}
+body.brand-2026 #zonas .s-prose p:nth-child(5){border-inline-start-color:#2b7a4b}
+html[lang=es] body.brand-2026 #zonas .s-prose p:nth-child(3){border-inline-start-color:#e82227}
+html[lang=es] body.brand-2026 #zonas .s-prose p:nth-child(4){border-inline-start-color:#ffd800}
+body.brand-2026 .s-stats+.s-note{margin-top:28px;font-size:14px;color:#5e5e5e}
+body.brand-2026 .s-article .s-back.closeout-back{display:none!important}
+body.brand-2026 .s-article h2.wp-block-heading{padding-top:28px;border-top:1px solid #e2e2dc;margin-top:28px}
+body.brand-2026 .s-article .wp-block-media-text{display:grid;grid-template-columns:minmax(180px,260px) minmax(0,1fr);gap:24px;align-items:center;background:#f7f6f1;border:1px solid #e5e4dd;border-radius:10px;padding:18px 22px;margin:18px 0}
+@media(max-width:720px){body.brand-2026 .s-article .wp-block-media-text{grid-template-columns:1fr}}
+body.brand-2026 .s-article .wp-block-media-text__media{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border-radius:8px;padding:12px;margin:0}
+body.brand-2026 .s-article .wp-block-media-text__media img{width:auto;max-width:100%;max-height:210px;height:auto;object-fit:contain;border-radius:6px}
+body.brand-2026 .s-article .wp-block-gallery:has(>.wp-block-image+.wp-block-image){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;background:#f7f6f1;border:1px solid #e5e4dd;border-radius:10px;padding:18px;margin:18px 0}
+body.brand-2026 .s-article .wp-block-gallery:has(>.wp-block-image+.wp-block-image) .wp-block-image{margin:0;background:#fff;border-radius:8px;padding:10px;display:flex;align-items:center;justify-content:center}
+body.brand-2026 .s-article .wp-block-gallery:has(>.wp-block-image+.wp-block-image) img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+body.brand-2026 dl.species-facts{display:grid;grid-template-columns:minmax(120px,160px) minmax(0,1fr);gap:8px 18px;align-items:baseline;margin-top:12px}
+@media(max-width:600px){body.brand-2026 dl.species-facts{grid-template-columns:1fr;gap:2px 0}body.brand-2026 dl.species-facts dd{margin-bottom:8px}}
+body.brand-2026 .knowledge-faq details>summary>span[aria-hidden=true]{font-size:0}
+body.brand-2026 .knowledge-faq details>summary>span[aria-hidden=true]::after{content:"+";font-size:20px;font-weight:400}
+body.brand-2026 .knowledge-faq details[open]>summary>span[aria-hidden=true]::after{content:"−"}
+body.brand-2026 .button{text-decoration:none!important}
+body.brand-2026 main:has(#formulario):not(:has(.s-hero,.ct-hero,.s-lead-pair))>.s-closing{display:none!important}
+@media(min-width:960px){body.brand-2026.a-site .mega{z-index:80;box-shadow:0 28px 56px rgba(1,0,7,.28)}}
+body.brand-2026 .pest-reading>.text-link{display:inline-block;margin-top:16px}
+@media(max-width:959px){
+ body.brand-2026.a-site .gt-buscar>span{font:600 20px/1.3 var(--body);letter-spacing:0}
+ body.brand-2026.a-site .nav-trigger:after{display:none!important}
+ body.brand-2026.a-site .nav-trigger[aria-expanded=true]{box-shadow:inset 0 -2px #010007}
+ body.brand-2026.a-site select.mobile-language-shortcut{appearance:none;-webkit-appearance:none;width:auto;min-width:58px;height:36px;min-height:36px;padding:0 24px 0 11px;border:1.5px solid rgba(1,0,7,.34);border-radius:999px;background:rgba(1,0,7,.05) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23010007' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 9px center/10px 6px;color:#010007;font:700 13px/1 var(--body);letter-spacing:.02em;text-align:left;box-shadow:none}
+ body.brand-2026.a-site select.mobile-language-shortcut:hover{background-color:rgba(1,0,7,.1)}
+}
