@@ -138,6 +138,24 @@ body.country-site[data-oficina] .machote-chat-host .tia{bottom:32px!important;ri
 @media (max-width:599px){.a-home .car-routes{right:146px!important}.a-home .car-routes a{white-space:nowrap;flex:0 0 auto!important;gap:3px!important}.a-home .car-routes .hero-routes{gap:6px!important;justify-content:space-between}}
 /* Los videos del carro y del mundo (escenas-sv.js) viven dentro de .car-media: su z-index no puede pasar por encima del velo. */
 .car-hero .car-media{z-index:0}
+/* 5-nov (comparación con Costa Rica): «Proteja su casa o su negocio» al final de cada guía y «Cómo prevenir cada plaga» en el blog. */
+.s-proteja h2,.s-consejos h2{font-size:clamp(28px,3vw,40px);margin:0 0 24px}
+.s-proteja-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 32px}
+.s-proteja-grid a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:20px 0;border-top:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;color:#010007;text-decoration:none}
+.s-proteja-grid a strong{font-size:19px}
+.s-proteja-grid a span:not([aria-hidden]){grid-column:1;color:#5e5e5e;font-size:15px}
+.s-proteja-grid a [aria-hidden]{grid-column:2;grid-row:1/3;font-size:22px}
+.s-proteja-grid a:hover strong{text-decoration:underline}
+.s-consejos .s-ey{font-size:13px;font-weight:600;color:#3a3a3a;margin:0 0 8px}
+.s-consejos>.s-prose{color:#5e5e5e;margin:0 0 32px}
+.s-consejos-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 32px}
+.s-consejos-grid article{border-top:1px solid #d0d0d0;padding-top:20px;display:flex;flex-direction:column}
+.s-consejos-grid h3{font-size:22px;line-height:1.2;margin:0 0 12px}
+.s-consejos-grid article>p:not(.s-ey){color:#5e5e5e;font-size:15px;line-height:1.6;margin:0 0 16px;flex:1}
+@media (max-width:1023px){.s-consejos-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:599px){.s-consejos-grid{grid-template-columns:1fr;gap:32px}}
+/* Migas de pan en celular: los enlaces miden 44 px de alto y las barras deben quedar centradas con ellos. */
+@media (max-width:760px){main:not(.gt-copia):not(.ct-commercial) :is(.s-intro nav,.pest-breadcrumb,.journal-breadcrumb){display:flex;flex-wrap:wrap;align-items:center}}
 </style>
 </head>
 <body class="a-site s-page brand-2026 country-site" id="page-top" data-machote="costa-rica" data-oficina="el-salvador">
